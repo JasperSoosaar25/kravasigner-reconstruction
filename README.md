@@ -19,6 +19,8 @@ The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed
 
 The continued audit in `docs/EXTENDED-STRUCTURE.md` checks field types, mutability, descriptor flags and recorded superclass types. Against the actual corrected device product, all 106 recovered types and 462 reflection records agree; 380 have nonempty type expressions and 82 are enum cases without a payload type. The full 98,071-byte reflection-name section also matches the original exactly. The device workflow now checks the stronger structure against an original metadata snapshot, without using the old executable as a build input. The stronger check and both builds passed in [run 38128927828](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38128927828), and the downloaded products passed independently. These are bounded structural checks; original function and UI bodies remain uncertain.
 
+The community preparation is verified: [development builds](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132628569), [baseline builds](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132707703) and [contributor checks](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132628642) all passed at `7ccc411`. Both simulator builds launched. [Read the readiness record](docs/COMMUNITY-READINESS.md) for what changed and what was tested.
+
 ## Build
 
 Use macOS with **Xcode 26.0.1** (iOS 26.0 SDK), matching the uploaded app's SDK generation. The shared workspace and scheme still have the names `Feather.xcworkspace` and `Feather`; their app product and Swift module are `KravaSigner`. Those project names acknowledge the reference project's origin.

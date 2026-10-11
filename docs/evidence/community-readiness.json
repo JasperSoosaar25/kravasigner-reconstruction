@@ -1,0 +1,322 @@
+{
+  "schema": 1,
+  "prepared_on": "2026-10-11",
+  "tested_source_commit": "7ccc41112517bed65e293a71c4dee0f586d1e51d",
+  "tested_source_tree": "b443be9e1be38a79fa70a83af98d385b638c9b95",
+  "workflows": [
+    {
+      "id": 38132628642,
+      "name": "Contributor checks",
+      "url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132628642",
+      "branch": "main",
+      "commit": "7ccc41112517bed65e293a71c4dee0f586d1e51d",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-11T10:37:46Z",
+      "updated_at": "2026-10-11T10:38:23Z",
+      "jobs": [
+        {
+          "id": 114449923263,
+          "name": "Source and build-mode checks",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run bash scripts/check.sh development",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38132628569,
+      "name": "Build KravaSigner",
+      "url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132628569",
+      "branch": "main",
+      "commit": "7ccc41112517bed65e293a71c4dee0f586d1e51d",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-11T10:37:46Z",
+      "updated_at": "2026-10-11T10:44:40Z",
+      "jobs": [
+        {
+          "id": 114449923015,
+          "name": "iOS device",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Select Xcode 26.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate source and test reconstructed TLS behavior",
+              "conclusion": "success"
+            },
+            {
+              "name": "Build from source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Compare compiled app type metadata with the original",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Compare recovered field types, flags and superclass references",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Launch app in iOS Simulator",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Save build logs, results and app",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 114449923166,
+          "name": "iOS simulator",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Select Xcode 26.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate source and test reconstructed TLS behavior",
+              "conclusion": "success"
+            },
+            {
+              "name": "Build from source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Compare compiled app type metadata with the original",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Compare recovered field types, flags and superclass references",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Launch app in iOS Simulator",
+              "conclusion": "success"
+            },
+            {
+              "name": "Save build logs, results and app",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38132707703,
+      "name": "Build KravaSigner",
+      "url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132707703",
+      "branch": "reconstruction-baseline",
+      "commit": "7ccc41112517bed65e293a71c4dee0f586d1e51d",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-11T10:39:08Z",
+      "updated_at": "2026-10-11T10:46:07Z",
+      "jobs": [
+        {
+          "id": 114450158710,
+          "name": "iOS simulator",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Select Xcode 26.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate source and test reconstructed TLS behavior",
+              "conclusion": "success"
+            },
+            {
+              "name": "Build from source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Compare compiled app type metadata with the original",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Compare recovered field types, flags and superclass references",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Launch app in iOS Simulator",
+              "conclusion": "success"
+            },
+            {
+              "name": "Save build logs, results and app",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 114450158824,
+          "name": "iOS device",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Select Xcode 26.0.1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Validate source and test reconstructed TLS behavior",
+              "conclusion": "success"
+            },
+            {
+              "name": "Build from source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Compare compiled app type metadata with the original",
+              "conclusion": "success"
+            },
+            {
+              "name": "Compare recovered field types, flags and superclass references",
+              "conclusion": "success"
+            },
+            {
+              "name": "Launch app in iOS Simulator",
+              "conclusion": "skipped"
+            },
+            {
+              "name": "Save build logs, results and app",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "build_modes": {
+    "development": {
+      "default": true,
+      "original_resources_overwrite": false,
+      "compiled_original_metadata_gate": false,
+      "verified_editable_config": true,
+      "compiled_catalog_is_original": false,
+      "catalog_sha256": "439a4083fbd24c81446a2c8da618d0eac7d617126df40ffc6fd4ffbf1d6abdb5",
+      "device_ipa_sha256": "99d0ca7fbd192df7889cdda3726a01b1bbba8d4f51155b04474016586bd219e0",
+      "simulator_launch_pid": 20722,
+      "startup_passed": true
+    },
+    "baseline": {
+      "branch": "reconstruction-baseline",
+      "original_resources_exact_each": 66,
+      "unexplained_omissions_each": 0,
+      "app_types_compared": 106,
+      "field_type_records_compared": 462,
+      "structural_differences": 0,
+      "unresolved_type_references": 0,
+      "independent_downloaded_product_check": true,
+      "simulator_startup_passed": true
+    }
+  },
+  "publication_review": {
+    "historical_commits_reviewed": 8,
+    "historical_unique_blobs_reviewed": 465,
+    "credential_patterns": [
+      "GitHub token formats",
+      "AWS access key format",
+      "encoded multiline private keys"
+    ],
+    "credential_pattern_findings": 0,
+    "private_signing_paths_in_current_or_historical_trees": 0,
+    "historical_device_and_failed_job_logs_scanned": 5,
+    "historical_simulator_artifact_log_files_scanned": 15,
+    "full_historical_simulator_job_wrappers_unavailable": 3,
+    "limitation": "Pattern-based review, not proof that arbitrary confidential material cannot exist. Three full simulator job-log fetches returned Transport closed; their retained artifact logs and app bundles were inspected. No owner signing inputs were supplied to any CI build."
+  },
+  "limits": [
+    "Unofficial reconstruction; original method bodies and complete UI source remain unrecovered.",
+    "Startup checks are not full UI, real-device signing or installation tests.",
+    "Recovered artwork and branding are not automatically relicensed by this repository's GPL notice."
+  ]
+}

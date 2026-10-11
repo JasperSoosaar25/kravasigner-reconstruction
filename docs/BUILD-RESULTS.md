@@ -1,5 +1,7 @@
 # Verified source builds and simulator run
 
+Community preparation now supports development builds for feature work and explicit baseline audits. Both modes and contributor checks passed at `7ccc411`; see [COMMUNITY-READINESS.md](COMMUNITY-READINESS.md). The earlier exact-resource/metadata results below describe baseline reconstruction builds.
+
 Verified on 11 October 2026 in the owner's private repository:
 [JasperSoosaar25/kravasigner-reconstruction](https://github.com/JasperSoosaar25/kravasigner-reconstruction).
 

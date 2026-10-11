@@ -280,10 +280,10 @@ index 3fee771..58d7be1 100644
 \ No newline at end of file
 +Maintainers may edit or remove harmful content and restrict participation for repeated or serious violations. Use GitHub's reporting controls for abusive content. For security problems, follow [SECURITY.md](SECURITY.md).
 diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
-index f37f8a5..e3d450e 100644
+index f37f8a5..e566e1b 100644
 --- a/CONTRIBUTING.md
 +++ b/CONTRIBUTING.md
-@@ -1,62 +1,36 @@
+@@ -1,62 +1,38 @@
 -# Contributing
 +# Contributing to KravaSigner reconstruction
  
@@ -294,12 +294,7 @@ index f37f8a5..e3d450e 100644
 +## Your first contribution
  
 -## Rules
-+1. Fork [this repository](https://github.com/JasperSoosaar25/kravasigner-reconstruction/fork).
-+2. Clone your fork. The local packages are included; recursive submodule cloning is unnecessary.
-+3. Create a branch, for example `git switch -c feature/source-search`.
-+4. Follow the [development guide](docs/DEVELOPMENT.md), make your change and run `bash scripts/check.sh development`.
-+5. Build the app on macOS or run **Build KravaSigner** with mode **development** in your fork's Actions tab. Include what you tested and screenshots for visible UI changes.
-+6. Commit, push your branch and open a pull request against this repository's `main` branch. Use the PR template to describe the problem and resulting behavior.
++If you own this repository, clone it directly and work on a feature branch. Other contributors start with a fork.
  
 -- **No usage of any exploits of any kind**.
 -- **No contributions related to retrieving any signing certificates owned by companies**.
@@ -313,31 +308,36 @@ index f37f8a5..e3d450e 100644
 -- **Typo contributions are okay**, just make sure they are appropriate.
 -  - This includes localizations
 -- **Code cleaning contributions are okay**.
-+For a larger design, database change or change to installation/signing, open a feature issue first so people can agree on the direction. A small typo or isolated bug fix can go directly to a PR. There is no requirement to contribute to Feather before contributing here.
++1. Fork [this repository](https://github.com/JasperSoosaar25/kravasigner-reconstruction/fork).
++2. Clone your fork. The local packages are included; recursive submodule cloning is unnecessary.
++3. Create a branch, for example `git switch -c feature/source-search`.
++4. Follow the [development guide](docs/DEVELOPMENT.md), make your change and run `bash scripts/check.sh development`.
++5. Build the app on macOS or run **Build KravaSigner** with mode **development** in your fork's Actions tab. Include what you tested and screenshots for visible UI changes.
++6. Commit, push your branch and open a pull request against this repository's `main` branch. Use the PR template to describe the problem and resulting behavior.
  
 -## Contributing to Feather
-+## Development and audit builds
++For a larger design, database change or change to installation/signing, open a feature issue first so people can agree on the direction. A small typo or isolated bug fix can go directly to a PR. There is no requirement to contribute to Feather before contributing here.
  
 -#### Compiling requirements
-+**Development** is the default for Xcode, the build script and normal CI. It compiles editable artwork, translations, launch screen and database models. New types/properties and features are allowed; old compiled type equality is not a feature gate.
++## Development and audit builds
  
 -- Xcode 16.0
 -- Swift 6.0
 -- iOS 16.0
-+**Baseline** is an explicit reconstruction audit. It restores the distributed original resources and compares the device executable's selected metadata with the original. Use `bash scripts/build.sh device baseline` or select baseline in Actions. Feature changes can intentionally fail that comparison. Do not edit the original snapshots to make a feature pass. Historical evidence remains historical.
++**Development** is the default for Xcode, the build script and normal CI. It compiles editable artwork, translations, launch screen and database models. New types/properties and features are allowed; old compiled type equality is not a feature gate.
  
 -1. Clone repository
 -    ```sh
 -    git clone https://github.com/khcrysalis/Feather --recursive
 -    ```
 -    - `Zsign` is a submodule, recursive is required.
-+Keep `RecoveredResources/` and original evidence intact. Describe newly added behavior as new behavior. Evidence changes need a clear explanation and the input digest/method that supports them.
++**Baseline** is an explicit reconstruction audit. It restores the distributed original resources and compares the device executable's selected metadata with the original. Use `bash scripts/build.sh device baseline` or select baseline in Actions. Feature changes can intentionally fail that comparison. Do not edit the original snapshots to make a feature pass. Historical evidence remains historical.
  
 -2. Opening with Xcode
 -    ```sh
 -    cd Feather && open Feather.xcworkspace
 -    ```
-+## Review expectations
++Keep `RecoveredResources/` and original evidence intact. Describe newly added behavior as new behavior. Evidence changes need a clear explanation and the input digest/method that supports them.
  
 -#### Localizations
 -- For localizations, you will need Xcode 15 or higher to edit the `Feather/Resources/Localizable.xcstrings` file, or some alternative software which allows you to edit an `.xcstrings` file. 
@@ -347,6 +347,9 @@ index f37f8a5..e3d450e 100644
 -- After localizing, please have another person review your localizations (unless the owners have asked you personally to help translate). 
 -  - We want high quality localizations and have them actually make sense when in the application.
 -  - They will not be merged unless the latter was done.
++## Review expectations
+ 
+-#### Making a pull request
 +- Keep a PR focused and describe the visible behavior or failure it improves.
 +- Use the existing SwiftUI and service/storage patterns; keep views readable and asynchronous network work off the main thread.
 +- Check light/dark appearance, Dynamic Type, VoiceOver labels, loading/empty/error states and the supported iOS versions relevant to the change.
@@ -355,12 +358,10 @@ index f37f8a5..e3d450e 100644
 +- Preserve stock-iOS compatibility. Do not contribute exploits, piracy features or retrieval of signing credentials belonging to other people or organizations.
 +- Preserve existing copyright/license notices. App changes and new project tooling are contributed under GPL-3.0; vendored package changes retain their package's license. You must have the right to contribute the content. See [NOTICE](NOTICE.md).
  
--#### Making a pull request
-+CI uses read-only repository permissions and no signing secrets. GitHub may ask a maintainer to approve a first-time fork's workflow run. Passing checks helps review; it does not automatically merge a PR.
- 
 -- Make sure your contributions stay isolated in their own branch, and not `main`.
 -- When contributing don't be afraid of any reviewers requesting changes or judging how you wrote something, it's all to keep the project clean and tidy.
--
++CI uses read-only repository permissions and no signing secrets. GitHub may ask a maintainer to approve a first-time fork's workflow run. Passing checks helps review; it does not automatically merge a PR.
+ 
 -## Contributing to Zsign
 -
 -When contributing to Zsign, head over to [khcrysalis/Zsign-Package](https://github.com/khcrysalis/Zsign-Package/tree/package) and make your contributions.
@@ -61547,10 +61548,10 @@ index 700f153..7c10bb1
 +validate:
 +	python3 scripts/validate-source.py
 diff --git a/README.md b/README.md
-index 84d12cf..d0267be 100644
+index 84d12cf..5ca5acc 100644
 --- a/README.md
 +++ b/README.md
-@@ -1,74 +1,86 @@
+@@ -1,74 +1,88 @@
 -# Feather
 +# KravaSigner 2.8.2 — reconstructed source
  
@@ -61600,27 +61601,24 @@ index 84d12cf..d0267be 100644
 +The continued audit in `docs/EXTENDED-STRUCTURE.md` checks field types, mutability, descriptor flags and recorded superclass types. Against the actual corrected device product, all 106 recovered types and 462 reflection records agree; 380 have nonempty type expressions and 82 are enum cases without a payload type. The full 98,071-byte reflection-name section also matches the original exactly. The device workflow now checks the stronger structure against an original metadata snapshot, without using the old executable as a build input. The stronger check and both builds passed in [run 38128927828](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38128927828), and the downloaded products passed independently. These are bounded structural checks; original function and UI bodies remain uncertain.
  
 -## How does it work?
-+## Build
++The community preparation is verified: [development builds](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132628569), [baseline builds](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132707703) and [contributor checks](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38132628642) all passed at `7ccc411`. Both simulator builds launched. [Read the readiness record](docs/COMMUNITY-READINESS.md) for what changed and what was tested.
  
 -Visit the [HOW IT WORKS](./HOW_IT_WORKS.md) page.
-+Use macOS with **Xcode 26.0.1** (iOS 26.0 SDK), matching the uploaded app's SDK generation. The shared workspace and scheme still have the names `Feather.xcworkspace` and `Feather`; their app product and Swift module are `KravaSigner`. Those project names acknowledge the reference project's origin.
++## Build
  
 -## Sponsors
-+```bash
-+bash scripts/build.sh device baseline
-+```
++Use macOS with **Xcode 26.0.1** (iOS 26.0 SDK), matching the uploaded app's SDK generation. The shared workspace and scheme still have the names `Feather.xcworkspace` and `Feather`; their app product and Swift module are `KravaSigner`. Those project names acknowledge the reference project's origin.
  
 -| Thanks to all my [sponsors](https://github.com/sponsors/claration)!! |
 -|:-:|
 -| <img src="https://raw.githubusercontent.com/claration/github-sponsor-graph/main/graph.png"> |
 -| _**"samara is cute" - Vendicated**_ |
-+The result is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
++```bash
++bash scripts/build.sh device baseline
++```
  
 -## Star History
-+```bash
-+bash scripts/build.sh simulator baseline
-+bash scripts/simulator-smoke.sh
-+```
++The result is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
  
 -<a href="https://star-history.com/#claration/Feather&Date">
 - <picture>
@@ -61629,10 +61627,13 @@ index 84d12cf..d0267be 100644
 -   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=claration/Feather&type=Date" />
 - </picture>
 -</a>
-+The simulator script installs and launches the app, checks that it remains alive after startup, and records a screenshot and logs. It does not establish real-device signing or installation reliability.
++```bash
++bash scripts/build.sh simulator baseline
++bash scripts/simulator-smoke.sh
++```
  
 -## Acknowledgements
-+The GitHub Actions workflow `.github/workflows/reconstruct.yml` supports development (default) and baseline modes and runs these two jobs on `macos-15`, selects Xcode 26.0.1 explicitly, uses the dependency lockfiles, and saves logs, build-result bundles and generated artifacts. It runs on pushes to `main`, pull requests and manual dispatch. Action implementations are pinned to inspected commit SHAs. No releases are automatically published. Normal pushes and PRs use development mode; manually choose baseline for the original metadata comparisons.
++The simulator script installs and launches the app, checks that it remains alive after startup, and records a screenshot and logs. It does not establish real-device signing or installation reliability.
  
 -- [Samara](https://github.com/claration) - The maker
 -- [idevice](https://github.com/jkcoxson/idevice) - Backend for builds with this included, used for communication with `installd`.
@@ -61643,19 +61644,21 @@ index 84d12cf..d0267be 100644
 -- [Nuke](https://github.com/kean/Nuke) - Image caching.
 -- [Asspp](https://github.com/Lakr233/Asspp) - Some code for setting up the http server.
 -- [plistserver](https://github.com/nekohaxx/plistserver) - Hosted on https://api.palera.in.
-+## Local behavioral tests
++The GitHub Actions workflow `.github/workflows/reconstruct.yml` supports development (default) and baseline modes and runs these two jobs on `macos-15`, selects Xcode 26.0.1 explicitly, uses the dependency lockfiles, and saves logs, build-result bundles and generated artifacts. It runs on pushes to `main`, pull requests and manual dispatch. Action implementations are pinned to inspected commit SHAs. No releases are automatically published. Normal pushes and PRs use development mode; manually choose baseline for the original metadata comparisons.
  
 -## License 
++## Local behavioral tests
+ 
+-This project is licensed under the GPL-3.0 license. You can see the full details of the license [here](https://github.com/claration/Feather/blob/main/LICENSE). It's under this specific license because I wanted to make a project that is transparent to the user thats related to certificate paired sideloading, before this project there weren't any open source projects that filled in this gap.
 +```bash
 +python3 scripts/validate-source.py --mode baseline
 +swiftc Feather/Utilities/TLSAssetDownloader.swift tests/TLSAssetDownloaderTests.swift -o /tmp/krava-tls-tests
 +/tmp/krava-tls-tests
 +```
  
--This project is licensed under the GPL-3.0 license. You can see the full details of the license [here](https://github.com/claration/Feather/blob/main/LICENSE). It's under this specific license because I wanted to make a project that is transparent to the user thats related to certificate paired sideloading, before this project there weren't any open source projects that filled in this gap.
-+These offline tests exercise the same reconstructed download helper used by the app: request order/policy, successful output, second-request failure, invalid UTF-8, and write failure. They use invented fixtures, not signing credentials or the live TLS endpoints. Linux Swift can run this helper; it cannot compile UIKit or launch the iOS app.
- 
 -By contributing to this project, you agree to license your code under the GPL-3.0 license as well (including agreeing to license exceptions), ensuring that your work, like all other contributions, remains freely accessible and open.
++These offline tests exercise the same reconstructed download helper used by the app: request order/policy, successful output, second-request failure, invalid UTF-8, and write failure. They use invented fixtures, not signing credentials or the live TLS endpoints. Linux Swift can run this helper; it cannot compile UIKit or launch the iOS app.
++
 +## Original resources and optional private inputs
 +
 +`RecoveredResources/Bundle/` contains the original runtime resources. The build restores all **66 files byte-for-byte**, including the compiled catalog, loose icons, launch NIBs, Core Data model, translations, Settings bundle, acknowledgements and privacy manifests. Another **21 metadata files** are retained for reference. `docs/ipa-file-coverage.json` and `.csv` account for all **135 archive entries**.

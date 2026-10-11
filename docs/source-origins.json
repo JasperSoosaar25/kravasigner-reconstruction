@@ -406,6 +406,7 @@
     "RecoveredResources/Reference/swift-nio__NIOFileSystem.bundle/Info.plist",
     "SECURITY.md",
     "docs/BUILD-RESULTS.md",
+    "docs/COMMUNITY-READINESS.md",
     "docs/DEVELOPMENT.md",
     "docs/DOUBLE-CHECK.md",
     "docs/EVIDENCE.md",
@@ -417,6 +418,7 @@
     "docs/STATUS.md",
     "docs/evidence/build-verification.json",
     "docs/evidence/catalog-metadata.json",
+    "docs/evidence/community-readiness.json",
     "docs/evidence/constant-functions.asm",
     "docs/evidence/constant-references.json",
     "docs/evidence/coredata-schema.json",
@@ -475,5 +477,5 @@
     "tests/SwiftStructureNegativeChecks.py",
     "tests/TLSAssetDownloaderTests.swift"
   ],
-  "note": "Community preparation snapshot. Development mode permits features and editable resources; baseline mode preserves the documented original comparison. This inventory is provenance, not official source recovery."
+  "note": "Final community preparation snapshot. Both development and baseline platform builds and contributor checks passed at 7ccc411. Development permits new features and editable resources. This partition is provenance, not official source recovery."
 }

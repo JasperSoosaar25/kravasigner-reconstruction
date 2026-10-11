@@ -1,5 +1,7 @@
 # Actual validation status — 11 October 2026
 
+Community preparation now supports development builds for feature work and explicit baseline audits. Both modes and contributor checks passed at `7ccc411`; see [COMMUNITY-READINESS.md](COMMUNITY-READINESS.md). The earlier exact-resource/metadata results below describe baseline reconstruction builds.
+
 | Check | Result |
 |---|---|
 | Uploaded IPA inventory/CRC, Mach-O metadata and hashes | Passed during original inspection |

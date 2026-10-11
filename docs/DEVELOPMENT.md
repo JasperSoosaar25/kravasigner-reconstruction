@@ -4,7 +4,7 @@ You can change this project and build your own app. The current code builds from
 
 ## Start with a fork
 
-Use GitHub's **Fork** button, then clone your own repository and create a feature branch:
+If you own this repository, clone it directly and create a feature branch. Other contributors use GitHub's **Fork** button, then clone your own repository and create a feature branch:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/kravasigner-reconstruction.git

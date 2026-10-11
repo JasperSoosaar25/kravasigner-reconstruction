@@ -4,6 +4,8 @@ You can fork this project, add features, fix bugs, improve accessibility or tran
 
 ## Your first contribution
 
+If you own this repository, clone it directly and work on a feature branch. Other contributors start with a fork.
+
 1. Fork [this repository](https://github.com/JasperSoosaar25/kravasigner-reconstruction/fork).
 2. Clone your fork. The local packages are included; recursive submodule cloning is unnecessary.
 3. Create a branch, for example `git switch -c feature/source-search`.
