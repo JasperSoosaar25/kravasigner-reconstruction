@@ -17,7 +17,7 @@
   },
   "builds": {
     "device": {
-      "artifact_sha256": "677a521ec48d982c890cbb694363477fd82e874e3180e4c2ba3cc73c9e65d272",
+      "artifact_sha256": "6f9fdbd2765aa597a6925eb395cc2770398c8d8fa846d71d789614e9cd9ecd71",
       "exact_original_runtime_resources": 66,
       "missing_resources": [],
       "changed_resources": [],
@@ -39,12 +39,12 @@
         "DTXcode",
         "DTXcodeBuild"
       ],
-      "main_executable_sha256": "59fc10f980bbc94b072ecdb70b75773adf8730aa602dcaed6ec29d0dd9dd931d",
+      "main_executable_sha256": "4c0e43a50564db6e448b6c2fc16d9ac41dfcaf8448f04ca509f3157142db701d",
       "main_executable_differs_from_original": true,
-      "ipa_sha256": "42fc65881414b7d0e85b4fb639012664c2154d67d51c59996bd1a7df73832a1a"
+      "ipa_sha256": "9adc52854b5490e069c19a4219629aaeea8744a7aa1444391be6581fd7ae78e2"
     },
     "simulator": {
-      "artifact_sha256": "2b4543b75a48faed2e78528b68ef982831f07e22c7f20254a877d22ef1875996",
+      "artifact_sha256": "aca16f6c9710c4fbd2ec715b8d6e81c2f44f4f523a7a225e6bd914cb336bff05",
       "exact_original_runtime_resources": 66,
       "missing_resources": [],
       "changed_resources": [],
@@ -70,14 +70,14 @@
         "DTXcodeBuild",
         "UIRequiredDeviceCapabilities"
       ],
-      "main_executable_sha256": "4cab73f59954f7dc68257f92b298e3fd34bbc5265a454dde62a960266ea5686d",
+      "main_executable_sha256": "942a435ca696d2a765abf806da88a3763048d8ce28675be4a34858255a75e0f5",
       "main_executable_differs_from_original": true
     }
   },
   "errors": [],
   "passed": true,
   "limit": "Exact distributed-file coverage only; original private source, all behaviours and signing equivalence remain unproven.",
-  "tested_source_commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
-  "run_id": 38126989899,
-  "run_url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899"
+  "tested_source_commit": "d97d268d669c33ab9826d0c74080c909d6eb85bb",
+  "run_id": 38128927828,
+  "run_url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38128927828"
 }

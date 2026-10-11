@@ -1,8 +1,8 @@
 {
-  "commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
-  "run_id": 38126989899,
-  "ipa_sha256": "42fc65881414b7d0e85b4fb639012664c2154d67d51c59996bd1a7df73832a1a",
-  "executable_sha256": "59fc10f980bbc94b072ecdb70b75773adf8730aa602dcaed6ec29d0dd9dd931d",
+  "commit": "d97d268d669c33ab9826d0c74080c909d6eb85bb",
+  "run_id": 38128927828,
+  "ipa_sha256": "9adc52854b5490e069c19a4219629aaeea8744a7aa1444391be6581fd7ae78e2",
+  "executable_sha256": "4c0e43a50564db6e448b6c2fc16d9ac41dfcaf8448f04ca509f3157142db701d",
   "original_executable_reused": false,
   "runtime_resources_verified": 66,
   "platform": [
@@ -10,14 +10,14 @@
   ],
   "size": 13612196,
   "repository": "https://github.com/JasperSoosaar25/kravasigner-reconstruction",
-  "run_url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899",
+  "run_url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38128927828",
   "jobs": {
     "device": {
-      "id": 114433300685,
+      "id": 114439017691,
       "conclusion": "success"
     },
     "simulator": {
-      "id": 114433300298,
+      "id": 114439017556,
       "conclusion": "success"
     }
   },
@@ -29,13 +29,13 @@
   },
   "simulator": {
     "runtime_resources_verified": 66,
-    "startup_pid": 15617,
+    "startup_pid": 26698,
     "startup_check_seconds": 10,
     "startup_passed": true,
     "platform": [
       "iPhoneSimulator"
     ],
-    "screenshot_sha256": "b62df5c3b9692ee15d78de911d71e804c1886e4be3c85b0ed620506c6b83ddde"
+    "screenshot_sha256": "b44a322272aaecc5f13cc13eb1f9554bfc78abbce62fc7bad38ebce38b28356e"
   },
   "tls_fixture_tests_passed": 4,
   "physical_device_signing_installation_tested": false,
@@ -43,19 +43,27 @@
   "artifacts": [
     {
       "filename": "KravaSigner-device-build.zip",
-      "github_artifact_id": 11696953812,
-      "bytes": 28072386,
-      "sha256": "677a521ec48d982c890cbb694363477fd82e874e3180e4c2ba3cc73c9e65d272"
+      "github_artifact_id": 11698101449,
+      "bytes": 28091707,
+      "sha256": "6f9fdbd2765aa597a6925eb395cc2770398c8d8fa846d71d789614e9cd9ecd71"
     },
     {
       "filename": "KravaSigner-simulator-build.zip",
-      "github_artifact_id": 11697857900,
-      "bytes": 26696942,
-      "sha256": "2b4543b75a48faed2e78528b68ef982831f07e22c7f20254a877d22ef1875996"
+      "github_artifact_id": 11699096328,
+      "bytes": 26699923,
+      "sha256": "aca16f6c9710c4fbd2ec715b8d6e81c2f44f4f523a7a225e6bd914cb336bff05"
     }
   ],
   "compiled_original_app_descriptors_matched": 106,
   "compiled_field_name_mismatches": [],
   "unexplained_omitted_app_paths": [],
-  "added_app_paths": []
+  "added_app_paths": [],
+  "compiled_reflection_records_matched": 462,
+  "nonempty_field_type_records_matched": 380,
+  "enum_cases_without_payload_types_matched": 82,
+  "recorded_superclass_types_matched": 13,
+  "complete_reflection_name_section_bytes_matched": 98071,
+  "complete_reflection_name_section_strings": 7060,
+  "extended_structure_check_passed": true,
+  "extended_structure_unresolved_references": 0
 }

@@ -36,5 +36,9 @@
     "__DATA,__const": "146ae02fa155eb2204adf6ba116fbd5e3527975cd47e3596a9b4a73504dbaeae",
     "__DATA,__la_symbol_ptr": "9d952ab4d6063bc0af85493b8eecb99963eab6c38f58d9e5b6de82b59ed9e65d",
     "__DATA,__data": "8396637d922aafabae31e536e8a089b641caf29ad3046278dfd2342a3a9a423f"
-  }
+  },
+  "latest_tested_source_commit": "d97d268d669c33ab9826d0c74080c909d6eb85bb",
+  "latest_run_id": 38128927828,
+  "latest_framework_sha256": "df7faa880948b310527a191362fda21b31f6d9d261731ec1fe1ab9b7728854a4",
+  "latest_file_backed_sections_match_original": true
 }

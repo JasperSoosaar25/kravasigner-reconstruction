@@ -1,0 +1,38 @@
+{
+  "original": {
+    "bytes": 98071,
+    "sha256": "2a8377ee3836615bf0d54e670c19c7fdfae2677be8b7d89e504187f5be859eba",
+    "strings": 7060
+  },
+  "prior_before_corrections": {
+    "bytes": 98199,
+    "sha256": "451d6dc68c7e468825ead0ebf4eba39c51e61a1d54c464c39b639edbc34ef886",
+    "strings": 7064
+  },
+  "corrected": {
+    "bytes": 98071,
+    "sha256": "2a8377ee3836615bf0d54e670c19c7fdfae2677be8b7d89e504187f5be859eba",
+    "strings": 7060
+  },
+  "corrected_section_byte_identical_to_original": true,
+  "prior_additional_names": [
+    "__filteredRecommendedSourcesData",
+    "__shouldStar",
+    "_recommendedSourcesData",
+    "recommendedSources"
+  ],
+  "prior_missing_names": [],
+  "corrected_additional_names": [],
+  "corrected_missing_names": [],
+  "baseline_corrected_run_id": 38126989899,
+  "baseline_corrected_source_commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
+  "limit": "Raw reflection-name string section across linked modules only; no function/UI body or original source equivalence implied.",
+  "latest_build": {
+    "bytes": 98071,
+    "sha256": "2a8377ee3836615bf0d54e670c19c7fdfae2677be8b7d89e504187f5be859eba",
+    "strings": 7060
+  },
+  "latest_section_byte_identical_to_original": true,
+  "latest_run_id": 38128927828,
+  "latest_tested_source_commit": "d97d268d669c33ab9826d0c74080c909d6eb85bb"
+}

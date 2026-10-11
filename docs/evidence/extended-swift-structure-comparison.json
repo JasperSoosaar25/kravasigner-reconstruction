@@ -6005,13 +6005,10 @@
     ],
     "unresolved_type_references": [],
     "unparsed_all_modules": 293,
-    "fixup_locations_parsed": 77410,
-    "schema_version": 1,
-    "origin": "Directly extracted from the supplied original IPA; normalized metadata only, not original Swift source.",
-    "limit": "Only the 106 app nominal descriptors recovered by the bounded parser; 293 other records remain unparsed. Anonymous contexts without recorded names use an anonymous marker. No method/UI bodies or exact source text."
+    "fixup_locations_parsed": 77410
   },
   "rebuilt": {
-    "executable_sha256": "59fc10f980bbc94b072ecdb70b75773adf8730aa602dcaed6ec29d0dd9dd931d",
+    "executable_sha256": "4c0e43a50564db6e448b6c2fc16d9ac41dfcaf8448f04ca509f3157142db701d",
     "app_types": [
       {
         "name": "KravaSigner.Download",
@@ -12025,7 +12022,9 @@
   "unresolved_type_references_count": 0,
   "passed": true,
   "limit": "Bounded reflection structure only. No method bodies, whole-program equivalence or original authored source recovered.",
-  "baseline_tested_source_commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
-  "baseline_run_id": 38126989899,
-  "comparison_script_sha256": "02c5a335879618e6877fcc2a2925eebbe1653e2781176b2959d42b1602f850af"
+  "tested_source_commit": "d97d268d669c33ab9826d0c74080c909d6eb85bb",
+  "run_id": 38128927828,
+  "comparison_script_sha256": "02c5a335879618e6877fcc2a2925eebbe1653e2781176b2959d42b1602f850af",
+  "independently_verified_after_artifact_download": true,
+  "ci_comparison_passed": true
 }

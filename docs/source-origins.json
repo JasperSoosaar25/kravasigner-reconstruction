@@ -431,6 +431,8 @@
     "docs/evidence/plural-audit.json",
     "docs/evidence/prior-build-metadata-mismatches.json",
     "docs/evidence/recovered-artwork-preview.png",
+    "docs/evidence/reference-patch-verification.json",
+    "docs/evidence/reflection-string-section-comparison.json",
     "docs/evidence/source-search-followup.json",
     "docs/evidence/swift-structure-negative-checks.json",
     "docs/evidence/swift-types.json",
@@ -463,5 +465,5 @@
     "tests/SwiftStructureNegativeChecks.py",
     "tests/TLSAssetDownloaderTests.swift"
   ],
-  "note": "Extended recovery-audit tooling snapshot. The stronger field-type comparison passes against the prior actual device product; next CI run is recorded separately. Original official source remains unrecovered."
+  "note": "Continued audit final snapshot. Both builds and extended structure check passed at d97d268; 462 reflection records and full reflection-name section agree. The common-reference patch has verified Git syntax and clean application. Original source bodies and whole-program equivalence remain unrecovered."
 }

@@ -1,0 +1,11 @@
+{
+  "checked_date": "2026-10-11",
+  "patch_sha256": "151075f306552a8b9a08ffcdeccf0625b2d51d15f0faae3696613f1236d778ac",
+  "patch_bytes": 3021569,
+  "common_reference_files": 295,
+  "modified_reference_files": 30,
+  "git_apply_syntax_passed": true,
+  "git_apply_check_passed": true,
+  "applied_common_file_bytes_match_source": true,
+  "limit": "Only common-reference changes; new/recovered files are separately inventoried. This is not an official source recovery patch."
+}

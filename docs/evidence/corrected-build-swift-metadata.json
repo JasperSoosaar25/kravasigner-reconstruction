@@ -1094,12 +1094,9 @@
   "type_table_records": 2432,
   "unparsed_all_modules": 293,
   "limit": "Bounded metadata names/fields only; not original expressions, method bodies or whole-program equivalence.",
-  "reference_app_type_count": 106,
-  "mismatches": [],
-  "metadata_names_and_fields_match_original": true,
-  "tested_source_commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
-  "run_id": 38126989899,
-  "executable_sha256": "59fc10f980bbc94b072ecdb70b75773adf8730aa602dcaed6ec29d0dd9dd931d",
+  "tested_source_commit": "d97d268d669c33ab9826d0c74080c909d6eb85bb",
+  "run_id": 38128927828,
+  "executable_sha256": "4c0e43a50564db6e448b6c2fc16d9ac41dfcaf8448f04ca509f3157142db701d",
   "comparison_passed": true,
   "comparison_reference": "docs/evidence/swift-types.json"
 }
