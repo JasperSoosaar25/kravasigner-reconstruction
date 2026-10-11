@@ -40,6 +40,13 @@ jobs:
           DerivedData-device/Build/Products/Release-iphoneos/KravaSigner.app/KravaSigner
           --reference docs/evidence/swift-types.json
           --output artifacts/swift-metadata-device.json
+      - name: Compare recovered field types, flags and superclass references
+        if: matrix.platform == 'device'
+        run: >-
+          python3 scripts/compare-swift-structure.py
+          docs/evidence/original-swift-structure.json
+          DerivedData-device/Build/Products/Release-iphoneos/KravaSigner.app/KravaSigner
+          --output artifacts/swift-structure-device.json
       - name: Launch app in iOS Simulator
         if: matrix.platform == 'simulator'
         run: bash scripts/simulator-smoke.sh

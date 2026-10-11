@@ -1,0 +1,6011 @@
+{
+  "executable_sha256": "b3376d32865ce970eefcfc061ad6750723fc01dd864c1da6bb7f415c1b9a45b3",
+  "app_types": [
+    {
+      "name": "KravaSigner.Download",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_progress",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "ySdG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_bytesDownloaded",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$ss5Int64VMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_totalBytes",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$ss5Int64VMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_unpackageProgress",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "ySdG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "task",
+          "flags": 2,
+          "type": [
+            "So24NSURLSessionDownloadTaskCSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "resumeData",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation4DataVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "id",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "url",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "fileName",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "onlyArchiving",
+          "flags": 0,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadManager",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "_downloads",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "ySay",
+            {
+              "context": "KravaSigner.Download",
+              "kind": 16
+            },
+            "GG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_session",
+          "flags": 2,
+          "type": [
+            "So12NSURLSessionCSg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.OptionsManager",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_key",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "appName",
+          "flags": 2,
+          "type": [
+            "SSSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "appVersion",
+          "flags": 2,
+          "type": [
+            "SSSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "appIdentifier",
+          "flags": 2,
+          "type": [
+            "SSSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "appEntitlementsFile",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "appAppearance",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options.AppAppearance",
+              "kind": 18
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "minimumAppRequirement",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options.MinimumAppRequirement",
+              "kind": 18
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "signingOption",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options.SigningOption",
+              "kind": 18
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "injectPath",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options.InjectPath",
+              "kind": 18
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "injectFolder",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options.InjectFolder",
+              "kind": 18
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ppqString",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ppqProtection",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "dynamicProtection",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "identifiers",
+          "flags": 2,
+          "type": [
+            "SDyS2SG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "displayNames",
+          "flags": 2,
+          "type": [
+            "SDyS2SG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "injectionFiles",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "disInjectionFiles",
+          "flags": 2,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "removeFiles",
+          "flags": 2,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "fileSharing",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "itunesFileSharing",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "proMotion",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "gameMode",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ipadFullscreen",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "removeURLScheme",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "removeProvisioning",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "changeLanguageFilesForCustomDisplayName",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "injectIntoExtensions",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "experiment_supportLiquidGlass",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "experiment_replaceSubstrateWithEllekit",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "post_installAppAfterSigned",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "post_deleteAppAfterSigned",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.<context:2>.CodingKeys",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "appName",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "appVersion",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "appIdentifier",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "appEntitlementsFile",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "appAppearance",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "minimumAppRequirement",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "signingOption",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "injectPath",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "injectFolder",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "ppqString",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "ppqProtection",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "dynamicProtection",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "identifiers",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "displayNames",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "injectionFiles",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "disInjectionFiles",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "removeFiles",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "fileSharing",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "itunesFileSharing",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "proMotion",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "gameMode",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "ipadFullscreen",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "removeURLScheme",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "removeProvisioning",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "changeLanguageFilesForCustomDisplayName",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "injectIntoExtensions",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "experiment_supportLiquidGlass",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "experiment_replaceSubstrateWithEllekit",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "post_installAppAfterSigned",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "post_deleteAppAfterSigned",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.InjectFolder",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "root",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "frameworks",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.InjectPath",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "executable_path",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "rpath",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.SigningOption",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "default",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "onlyModify",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.MinimumAppRequirement",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "default",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "v16",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "v15",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "v14",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "v13",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "v12",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.AppAppearance",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "default",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "light",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "dark",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ServerInstaller",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "id",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation4UUIDVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "port",
+          "flags": 0,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_needsShutdown",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "packageUrl",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_viewModel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "IDeviceSwift.InstallerStatusViewModel",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_server",
+          "flags": 2,
+          "type": [
+            {
+              "context": "Vapor.Application",
+              "kind": 16
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Storage",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "container",
+          "flags": 0,
+          "type": [
+            "So21NSPersistentContainerC"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_name",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AnyApp",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "base",
+          "flags": 0,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "archive",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ARFileModel",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "name",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "modificationDate",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation4DateVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ownerId",
+          "flags": 2,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "groupId",
+          "flags": 2,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "mode",
+          "flags": 2,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "size",
+          "flags": 2,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "content",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation4DataVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AR",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "_data",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation4DataVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ARError",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "badArchive",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Certificate",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "AppIDName",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ApplicationIdentifierPrefix",
+          "flags": 2,
+          "type": [
+            "SaySSGSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "CreationDate",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation4DateVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "Platform",
+          "flags": 2,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "IsXcodeManaged",
+          "flags": 2,
+          "type": [
+            "SbSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "DeveloperCertificates",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "import": "_$s10Foundation4DataVMn",
+              "addend": 0
+            },
+            "GSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "derEncodedProfile",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation4DataVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "PPQCheck",
+          "flags": 2,
+          "type": [
+            "SbSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "Entitlements",
+          "flags": 2,
+          "type": [
+            "SDySS",
+            {
+              "context": "KravaSigner.AnyCodable",
+              "kind": 17
+            },
+            "GSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ExpirationDate",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation4DateVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "Name",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ProvisionsAllDevices",
+          "flags": 2,
+          "type": [
+            "SbSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "ProvisionedDevices",
+          "flags": 2,
+          "type": [
+            "SaySSGSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "TeamIdentifier",
+          "flags": 2,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "TeamName",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "TimeToLive",
+          "flags": 2,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "UUID",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "Version",
+          "flags": 2,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Certificate.CodingKeys",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "AppIDName",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "CreationDate",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "Platform",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "IsXcodeManaged",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "DeveloperCertificates",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "PPQCheck",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "Entitlements",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "ExpirationDate",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "Name",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "ProvisionedDevices",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "TeamIdentifier",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "TeamName",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "TimeToLive",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "UUID",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "Version",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "derEncodedProfile",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificateReader",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "file",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "decoded",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Certificate",
+              "kind": 17
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AppFileHandler",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "_fileManager",
+          "flags": 0,
+          "type": [
+            "So13NSFileManagerC"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_uuid",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_uniqueWorkDir",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "uniqueWorkDirPayload",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_ipa",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_install",
+          "flags": 0,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_download",
+          "flags": 0,
+          "type": [
+            {
+              "context": "KravaSigner.Download",
+              "kind": 16
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.ImportedFileHandlerError",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "payloadNotFound",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ArchiveHandler",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "_viewModel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "IDeviceSwift.InstallerStatusViewModel",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_fileManager",
+          "flags": 0,
+          "type": [
+            "So13NSFileManagerC"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_uuid",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_payloadUrl",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_uniqueWorkDir",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificateFileHandler",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "_fileManager",
+          "flags": 0,
+          "type": [
+            "So13NSFileManagerC"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_uuid",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_key",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_provision",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_keyPassword",
+          "flags": 0,
+          "type": [
+            "SSSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_certNickname",
+          "flags": 0,
+          "type": [
+            "SSSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_isDefault",
+          "flags": 0,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_certPair",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Certificate",
+              "kind": 17
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.CertificateFileHandlerError",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "certNotValid",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningHandler",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "_fileManager",
+          "flags": 0,
+          "type": [
+            "So13NSFileManagerC"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_uuid",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_movedAppPath",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_uniqueWorkDir",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "appIcon",
+          "flags": 2,
+          "type": [
+            "So7UIImageCSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "appCertificate",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningFileHandlerError",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "appNotFound",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "infoPlistNotFound",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "missingCertifcate",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "disinjectFailed",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "signFailed",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandler",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_fileManager",
+          "flags": 0,
+          "type": [
+            "So13NSFileManagerC"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_urlsToInject",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_directoriesToCheck",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_injectedDylibNames",
+          "flags": 2,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_app",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_urls",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandlerError",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 3,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "unsupportedFileExtension",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "decompressionFailed",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "missingFile",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "noAccess",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandler.<context:2>.<context:2>.DirectoryType",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "frameworks",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "dynamicLibraries",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "applicationSupport",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ZsignHandler",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "hadError",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$ss5ErrorMp",
+              "addend": 0
+            },
+            "_pSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_appUrl",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_certificate",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AnyCodable",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "value",
+          "flags": 0,
+          "type": [
+            "yp"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.BackgroundAudioManager",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_engine",
+          "flags": 0,
+          "type": [
+            "So13AVAudioEngineC"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.BackgroundTaskManager",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "baseId",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "activeTasks",
+          "flags": 2,
+          "type": [
+            "SDySSSo25BGContinuedProcessingTaskCG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "registeredTasks",
+          "flags": 2,
+          "type": [
+            "ShySSG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.MobileGestalt",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_copyAnswerRef",
+          "flags": 0,
+          "type": [
+            "yXlSg",
+            {
+              "context": "__C.CFString",
+              "kind": 16
+            },
+            "XCSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_handle",
+          "flags": 0,
+          "type": [
+            "SvSg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRIconCache",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "cache",
+          "flags": 0,
+          "type": [
+            "So7NSCacheCySo8NSStringCSo7UIImageCG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRAppIconLoader",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_image",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "ySo7UIImageCSgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "task",
+          "flags": 2,
+          "type": [
+            "ScTyyt",
+            {
+              "import": "_$ss5NeverOMn",
+              "addend": 0
+            },
+            "GSg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRAppIconView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "app",
+          "flags": 0,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_pSg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "size",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s12CoreGraphics7CGFloatVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_colorScheme",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI11ColorSchemeOMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_loader",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.FRAppIconLoader",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_selectedColorHex",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_shouldTintIcons",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_shouldChangeIconsBasedOffStyle",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRExpirationPillView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "title",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "revoked",
+          "flags": 0,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "expiration",
+          "flags": 0,
+          "type": [
+            {
+              "context": "NimbleExtensions.<extension:[{\"addend\":0,\"import\":\"_$s10Foundation4DateVMn\"}]>.ExpirationInfo",
+              "kind": 17
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRIconCellView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "title",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "subtitle",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "iconUrl",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "size",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s12CoreGraphics7CGFloatVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "isCircle",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadHeaderView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_downloadManager",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.DownloadManager",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadItemView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "download",
+          "flags": 0,
+          "type": [
+            {
+              "context": "KravaSigner.Download",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_progress",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySdG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_bytesDownloaded",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$ss5Int64VMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_totalBytes",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$ss5Int64VMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_unpackageProgress",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySdG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryInfoView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallPreviewView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__useShareSheet",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__installationMethod",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__serverMethod",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isWebviewPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_progressTask",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "yScTyyt",
+            {
+              "import": "_$ss5NeverOMn",
+              "addend": 0
+            },
+            "GSgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_viewModel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "IDeviceSwift.InstallerStatusViewModel",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_installer",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.ServerInstaller",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_isSharing",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallProgressView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__isPulsing",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_viewModel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "IDeviceSwift.InstallerStatusViewModel",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallProgressView.PieShape",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "progress",
+          "flags": 2,
+          "type": [
+            "Sd"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryCellView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI22UserInterfaceSizeClassOMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_editMode",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI8EditModeOMn",
+              "addend": 0
+            },
+            "GSgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_selectedInfoAppPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AnyApp",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_selectedSigningAppPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AnyApp",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_selectedInstallAppPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AnyApp",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_selectedAppUUIDs",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "yShySSGG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_downloadManager",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.DownloadManager",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedInfoAppPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AnyApp",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedSigningAppPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AnyApp",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedInstallAppPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AnyApp",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isImportingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isDownloadingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__alertDownloadString",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedAppUUIDs",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "yShySSGG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__editMode",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI8EditModeOMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__searchText",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedScope",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.LibraryView.Scope",
+              "kind": 18
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__namespace",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI9NamespaceVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__signedApps",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI12FetchRequestVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Signed",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__importedApps",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI12FetchRequestVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Imported",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryView.Scope",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "all",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "signed",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "imported",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ArchiveView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__compressionLevel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__useShareSheet",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoEntitlementCellView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "key",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "value",
+          "flags": 0,
+          "type": [
+            "yp"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isExpanded",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoEntitlementView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "entitlements",
+          "flags": 0,
+          "type": [
+            "SDySS",
+            {
+              "context": "KravaSigner.AnyCodable",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_data",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Certificate",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "cert",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesAddView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__p12URL",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__provisionURL",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__p12Password",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__certificateName",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isImportingP12Presenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isImportingMobileProvisionPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesCellView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_data",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Certificate",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_cert",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__storedSelectedCert",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isAddingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isRenamingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isSelectedInfoPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__certToRename",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__newNickname",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__certificates",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI12FetchRequestVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_bindingSelectedCert",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySiGSg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ServerView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__ipFix",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__serverMethod",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_serverMethods",
+          "flags": 0,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_dataService",
+          "flags": 0,
+          "type": [
+            {
+              "context": "NimbleJSON.NBFetchService",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelHeaderView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_lastHeartbeatTime",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s10Foundation4DateVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelPulseRing",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__animationProgress",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySdG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_animationDuration",
+          "flags": 0,
+          "type": [
+            "Sd"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_colorStartThreshold",
+          "flags": 0,
+          "type": [
+            "Sd"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_colorTransitionDuration",
+          "flags": 0,
+          "type": [
+            "Sd"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_lastHeartbeat",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s10Foundation4DateVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__isImportingPairingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_doesHavePairingFile",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_isLocalDevVpnAvailable",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallationView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__installationMethod",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__showMethodChangedAlert",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_installationMethods",
+          "flags": 0,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ResetView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.ConfigurationDictAddView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__newKey",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__newValue",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__showOverrideAlert",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_dataDict",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySDyS2SGG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ConfigurationDictView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__isAddingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "title",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_dataDict",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySDyS2SGG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ConfigurationView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__optionsManager",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.OptionsManager",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_isRandomAlertPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_randomString",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SettingsView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__storedSelectedCert",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__certificates",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI12FetchRequestVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningAlternativeIconView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__alternateIcons",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySaySS4name_SS4pathtGG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_appIcon",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySo7UIImageCSgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_isModifing",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningDylibView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__dylibs",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySaySSGG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__hiddenDylibCount",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningFrameworksView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__frameworks",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySaySSGG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__plugins",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySaySSGG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_frameworksPath",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_pluginsPath",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningOptionsView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "temporaryOptions",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningToggleCellView",
+      "kind": 17,
+      "descriptor_flags": 209,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "title",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "yxSgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "arrayKeyPath",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$ss15WritableKeyPathCMn",
+              "addend": 0
+            },
+            "yxSaySSGG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningPropertiesView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_text",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "title",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "initialValue",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_bindingValue",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySSSgG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningTweaksView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__isAddingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_options",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__optionsManager",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.OptionsManager",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__temporaryOptions",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.Options",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__temporaryCertificate",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isAltPickerPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isFilePickerPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isImagePickerPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isSigning",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedPhoto",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s015_PhotosUI_SwiftB00A10PickerItemVMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_appIcon",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySo7UIImageCSgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_certificates",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI12FetchRequestVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.CertificatePair",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AppInfoPresentable",
+              "kind": 3
+            },
+            "_p"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AppVersionInfo",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "version",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "date",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s10Foundation4DateVMn",
+              "addend": 0
+            },
+            "Sg"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "description",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ExpandableText",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "text",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "lineLimit",
+          "flags": 0,
+          "type": [
+            "Si"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_expanded",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_truncated",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderGeometry",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_offset",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s12CoreGraphics7CGFloatVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_windowHeight",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s12CoreGraphics7CGFloatVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_$observationRegistrar",
+          "flags": 0,
+          "type": [
+            {
+              "import": "_$s11Observation0A9RegistrarVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderContentModifier",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_geometry",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.<anonymous>.FlexibleHeaderGeometry",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderScrollViewModifier",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_geometry",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.<anonymous>.FlexibleHeaderGeometry",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ScreenshotPreviewView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_currentIndex",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "screenshotURLs",
+          "flags": 0,
+          "type": [
+            "Say",
+            {
+              "import": "_$s10Foundation3URLVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsDetailView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_downloadManager",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.DownloadManager",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__downloadProgress",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySdG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_cancellable",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7Combine14AnyCancellableCMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isScreenshotPreviewPresented",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedScreenshotIndex",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "source",
+          "flags": 2,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.VersionHistoryView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 0,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "versions",
+          "flags": 0,
+          "type": [
+            "Say",
+            {
+              "context": "AltSourceKit.ASRepository.App.Version",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsCardInfoView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "new",
+          "flags": 2,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository.News",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsCardView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "new",
+          "flags": 2,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository.News",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_isLoading",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_hasLoadedInitialData",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedNewsPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "AltSourceKit.ASRepository.News",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__namespace",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI9NamespaceVMn",
+              "addend": 0
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "news",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "context": "AltSourceKit.ASRepository.News",
+              "kind": 17
+            },
+            "GSg"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsTableRepresentableView.Coordinator",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": [
+        {
+          "name": "sources",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "searchText",
+          "flags": 2,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "sortOption",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.SourceAppsView.SortOption",
+              "kind": 18
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "sortAscending",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "onSelect",
+          "flags": 0,
+          "type": [
+            "y",
+            {
+              "context": "KravaSigner.SourceAppsView.SourceAppRoute",
+              "kind": 17
+            },
+            "c"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_groupedAppsByNameFirstLetter",
+          "flags": 2,
+          "type": [
+            "SDySSSay",
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            },
+            "6source_",
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            },
+            "3apptGG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_groupedAppsByDate",
+          "flags": 2,
+          "type": [
+            "SDySSSay",
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            },
+            "6source_",
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            },
+            "3apptGG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_sortedSectionTitles",
+          "flags": 2,
+          "type": [
+            "SaySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_cachedSortedApps",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            },
+            "6source_",
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            },
+            "3apptG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "uiTableView",
+          "flags": 2,
+          "type": [
+            "So11UITableViewCSgXw"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsTableRepresentableView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "sources",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_searchText",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_sortOption",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.SourceAppsView.SortOption",
+              "kind": 18
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_sortAscending",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI7BindingVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "onSelect",
+          "flags": 2,
+          "type": [
+            "y",
+            {
+              "context": "KravaSigner.SourceAppsView.SourceAppRoute",
+              "kind": 17
+            },
+            "c"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadButtonView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "app",
+          "flags": 0,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_downloadManager",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.DownloadManager",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_downloadProgress",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySdG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_cancellable",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7Combine14AnyCancellableCMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsCellView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__storeCellAppearance",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySiG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "source",
+          "flags": 2,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 2,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView.SourceAppRoute",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "source",
+          "flags": 0,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "app",
+          "flags": 0,
+          "type": [
+            {
+              "context": "AltSourceKit.ASRepository.App",
+              "kind": 17
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "id",
+          "flags": 0,
+          "type": [
+            "SS"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "__sortOptionRawValue",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__sortAscending",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__sortOption",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.SourceAppsView.SortOption",
+              "kind": 18
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__selectedRoute",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.SourceAppsView.SourceAppRoute",
+              "kind": 17
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_isLoading",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_hasLoadedOnce",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__searchText",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "object",
+          "flags": 2,
+          "type": [
+            "Say",
+            {
+              "context": "KravaSigner.AltSource",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_viewModel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI14ObservedObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.SourcesViewModel",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__sources",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySay",
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            },
+            "GSgG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView.SortOption",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "default",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "name",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "date",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesAddView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dismiss",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI13DismissActionVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_dataService",
+          "flags": 0,
+          "type": [
+            {
+              "context": "NimbleJSON.NBFetchService",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isImporting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__sourceURL",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesCellView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI22UserInterfaceSizeClassOMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "source",
+          "flags": 2,
+          "type": [
+            {
+              "context": "KravaSigner.AltSource",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI22UserInterfaceSizeClassOMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_viewModel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.SourcesViewModel",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isAddingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__addingSourceLoading",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__searchText",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySSG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__sources",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI12FetchRequestVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AltSource",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesViewModel",
+      "kind": 16,
+      "descriptor_flags": 2147549264,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_dataService",
+          "flags": 0,
+          "type": [
+            {
+              "context": "NimbleJSON.NBFetchService",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "isFinished",
+          "flags": 2,
+          "type": [
+            "Sb"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_sources",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7Combine9PublishedVMn",
+              "addend": 0
+            },
+            "ySDy",
+            {
+              "context": "KravaSigner.AltSource",
+              "kind": 16
+            },
+            {
+              "context": "AltSourceKit.ASRepository",
+              "kind": 17
+            },
+            "GG"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ExtendedTabbarView",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11EnvironmentVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI22UserInterfaceSizeClassOMn",
+              "addend": 0
+            },
+            "SgG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_customization",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI10AppStorageVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "import": "_$s7SwiftUI20TabViewCustomizationVMn",
+              "addend": 0
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_viewModel",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.SourcesViewModel",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__isAddingPresenting",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "ySbG"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "__sources",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI12FetchRequestVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AltSource",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TabbarView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_selectedTab",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI5StateVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.TabEnum",
+              "kind": 18
+            },
+            "G"
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TabEnum",
+      "kind": 18,
+      "descriptor_flags": 82,
+      "field_descriptor_kind": 2,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "sources",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "library",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "settings",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        },
+        {
+          "name": "certificates",
+          "flags": 0,
+          "type": null,
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.VariedTabbarView",
+      "kind": 17,
+      "descriptor_flags": 81,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.AppDelegate",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So8NSObjectC"
+      ],
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.FeatherApp",
+      "kind": 17,
+      "descriptor_flags": 65617,
+      "field_descriptor_kind": 0,
+      "superclass_type": null,
+      "fields": [
+        {
+          "name": "_appDelegate",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI28UIApplicationDelegateAdaptorVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.AppDelegate",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "heartbeat",
+          "flags": 0,
+          "type": [
+            {
+              "context": "IDeviceSwift.HeartbeatManager",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "_downloadManager",
+          "flags": 2,
+          "type": [
+            {
+              "import": "_$s7SwiftUI11StateObjectVMn",
+              "addend": 0
+            },
+            "y",
+            {
+              "context": "KravaSigner.DownloadManager",
+              "kind": 16
+            },
+            "G"
+          ],
+          "type_resolved": true
+        },
+        {
+          "name": "storage",
+          "flags": 0,
+          "type": [
+            {
+              "context": "KravaSigner.Storage",
+              "kind": 16
+            }
+          ],
+          "type_resolved": true
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AltSource",
+      "kind": 16,
+      "descriptor_flags": 80,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So15NSManagedObjectC"
+      ],
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.CertificatePair",
+      "kind": 16,
+      "descriptor_flags": 80,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So15NSManagedObjectC"
+      ],
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.Imported",
+      "kind": 16,
+      "descriptor_flags": 80,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So15NSManagedObjectC"
+      ],
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.Signed",
+      "kind": 16,
+      "descriptor_flags": 80,
+      "field_descriptor_kind": 7,
+      "superclass_type": [
+        "So15NSManagedObjectC"
+      ],
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.<context:2>.ResourceBundleClass",
+      "kind": 16,
+      "descriptor_flags": 2147483728,
+      "field_descriptor_kind": 1,
+      "superclass_type": null,
+      "fields": []
+    }
+  ],
+  "unresolved_type_references": [],
+  "unparsed_all_modules": 293,
+  "fixup_locations_parsed": 77410,
+  "schema_version": 1,
+  "origin": "Directly extracted from the supplied original IPA; normalized metadata only, not original Swift source.",
+  "limit": "Only the 106 app nominal descriptors recovered by the bounded parser; 293 other records remain unparsed. Anonymous contexts without recorded names use an anonymous marker. No method/UI bodies or exact source text."
+}

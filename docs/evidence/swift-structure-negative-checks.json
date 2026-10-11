@@ -1,0 +1,31 @@
+{
+  "original_executable_sha256": "b3376d32865ce970eefcfc061ad6750723fc01dd864c1da6bb7f415c1b9a45b3",
+  "checks": [
+    {
+      "check": "unchanged-original baseline",
+      "passed": true
+    },
+    {
+      "check": "mutable field flag changed",
+      "passed": true,
+      "detected": {
+        "field_flags": 1
+      }
+    },
+    {
+      "check": "id field type changed from String to Bool without renaming it",
+      "passed": true,
+      "detected": {
+        "field_type": 1
+      },
+      "earlier_names_only_check_would_detect": false
+    },
+    {
+      "check": "unsupported symbolic type reference cannot silently pass",
+      "passed": true,
+      "unresolved_references_detected": 9
+    }
+  ],
+  "passed": true,
+  "limit": "Negative checker validation, not execution or behavior tests of the app."
+}

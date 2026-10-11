@@ -402,6 +402,7 @@
     "docs/BUILD-RESULTS.md",
     "docs/DOUBLE-CHECK.md",
     "docs/EVIDENCE.md",
+    "docs/EXTENDED-STRUCTURE.md",
     "docs/FEATHER-UPSTREAM-README.md",
     "docs/FEATHER-UPSTREAM-app-repo.json",
     "docs/RECOVERY-COVERAGE.md",
@@ -418,6 +419,7 @@
     "docs/evidence/decompiled-ssl.c",
     "docs/evidence/decompiled-theme.c",
     "docs/evidence/decompiled-url.c",
+    "docs/evidence/extended-swift-structure-comparison.json",
     "docs/evidence/ghidra-theme-terminal.log",
     "docs/evidence/independent-archive-audit.json",
     "docs/evidence/inline-string-references.json",
@@ -425,10 +427,12 @@
     "docs/evidence/localization-audit.json",
     "docs/evidence/openssl-code-comparison.json",
     "docs/evidence/original-signing-metadata-summary.json",
+    "docs/evidence/original-swift-structure.json",
     "docs/evidence/plural-audit.json",
     "docs/evidence/prior-build-metadata-mismatches.json",
     "docs/evidence/recovered-artwork-preview.png",
     "docs/evidence/source-search-followup.json",
+    "docs/evidence/swift-structure-negative-checks.json",
     "docs/evidence/swift-types.json",
     "docs/evidence/theme-functions.asm",
     "docs/evidence/theme-references.json",
@@ -447,6 +451,7 @@
     "docs/upstream-workspace-Package.resolved.json",
     "scripts/audit-original-ipa.py",
     "scripts/build.sh",
+    "scripts/compare-swift-structure.py",
     "scripts/double-check-original.py",
     "scripts/export-original-entitlements.py",
     "scripts/import-private-signing-assets.py",
@@ -455,7 +460,8 @@
     "scripts/simulator-smoke.sh",
     "scripts/validate-source.py",
     "scripts/verify-built-app.py",
+    "tests/SwiftStructureNegativeChecks.py",
     "tests/TLSAssetDownloaderTests.swift"
   ],
-  "note": "Final follow-up snapshot: corrected source built at edad402; all 106 recovered app descriptors/fields match. Full official source remains unrecovered. Includes independent archive, signing, dependency-section and bounded source-search evidence."
+  "note": "Extended recovery-audit tooling snapshot. The stronger field-type comparison passes against the prior actual device product; next CI run is recorded separately. Original official source remains unrecovered."
 }

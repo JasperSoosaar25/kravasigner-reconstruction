@@ -48,6 +48,18 @@ require(len(coverage['entries'])==coverage['zip_entries']==135,'Original archive
 require(len({x['ipa_path'] for x in coverage['entries']})==135,'Duplicate archive entry in coverage')
 require(len(manifest)==87,'Original resource/reference inventory incomplete')
 require(sum(bool(x.get('built_path')) for x in manifest)==66,'Resource restoration inventory incomplete')
+structure=json.loads((root/'docs/evidence/original-swift-structure.json').read_text())
+earlier_types=json.loads((root/'docs/evidence/swift-types.json').read_text())['types']
+original_executable=next(row for row in coverage['entries'] if row['ipa_path']=='Payload/KravaSigner.app/KravaSigner')
+require(structure['executable_sha256']==original_executable['sha256'],'Original structure evidence identifies another executable')
+require(not structure['unresolved_type_references'],'Original structure evidence contains unresolved field types')
+require(len(structure['app_types'])==106 and sum(len(t['fields']) for t in structure['app_types'])==462,'Original structure evidence is incomplete')
+prior_by_name={t['name']:t for t in earlier_types}
+require({t['name'] for t in structure['app_types']}==set(prior_by_name),'Original structure type names disagree with earlier evidence')
+for row in structure['app_types']:
+    old=prior_by_name[row['name']]
+    require(row['kind']=={'class':16,'struct':17,'enum':18}[old['kind']] and row['descriptor_flags']==int(old['flags'],16),'Original descriptor kind/flags disagree')
+    require([(f['name'],f['flags']) for f in row['fields']]==[(f['name'],f['flags']) for f in old['fields']],'Original field names/flags disagree')
 require(not any(p.is_file() for p in (root/'RecoveredResources/Bundle').rglob('_CodeSignature/*')),'Original code signature retained in build resources')
 for row in coverage['entries']:
     if row['disposition']=='private-input':
@@ -65,4 +77,5 @@ for path in ['Zsign/src/zsign.mm','IDeviceKitten/Package.swift','NimbleKit/Packa
 print('PASS metadata, URL handler, TLS wiring, lockfiles and recovered resource hashes')
 print('PASS credential exclusion and self-contained local package inputs')
 print('PASS orange theme, recovered translations and all 135 archive entries accounted for')
+print('PASS original structure evidence: 106 descriptors and 462 reflection records')
 print('Structural checks passed; Xcode compilation is a separate check.')
