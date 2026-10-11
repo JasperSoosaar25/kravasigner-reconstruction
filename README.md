@@ -4,6 +4,8 @@ This is an **unofficial reconstruction**, based on static analysis of the suppli
 
 The changes go beyond artwork: direct certificate/key downloads, automatic launch refresh, the `local.kravasign.com` installation host, the `kravasigner` URL handler, Settings changes, app metadata, cache identity, the orange #f97316 accent, original translations and full resource restoration. `docs/EVIDENCE.md` identifies their evidence and confidence. Most signing, repository, archive, database and installation code remains the pinned Feather reference because its original KravaSigner implementation cannot be recovered completely from this binary.
 
+The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed two reference-only source features: the recommended-repository list and GitHub star prompt. The device workflow now compares compiled app type names and stored-field names with all 106 recovered original descriptors. This checks bounded metadata agreement, not every original method or view body.
+
 ## Build
 
 Use macOS with **Xcode 26.0.1** (iOS 26.0 SDK), matching the uploaded app's SDK generation. The shared workspace and scheme still have the names `Feather.xcworkspace` and `Feather`; their app product and Swift module are `KravaSigner`. Those project names acknowledge the reference project's origin.
@@ -46,6 +48,14 @@ python3 scripts/import-private-signing-assets.py /path/to/KravaSigner.ipa
 ```
 
 This writes to the gitignored `private-signing-assets/` directory. The Xcode build phase includes that directory only when it exists. The CI build has no default signing credentials. The TLS files are fetched at runtime from the URLs observed in the binary; none was downloaded during this investigation.
+
+The original signed executable also contains 19 entitlement keys. To retain their exact values privately:
+
+```bash
+python3 scripts/export-original-entitlements.py /path/to/KravaSigner.ipa
+```
+
+The export stays in gitignored `private-signing-metadata/` and is not automatically applied. Signing output may incorporate profile or signing-tool values and does not recover the original project entitlements file. The minimal source template now uses the observed `get-task-allow = false`; any eventual signed installation must use entitlements permitted by its profile.
 
 ## Provenance and limits
 

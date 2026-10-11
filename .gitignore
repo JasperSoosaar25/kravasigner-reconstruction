@@ -9,6 +9,7 @@ _build
 
 # Local inputs/build results, never repository contents
 private-signing-assets/
+private-signing-metadata/
 *.ipa
 *.p12
 *.mobileprovision
@@ -16,3 +17,5 @@ DerivedData*/
 artifacts/
 .build/
 SourcePackages/
+__pycache__/
+*.pyc

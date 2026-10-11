@@ -1,0 +1,51 @@
+{
+  "tested_commit": "90ba4ff66f784c1bad034b2b5976a70000078c75",
+  "original_recovered_type_count": 106,
+  "old_rebuilt_recovered_type_count": 106,
+  "mismatches": [
+    {
+      "name": "KravaSigner.SourcesAddView",
+      "original_fields": [
+        "_dismiss",
+        "_dataService",
+        "__isImporting",
+        "__sourceURL"
+      ],
+      "rebuilt_fields": [
+        "_dismiss",
+        "_dataService",
+        "__filteredRecommendedSourcesData",
+        "_recommendedSourcesData",
+        "recommendedSources",
+        "__isImporting",
+        "__sourceURL"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesView",
+      "original_fields": [
+        "_horizontalSizeClass",
+        "_viewModel",
+        "__isAddingPresenting",
+        "__addingSourceLoading",
+        "__searchText",
+        "__sources"
+      ],
+      "rebuilt_fields": [
+        "_horizontalSizeClass",
+        "__shouldStar",
+        "_viewModel",
+        "__isAddingPresenting",
+        "__addingSourceLoading",
+        "__searchText",
+        "__sources"
+      ]
+    }
+  ],
+  "corroborating_absent_raw_constants": [
+    "Feather.shouldStar",
+    "https://github.com/khcrysalis/Feather",
+    "https://raw.githubusercontent.com/claration/Feather/refs/heads/main/app-repo.json"
+  ],
+  "confidence": "High for stored-field mismatch; UI removal inferred from fields and absent reference-specific constants. Complete original view bodies remain unknown."
+}

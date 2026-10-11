@@ -33,6 +33,13 @@ jobs:
           /tmp/krava-tls-tests | tee artifacts/tls-tests.log
       - name: Build from source
         run: bash scripts/build.sh '${{ matrix.platform }}'
+      - name: Compare compiled app type metadata with the original
+        if: matrix.platform == 'device'
+        run: >-
+          python3 scripts/inspect-swift-metadata.py
+          DerivedData-device/Build/Products/Release-iphoneos/KravaSigner.app/KravaSigner
+          --reference docs/evidence/swift-types.json
+          --output artifacts/swift-metadata-device.json
       - name: Launch app in iOS Simulator
         if: matrix.platform == 'simulator'
         run: bash scripts/simulator-smoke.sh

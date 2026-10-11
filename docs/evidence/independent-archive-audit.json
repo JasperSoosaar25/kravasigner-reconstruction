@@ -1,0 +1,86 @@
+{
+  "original_archive": {
+    "sha256": "c155ad99e97bf8d65bee28df63076cffb6050c6fc142aa08255d2a1f243010e8",
+    "entries": 135,
+    "files": 98,
+    "directories": 37,
+    "unaccounted_entries": [],
+    "dispositions": {
+      "directory": 37,
+      "preserved-resource": 66,
+      "replaced-signature": 2,
+      "preserved-reference": 21,
+      "rebuilt-executable": 2,
+      "private-input": 7
+    },
+    "preserved_source_files_verified": 87
+  },
+  "builds": {
+    "device": {
+      "artifact_sha256": "735666fcd92df0dcea0873122e232a9fd68cb9f42c5d15d12f8e497e1c6acb56",
+      "exact_original_runtime_resources": 66,
+      "missing_resources": [],
+      "changed_resources": [],
+      "added_app_file_paths": [],
+      "omitted_original_app_paths": [
+        "_CodeSignature/CodeResources",
+        "embedded.mobileprovision",
+        "signing-assets/Development/cert.mobileprovision",
+        "signing-assets/Development/cert.p12",
+        "signing-assets/Development/cert.txt",
+        "signing-assets/Distribution/cert.mobileprovision",
+        "signing-assets/Distribution/cert.p12",
+        "signing-assets/Distribution/cert.txt"
+      ],
+      "unexplained_omissions": [],
+      "changed_info_plist_keys": [
+        "DTPlatformBuild",
+        "DTSDKBuild",
+        "DTXcode",
+        "DTXcodeBuild"
+      ],
+      "main_executable_sha256": "31a3b0bb0279dcab53db9cb4c3ef2bdfc249c651762382f920d38e682de062f1",
+      "main_executable_differs_from_original": true,
+      "ipa_sha256": "53fd4010ffdcc8bd3c0db2b9f95345e63cb2c459b3b07b901b49021c23d9c86c"
+    },
+    "simulator": {
+      "artifact_sha256": "293c46e514f54217847ee5618ff52050af8b2182e629caa5eae5837e0ee573e3",
+      "exact_original_runtime_resources": 66,
+      "missing_resources": [],
+      "changed_resources": [],
+      "added_app_file_paths": [],
+      "omitted_original_app_paths": [
+        "_CodeSignature/CodeResources",
+        "embedded.mobileprovision",
+        "signing-assets/Development/cert.mobileprovision",
+        "signing-assets/Development/cert.p12",
+        "signing-assets/Development/cert.txt",
+        "signing-assets/Distribution/cert.mobileprovision",
+        "signing-assets/Distribution/cert.p12",
+        "signing-assets/Distribution/cert.txt"
+      ],
+      "unexplained_omissions": [],
+      "changed_info_plist_keys": [
+        "CFBundleSupportedPlatforms",
+        "DTPlatformBuild",
+        "DTPlatformName",
+        "DTSDKBuild",
+        "DTSDKName",
+        "DTXcode",
+        "DTXcodeBuild",
+        "UIRequiredDeviceCapabilities"
+      ],
+      "main_executable_sha256": "a9d57b9840295790f6c121d3523d07d68d9a1cf0b344384994f3f16f4b9ff527",
+      "main_executable_differs_from_original": true
+    }
+  },
+  "errors": [],
+  "passed": true,
+  "limit": "Exact distributed-file coverage only; original private source, all behaviours and signing equivalence remain unproven.",
+  "source_checkpoint_commit": "f1ba72ad771acf223ab963ac74ef897b7bbb4048",
+  "source_checkpoint_tree": "36eadc34ce40dd2d6c74da17e377483c3d867f13",
+  "source_checkpoint_exact_blobs_and_modes": 439,
+  "tested_build_commit": "90ba4ff66f784c1bad034b2b5976a70000078c75",
+  "tested_build_run_id": 38102345171,
+  "negative_missing_resource_fixture_rejected": true
+}

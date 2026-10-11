@@ -1,6 +1,6 @@
 {
   "reference_commit": "1a9b2bbcc7ebe0fbbf76fec45ec1e94ff0c4edc4",
-  "identical_reference_files": 267,
+  "identical_reference_files": 265,
   "identical_reference_paths": [
     ".editorconfig",
     ".github/ISSUE_TEMPLATE/blank.yml",
@@ -68,7 +68,6 @@
     "Feather/Resources/Settings.bundle/en.lproj/Root.strings",
     "Feather/Resources/ellekit.deb",
     "Feather/Supporting Files/Feather-Bridging-Header.h",
-    "Feather/Supporting Files/Feather.entitlements",
     "Feather/Utilities/ARDecompression/AR.swift",
     "Feather/Utilities/ARDecompression/Decompression.swift",
     "Feather/Utilities/ARDecompression/Models/ARFileModel.swift",
@@ -136,7 +135,6 @@
     "Feather/Views/Sources/Apps/SourceAppsView.swift",
     "Feather/Views/Sources/Apps/UIKit/SourceAppsTableRepresentableView.swift",
     "Feather/Views/Sources/SourcesCellView.swift",
-    "Feather/Views/Sources/SourcesView.swift",
     "Feather/Views/Sources/SourcesViewModel.swift",
     "Feather/Views/TabView/Bars/ExtendedTabbarView.swift",
     "Feather/Views/TabView/Bars/TabbarView.swift",
@@ -289,6 +287,7 @@
     "Feather/Resources/Localizable.xcstrings",
     "Feather/Resources/Settings.bundle/Root.plist",
     "Feather/Resources/feather_extension.png",
+    "Feather/Supporting Files/Feather.entitlements",
     "Feather/Utilities/FR.swift",
     "Feather/Views/Common/FRAppIconView.swift",
     "Feather/Views/Settings/Appearance/AppearanceTintColorView.swift",
@@ -296,6 +295,7 @@
     "Feather/Views/Settings/Installation/Server & SSL/ServerView.swift",
     "Feather/Views/Settings/SettingsView.swift",
     "Feather/Views/Sources/SourcesAddView.swift",
+    "Feather/Views/Sources/SourcesView.swift",
     "Makefile",
     "README.md",
     "license_plist.yml"
@@ -400,6 +400,7 @@
     "RecoveredResources/Reference/swift-nio_NIOPosix.bundle/Info.plist",
     "RecoveredResources/Reference/swift-nio__NIOFileSystem.bundle/Info.plist",
     "docs/BUILD-RESULTS.md",
+    "docs/DOUBLE-CHECK.md",
     "docs/EVIDENCE.md",
     "docs/FEATHER-UPSTREAM-README.md",
     "docs/FEATHER-UPSTREAM-app-repo.json",
@@ -416,10 +417,13 @@
     "docs/evidence/decompiled-theme.c",
     "docs/evidence/decompiled-url.c",
     "docs/evidence/ghidra-theme-terminal.log",
+    "docs/evidence/independent-archive-audit.json",
     "docs/evidence/inline-string-references.json",
     "docs/evidence/launchscreen-decoded.json",
     "docs/evidence/localization-audit.json",
+    "docs/evidence/original-signing-metadata-summary.json",
     "docs/evidence/plural-audit.json",
+    "docs/evidence/prior-build-metadata-mismatches.json",
     "docs/evidence/recovered-artwork-preview.png",
     "docs/evidence/swift-types.json",
     "docs/evidence/theme-functions.asm",
@@ -439,12 +443,15 @@
     "docs/upstream-workspace-Package.resolved.json",
     "scripts/audit-original-ipa.py",
     "scripts/build.sh",
+    "scripts/double-check-original.py",
+    "scripts/export-original-entitlements.py",
     "scripts/import-private-signing-assets.py",
+    "scripts/inspect-swift-metadata.py",
     "scripts/restore-recovered-artwork.sh",
     "scripts/simulator-smoke.sh",
     "scripts/validate-source.py",
     "scripts/verify-built-app.py",
     "tests/TLSAssetDownloaderTests.swift"
   ],
-  "note": "Final documentation snapshot. Source build/run verification identifies tested code commit 90ba4ff66f784c1bad034b2b5976a70000078c75 separately. This is documented reference/reconstructed source, not original official source."
+  "note": "Independent completeness follow-up snapshot. Includes two compiled-field corrections and private entitlement export. Original official source remains unrecovered; build results identify tested source commits explicitly."
 }

@@ -19,40 +19,6 @@ struct SourcesAddView: View {
 
 	private let _dataService = NBFetchService()
 	
-	@State private var _filteredRecommendedSourcesData: [(url: URL, data: ASRepository)] = []
-	private func _refreshFilteredRecommendedSourcesData() {
-		let filtered = recommendedSourcesData
-			.filter { (url, data) in
-				let id = data.id ?? url.absoluteString
-				return !Storage.shared.sourceExists(id)
-			}
-			.sorted { lhs, rhs in
-				let lhsName = lhs.data.name ?? ""
-				let rhsName = rhs.data.name ?? ""
-				return lhsName.localizedCaseInsensitiveCompare(rhsName) == .orderedAscending
-			}
-		_filteredRecommendedSourcesData = filtered
-	}
-	
-	@State var recommendedSourcesData: [(url: URL, data: ASRepository)] = []
-	let recommendedSources: [URL] = [
-		"https://raw.githubusercontent.com/claration/Feather/refs/heads/main/app-repo.json",
-		"https://raw.githubusercontent.com/Aidoku/Aidoku/altstore/apps.json",
-		"https://github.com/chachillie/Flycast-iOS/raw/main/flycast-ios.json",
-		"https://xitrix.github.io/iTorrent/AltStore.json",
-		"https://altstore.oatmealdome.me/",
-		"https://raw.githubusercontent.com/LiveContainer/LiveContainer/refs/heads/main/apps.json",
-		"https://alt.crystall1ne.dev/",
-		"https://pokemmo.com/altstore/",
-		"https://provenance-emu.com/apps.json",
-		"https://community-apps.sidestore.io/sidecommunity.json",
-		"https://alt.getutm.app",
-		"https://raw.githubusercontent.com/paigely/Navic/refs/heads/master/app-repo.json",
-		"https://stikdebug.xyz/index.json",
-		"https://apps.manicemu.site/altstore",
-		"https://alt.crystall1ne.dev"
-	].map { URL(string: $0)! }
-	
 	@State private var _isImporting = false
 	@State private var _sourceURL = ""
 	
@@ -100,28 +66,6 @@ struct SourcesAddView: View {
 					Text(.localized("Supports importing from Feather and ESign."))
 				}
 				
-				if !_filteredRecommendedSourcesData.isEmpty {
-					NBSection(.localized("Featured")) {
-						ForEach(_filteredRecommendedSourcesData, id: \.url) { (url, source) in
-							HStack(spacing: 2) {
-								FRIconCellView(
-									title: source.name ?? .localized("Unknown"),
-									subtitle: url.absoluteString,
-									iconUrl: source.currentIconURL
-								)
-								Button {
-									Storage.shared.addSource(url, repository: source) { _ in
-										_refreshFilteredRecommendedSourcesData()
-									}
-								} label: {
-									NBButton(.localized("Add"), systemImage: "arrow.down", style: .text)
-								}
-							}
-						}
-					} footer: {
-						Text(.localized("Open an [issue](https://github.com/claration/Feather/issues) on GitHub if you want your source to be featured."))
-					}
-				}
 			}
 			.toolbar {
 				NBToolbarButton(role: .cancel)
@@ -143,18 +87,6 @@ struct SourcesAddView: View {
 					}
 				}
 			}
-			.animation(.default, value: _filteredRecommendedSourcesData.map { $0.data.id ?? "" })
-			.task {
-				await _fetchRecommendedRepositories()
-			}
-		}
-	}
-	
-	private func _fetchRecommendedRepositories() async {
-		let fetched = await _concurrentFetchRepositories(from: recommendedSources)
-		await MainActor.run {
-			recommendedSourcesData = fetched
-			_refreshFilteredRecommendedSourcesData()
 		}
 	}
 	
