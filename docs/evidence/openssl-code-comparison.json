@@ -1,0 +1,40 @@
+{
+  "compared_original_framework": "OpenSSL",
+  "section_count_original": 11,
+  "section_count_rebuilt": 11,
+  "differing_file_backed_sections": [],
+  "text_sha256_original": "5c62239a0849af64db920ad04c4617dd1db153db95c023f5479e270a43197132",
+  "text_sha256_rebuilt": "5c62239a0849af64db920ad04c4617dd1db153db95c023f5479e270a43197132",
+  "same_machine_code_text": true,
+  "limit": "Pinned prebuilt dependency, not source recovered or rebuilt from this IPA; whole-file signatures differ.",
+  "tested_source_commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
+  "run_id": 38126989899,
+  "original_framework_sha256": "541773f3671c5ec67b2adce8a11b89bea4da35f562c4f949f026a4e7ee1a48d4",
+  "rebuilt_framework_sha256": "df7faa880948b310527a191362fda21b31f6d9d261731ec1fe1ab9b7728854a4",
+  "section_sha256_original": {
+    "__TEXT,__text": "5c62239a0849af64db920ad04c4617dd1db153db95c023f5479e270a43197132",
+    "__TEXT,__stubs": "3a6e6ffc9966bb8a41b69a314fb182f9bb1cf68bd7c39106722e468b778a3679",
+    "__TEXT,__stub_helper": "7590ceded855654f705df314befdd7d8312207493ddf7e6eb940e4ab0a5b94ee",
+    "__TEXT,__const": "91b2d700bf5275ef7476c8980108f6ff82ea5f437dfbbc41628c6162f662a9f8",
+    "__TEXT,__cstring": "52fce25f9d83197a9d606da17a74353d85d82a5562781487e8fb39117dde48ea",
+    "__TEXT,__unwind_info": "5c76f94be5f906cfbdaf20ba676c5b2dbc42dc994416b2f77f80625be8365fad",
+    "__TEXT,__eh_frame": "84c1bbff6e0201296e7a2edff20e406e35da8150c37196e96ace090efbb6d0f9",
+    "__DATA,__got": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b",
+    "__DATA,__const": "146ae02fa155eb2204adf6ba116fbd5e3527975cd47e3596a9b4a73504dbaeae",
+    "__DATA,__la_symbol_ptr": "9d952ab4d6063bc0af85493b8eecb99963eab6c38f58d9e5b6de82b59ed9e65d",
+    "__DATA,__data": "8396637d922aafabae31e536e8a089b641caf29ad3046278dfd2342a3a9a423f"
+  },
+  "section_sha256_rebuilt": {
+    "__TEXT,__text": "5c62239a0849af64db920ad04c4617dd1db153db95c023f5479e270a43197132",
+    "__TEXT,__stubs": "3a6e6ffc9966bb8a41b69a314fb182f9bb1cf68bd7c39106722e468b778a3679",
+    "__TEXT,__stub_helper": "7590ceded855654f705df314befdd7d8312207493ddf7e6eb940e4ab0a5b94ee",
+    "__TEXT,__const": "91b2d700bf5275ef7476c8980108f6ff82ea5f437dfbbc41628c6162f662a9f8",
+    "__TEXT,__cstring": "52fce25f9d83197a9d606da17a74353d85d82a5562781487e8fb39117dde48ea",
+    "__TEXT,__unwind_info": "5c76f94be5f906cfbdaf20ba676c5b2dbc42dc994416b2f77f80625be8365fad",
+    "__TEXT,__eh_frame": "84c1bbff6e0201296e7a2edff20e406e35da8150c37196e96ace090efbb6d0f9",
+    "__DATA,__got": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b",
+    "__DATA,__const": "146ae02fa155eb2204adf6ba116fbd5e3527975cd47e3596a9b4a73504dbaeae",
+    "__DATA,__la_symbol_ptr": "9d952ab4d6063bc0af85493b8eecb99963eab6c38f58d9e5b6de82b59ed9e65d",
+    "__DATA,__data": "8396637d922aafabae31e536e8a089b641caf29ad3046278dfd2342a3a9a423f"
+  }
+}

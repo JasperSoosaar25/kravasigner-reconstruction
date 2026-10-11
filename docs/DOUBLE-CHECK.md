@@ -41,9 +41,7 @@ does not silently transfer their successful build status to later source edits.
    minimal source template now matches the original false debugger flag.
 
 The workflow adds a check of compiled type names and field names against the
-original 106-descriptor evidence. It is a bounded agreement check; it does not
-establish original method-body or full UI equivalence. New device/simulator
-build and startup results will be recorded separately after this correction.
+original 106-descriptor evidence. The corrected device and simulator source builds both passed in [run 38126989899](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899) at commit `edad40232beca7ce0cd81363fc14812e0a8ca3b0`. The simulator installed and launched the new app (PID 15617), surviving the 10-second startup check. Its actual screenshot was inspected. Both downloaded products preserve all 66 original runtime resources with no unexplained omitted or added app files. The independently parsed new device executable matches all 106 recovered original app type names and their stored-field names; the CI check also passed. This is a bounded agreement check, not proof of original method-body or full UI equivalence. See `BUILD-RESULTS.md`, `evidence/corrected-build-audit.json` and `evidence/corrected-build-swift-metadata.json`.
 
 ## Exact accounting and limits
 
@@ -94,3 +92,13 @@ python3 scripts/export-original-entitlements.py /path/to/KravaSigner.ipa
 These scripts export no old executable as a source build input. The entitlement
 export goes only to gitignored private-signing-metadata and is not applied to the
 build automatically. It is observed signing output, not recovered authoring source.
+
+## Fresh source-release research and dependency comparison
+
+The follow-up checked the official KravaSign home/sign pages, two public search engines, and GitHub repository/code search. No verifiable official native source release for this supplied IPA was located. The official `/sign` page was a web signing/UDID flow; it did not expose this native project's source. Repository-name results led to this reconstruction and a third-party IPA listing. That listing has JSON/web/artwork files, not a Swift app project.
+
+GitHub code search for the exact bundle identifier returned six diagnostic files in `Kurt-228/ios27-research`, not source. An inspected 2.8.2 report identifies executable UUID `56F2F58E-8C71-3656-94CD-4D58AF046B6D`, different from this IPA's `3E12A44C-0DDB-3186-950A-B7C3004900D4`. Search for the observed TLS/install hostname returned zero code results. Search for `kravasigner` in Swift returned two CoreSign/Portal fork header files whose subtitle strings mention the name; they are not verified official KravaSigner source. Search counts are observations at the time of this check, not proof that no inaccessible/unindexed source exists. `evidence/source-search-followup.json` records the bounded search and primary documentation links.
+
+All 11 file-backed Mach-O sections in the original OpenSSL framework match those in the corrected device product, including the native machine-code section. Whole-file signatures differ. This supports the choice of that pinned prebuilt dependency; it does not recover or compile OpenSSL's original authoring source. See `evidence/openssl-code-comparison.json`.
+
+Apple's [Core Data code-generation documentation](https://developer.apple.com/documentation/coredata/generating-code) explains why Class Definition produces managed-object classes without visible authored files. [TN2415](https://developer.apple.com/library/archive/technotes/tn2415/_index.html) and [TN2318](https://developer.apple.com/library/archive/technotes/tn2318/_index.html) distinguish project entitlements from provisioning/signing output. Swift's [ABI type-metadata documentation](https://github.com/swiftlang/swift/blob/main/docs/ABI/TypeMetadata.rst) provides the context for the bounded executable metadata comparison. These references do not turn recovered compiler metadata into original source bodies.

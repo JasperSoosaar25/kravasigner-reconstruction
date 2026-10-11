@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-10-11",
+  "target_version": "2.8.2/build 1",
+  "target_bundle_id": "com.kravasign.KravaSigner",
+  "original_uuid": "3E12A44C-0DDB-3186-950A-B7C3004900D4",
+  "official_source_located": false,
+  "searches": [
+    {
+      "surface": "official website",
+      "urls": [
+        "https://kravasign.com/",
+        "https://www.kravasign.com/sign"
+      ],
+      "finding": "No native source link observed; sign page is a web signing/UDID flow."
+    },
+    {
+      "surface": "two public search engines",
+      "finding": "No verified official native source release located."
+    },
+    {
+      "surface": "GitHub repository search",
+      "query": "KravaSigner",
+      "finding": "Own reconstruction and joemossjr16/ios-apps; inspected third-party listing has JSON/web/artwork rather than Swift project."
+    },
+    {
+      "surface": "GitHub repository search",
+      "query": "KravaSign in:name,description",
+      "finding": "Only this reconstruction was returned."
+    },
+    {
+      "surface": "GitHub code search",
+      "query": "\"com.kravasign.KravaSigner\"",
+      "count": 6,
+      "finding": "All returned hits were diagnostic files under Kurt-228/ios27-research; inspected 2.8.2 report UUID differs from supplied IPA.",
+      "inspected_diagnostic_uuid": "56F2F58E-8C71-3656-94CD-4D58AF046B6D"
+    },
+    {
+      "surface": "GitHub code search",
+      "query": "\"local.kravasign.com\"",
+      "count": 0
+    },
+    {
+      "surface": "GitHub code search",
+      "query": "kravasigner language:Swift",
+      "count": 2,
+      "repositories": [
+        "dylan2280/Portal-Dev",
+        "dylans2010/Portal-Int"
+      ],
+      "finding": "CoreSignHeaderView subtitle references; not verified original KravaSigner release source."
+    }
+  ],
+  "primary_technical_references": [
+    "https://developer.apple.com/documentation/coredata/generating-code",
+    "https://developer.apple.com/library/archive/technotes/tn2415/_index.html",
+    "https://developer.apple.com/library/archive/technotes/tn2318/_index.html",
+    "https://github.com/swiftlang/swift/blob/main/docs/ABI/TypeMetadata.rst"
+  ],
+  "limits": "Bounded accessible/indexed search; absence of a verified release here does not establish that no private or unindexed source exists."
+}

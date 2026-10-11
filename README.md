@@ -4,7 +4,7 @@ This is an **unofficial reconstruction**, based on static analysis of the suppli
 
 The changes go beyond artwork: direct certificate/key downloads, automatic launch refresh, the `local.kravasign.com` installation host, the `kravasigner` URL handler, Settings changes, app metadata, cache identity, the orange #f97316 accent, original translations and full resource restoration. `docs/EVIDENCE.md` identifies their evidence and confidence. Most signing, repository, archive, database and installation code remains the pinned Feather reference because its original KravaSigner implementation cannot be recovered completely from this binary.
 
-The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed two reference-only source features: the recommended-repository list and GitHub star prompt. The device workflow now compares compiled app type names and stored-field names with all 106 recovered original descriptors. This checks bounded metadata agreement, not every original method or view body.
+The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed two reference-only source features: the recommended-repository list and GitHub star prompt. The device workflow now compares compiled app type names and stored-field names with all 106 recovered original descriptors. The corrected [Actions run 38126989899](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899) passed both source builds and simulator startup; a separate check of its downloaded device executable also found all 106 recovered type names and fields match. This checks bounded metadata agreement, not every original method or view body.
 
 ## Build
 

@@ -1,0 +1,83 @@
+{
+  "original_archive": {
+    "sha256": "c155ad99e97bf8d65bee28df63076cffb6050c6fc142aa08255d2a1f243010e8",
+    "entries": 135,
+    "files": 98,
+    "directories": 37,
+    "unaccounted_entries": [],
+    "dispositions": {
+      "directory": 37,
+      "preserved-resource": 66,
+      "replaced-signature": 2,
+      "preserved-reference": 21,
+      "rebuilt-executable": 2,
+      "private-input": 7
+    },
+    "preserved_source_files_verified": 87
+  },
+  "builds": {
+    "device": {
+      "artifact_sha256": "677a521ec48d982c890cbb694363477fd82e874e3180e4c2ba3cc73c9e65d272",
+      "exact_original_runtime_resources": 66,
+      "missing_resources": [],
+      "changed_resources": [],
+      "added_app_file_paths": [],
+      "omitted_original_app_paths": [
+        "_CodeSignature/CodeResources",
+        "embedded.mobileprovision",
+        "signing-assets/Development/cert.mobileprovision",
+        "signing-assets/Development/cert.p12",
+        "signing-assets/Development/cert.txt",
+        "signing-assets/Distribution/cert.mobileprovision",
+        "signing-assets/Distribution/cert.p12",
+        "signing-assets/Distribution/cert.txt"
+      ],
+      "unexplained_omissions": [],
+      "changed_info_plist_keys": [
+        "DTPlatformBuild",
+        "DTSDKBuild",
+        "DTXcode",
+        "DTXcodeBuild"
+      ],
+      "main_executable_sha256": "59fc10f980bbc94b072ecdb70b75773adf8730aa602dcaed6ec29d0dd9dd931d",
+      "main_executable_differs_from_original": true,
+      "ipa_sha256": "42fc65881414b7d0e85b4fb639012664c2154d67d51c59996bd1a7df73832a1a"
+    },
+    "simulator": {
+      "artifact_sha256": "2b4543b75a48faed2e78528b68ef982831f07e22c7f20254a877d22ef1875996",
+      "exact_original_runtime_resources": 66,
+      "missing_resources": [],
+      "changed_resources": [],
+      "added_app_file_paths": [],
+      "omitted_original_app_paths": [
+        "_CodeSignature/CodeResources",
+        "embedded.mobileprovision",
+        "signing-assets/Development/cert.mobileprovision",
+        "signing-assets/Development/cert.p12",
+        "signing-assets/Development/cert.txt",
+        "signing-assets/Distribution/cert.mobileprovision",
+        "signing-assets/Distribution/cert.p12",
+        "signing-assets/Distribution/cert.txt"
+      ],
+      "unexplained_omissions": [],
+      "changed_info_plist_keys": [
+        "CFBundleSupportedPlatforms",
+        "DTPlatformBuild",
+        "DTPlatformName",
+        "DTSDKBuild",
+        "DTSDKName",
+        "DTXcode",
+        "DTXcodeBuild",
+        "UIRequiredDeviceCapabilities"
+      ],
+      "main_executable_sha256": "4cab73f59954f7dc68257f92b298e3fd34bbc5265a454dde62a960266ea5686d",
+      "main_executable_differs_from_original": true
+    }
+  },
+  "errors": [],
+  "passed": true,
+  "limit": "Exact distributed-file coverage only; original private source, all behaviours and signing equivalence remain unproven.",
+  "tested_source_commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
+  "run_id": 38126989899,
+  "run_url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899"
+}

@@ -19,6 +19,8 @@ It is not an official source release or a claim of complete behavioural equivale
 | Main app source | 97 Swift files plus Objective-C/C++ bridging/native code and vendored local packages | Pinned Feather reference with documented recovered differences; complete KravaSigner private change set unknown |
 | Dependencies | Project/workspace package locks and pinned local Zsign/IDeviceKit source | Six recorded original dependency/tool versions agree; all original transitive dependency versions not identifiable |
 | Signing defaults | Owner IPA retains six default key/profile/password files; optional local import script supplied | Not committed to GitHub; default CI build has no bundled signing credentials |
+| Original signing entitlements | All 19 key names/types inventoried; exact dictionary available through a private local exporter | Observed signature output, not the original authoring entitlements file; values are not applied automatically |
+| Follow-up source differences | Recommendation list and star prompt removed; minimal debugger flag corrected | Original recovered fields now agree across all 106 app nominal descriptors; full method/UI bodies remain uncertain |
 | Original signatures and executables | Accounted for in per-entry manifest and retained in owner IPA | Two signatures need replacement; main executable and OpenSSL are rebuilt/supplied for the correct platform |
 | Archive metadata | Thirteen original AppleDouble sidecars retained as reference | No runtime app use claimed; included so metadata is not silently discarded |
 | Original official Swift/project history | Unavailable | Binary analysis does not recover original source expressions, comments, private commit history or every SwiftUI body |

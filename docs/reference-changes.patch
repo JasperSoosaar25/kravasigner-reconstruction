@@ -1,3 +1,4 @@
+diff --git a/.gitignore b/.gitignore
 --- a/.gitignore
 +++ b/.gitignore
 @@ -1,8 +1,21 @@
@@ -23,6 +24,7 @@
 +SourcePackages/
 +__pycache__/
 +*.pyc
+diff --git a/Feather.xcconfig b/Feather.xcconfig
 --- a/Feather.xcconfig
 +++ b/Feather.xcconfig
 @@ -6,7 +6,7 @@
@@ -34,6 +36,7 @@
  FEATHER_DISAMBIGUATOR=${DEVELOPMENT_TEAM}
  
  AD_HOC_CODE_SIGNING_ALLOWED = YES
+diff --git a/Feather.xcodeproj/project.pbxproj b/Feather.xcodeproj/project.pbxproj
 --- a/Feather.xcodeproj/project.pbxproj
 +++ b/Feather.xcodeproj/project.pbxproj
 @@ -24,8 +24,8 @@
@@ -143,6 +146,7 @@
  				PROVISIONING_PROFILE_SPECIFIER = "";
  				SDKROOT = auto;
  				STRIPFLAGS = "-rSTx";
+diff --git a/Feather.xcodeproj/xcshareddata/xcschemes/Feather.xcscheme b/Feather.xcodeproj/xcshareddata/xcschemes/Feather.xcscheme
 --- a/Feather.xcodeproj/xcshareddata/xcschemes/Feather.xcscheme
 +++ b/Feather.xcodeproj/xcshareddata/xcschemes/Feather.xcscheme
 @@ -16,7 +16,7 @@
@@ -172,6 +176,7 @@
              BlueprintName = "Feather"
              ReferencedContainer = "container:Feather.xcodeproj">
           </BuildableReference>
+diff --git a/Feather.xcworkspace/xcshareddata/swiftpm/Package.resolved b/Feather.xcworkspace/xcshareddata/swiftpm/Package.resolved
 --- a/Feather.xcworkspace/xcshareddata/swiftpm/Package.resolved
 +++ b/Feather.xcworkspace/xcshareddata/swiftpm/Package.resolved
 @@ -1,4 +1,5 @@
@@ -308,6 +313,7 @@
 -  "version" : 2
 +  "version" : 3
  }
+diff --git a/Feather/Backend/Server/ServerInstaller+TLS.swift b/Feather/Backend/Server/ServerInstaller+TLS.swift
 --- a/Feather/Backend/Server/ServerInstaller+TLS.swift
 +++ b/Feather/Backend/Server/ServerInstaller+TLS.swift
 @@ -51,7 +51,8 @@
@@ -335,6 +341,7 @@
  }
  
  extension ServerInstaller {
+diff --git a/Feather/FeatherApp.swift b/Feather/FeatherApp.swift
 --- a/Feather/FeatherApp.swift
 +++ b/Feather/FeatherApp.swift
 @@ -44,14 +44,14 @@
@@ -399,6 +406,7 @@
  			let imageCache = Nuke.ImageCache() // memory cache
  			dataCache?.sizeLimit = 500 * 1024 * 1024
  			imageCache.costLimit = 100 * 1024 * 1024
+diff --git a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json
 --- a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json
 +++ b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json
 @@ -1,88 +1,38 @@
@@ -512,6 +520,19 @@
 +    "version": 1
    }
  }
+diff --git a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png
+Binary files a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png and b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png differ
+diff --git a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_dark.png b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_dark.png
+Binary files a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_dark.png and b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_dark.png differ
+diff --git a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_tint.png b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_tint.png
+Binary files a/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_tint.png and b/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_tint.png differ
+diff --git a/Feather/Resources/Assets.xcassets/App_Unknown.imageset/unknown2.png b/Feather/Resources/Assets.xcassets/App_Unknown.imageset/unknown2.png
+Binary files a/Feather/Resources/Assets.xcassets/App_Unknown.imageset/unknown2.png and b/Feather/Resources/Assets.xcassets/App_Unknown.imageset/unknown2.png differ
+diff --git a/Feather/Resources/Assets.xcassets/Cert.imageset/Cert.png b/Feather/Resources/Assets.xcassets/Cert.imageset/Cert.png
+Binary files a/Feather/Resources/Assets.xcassets/Cert.imageset/Cert.png and b/Feather/Resources/Assets.xcassets/Cert.imageset/Cert.png differ
+diff --git a/Feather/Resources/Assets.xcassets/Repositories.imageset/nekofiles_folder.png b/Feather/Resources/Assets.xcassets/Repositories.imageset/nekofiles_folder.png
+Binary files a/Feather/Resources/Assets.xcassets/Repositories.imageset/nekofiles_folder.png and b/Feather/Resources/Assets.xcassets/Repositories.imageset/nekofiles_folder.png differ
+diff --git a/Feather/Resources/Info.plist b/Feather/Resources/Info.plist
 --- a/Feather/Resources/Info.plist
 +++ b/Feather/Resources/Info.plist
 @@ -19,7 +19,7 @@
@@ -582,6 +603,7 @@
 +	</dict>
  </dict>
  </plist>
+diff --git a/Feather/Resources/Localizable.xcstrings b/Feather/Resources/Localizable.xcstrings
 --- a/Feather/Resources/Localizable.xcstrings
 +++ b/Feather/Resources/Localizable.xcstrings
 @@ -1,16692 +1,17013 @@
@@ -34123,6 +34145,7 @@
 -  "version" : "1.0"
 -}+  "version": "1.0"
 +}
+diff --git a/Feather/Resources/Settings.bundle/Root.plist b/Feather/Resources/Settings.bundle/Root.plist
 --- a/Feather/Resources/Settings.bundle/Root.plist
 +++ b/Feather/Resources/Settings.bundle/Root.plist
 @@ -10,7 +10,7 @@
@@ -34134,6 +34157,9 @@
  		</dict>
  	</array>
  	<key>StringsTable</key>
+diff --git a/Feather/Resources/feather_extension.png b/Feather/Resources/feather_extension.png
+Binary files a/Feather/Resources/feather_extension.png and b/Feather/Resources/feather_extension.png differ
+diff --git a/Feather/Supporting Files/Feather.entitlements b/Feather/Supporting Files/Feather.entitlements
 --- a/Feather/Supporting Files/Feather.entitlements
 +++ b/Feather/Supporting Files/Feather.entitlements
 @@ -3,6 +3,6 @@
@@ -34144,6 +34170,7 @@
 +	<false/>
  </dict>
  </plist>
+diff --git a/Feather/Utilities/FR.swift b/Feather/Utilities/FR.swift
 --- a/Feather/Utilities/FR.swift
 +++ b/Feather/Utilities/FR.swift
 @@ -127,31 +127,30 @@
@@ -34193,6 +34220,7 @@
  	static func handleSource(
  		_ urlString: String,
  		competion: @escaping () -> Void
+diff --git a/Feather/Views/Common/FRAppIconView.swift b/Feather/Views/Common/FRAppIconView.swift
 --- a/Feather/Views/Common/FRAppIconView.swift
 +++ b/Feather/Views/Common/FRAppIconView.swift
 @@ -73,7 +73,7 @@
@@ -34204,6 +34232,7 @@
  	@AppStorage("Feather.shouldTintIcons") private var shouldTintIcons: Bool = false
  	@AppStorage("Feather.shouldChangeIconsBasedOffStyle") private var shouldChangeIconsBasedOffStyle: Bool = false
  	
+diff --git a/Feather/Views/Settings/Appearance/AppearanceTintColorView.swift b/Feather/Views/Settings/Appearance/AppearanceTintColorView.swift
 --- a/Feather/Views/Settings/Appearance/AppearanceTintColorView.swift
 +++ b/Feather/Views/Settings/Appearance/AppearanceTintColorView.swift
 @@ -9,9 +9,9 @@
@@ -34218,6 +34247,7 @@
  		("V2", 				"#B496DC"),
  		("Berry",   		"#ff7a83"),
  		("Cool Blue", 		"#4161F1"),
+diff --git a/Feather/Views/Settings/Appearance/AppearanceView.swift b/Feather/Views/Settings/Appearance/AppearanceView.swift
 --- a/Feather/Views/Settings/Appearance/AppearanceView.swift
 +++ b/Feather/Views/Settings/Appearance/AppearanceView.swift
 @@ -29,7 +29,7 @@
@@ -34229,6 +34259,7 @@
  	
  	private var _tintColorBinding: Binding<Color> {
  		Binding(
+diff --git a/Feather/Views/Settings/Installation/Server & SSL/ServerView.swift b/Feather/Views/Settings/Installation/Server & SSL/ServerView.swift
 --- a/Feather/Views/Settings/Installation/Server & SSL/ServerView.swift
 +++ b/Feather/Views/Settings/Installation/Server & SSL/ServerView.swift
 @@ -9,43 +9,6 @@
@@ -34295,6 +34326,7 @@
  						if success {
  							DispatchQueue.main.async {
  								UIAlertController.showAlertWithOk(
+diff --git a/Feather/Views/Settings/SettingsView.swift b/Feather/Views/Settings/SettingsView.swift
 --- a/Feather/Views/Settings/SettingsView.swift
 +++ b/Feather/Views/Settings/SettingsView.swift
 @@ -14,7 +14,6 @@
@@ -34427,6 +34459,7 @@
 -		return "\(url)/issues/new?template=bug.yml&title=\(encodedTitle)&text=\(encodedBody)"
 -	}
  }
+diff --git a/Feather/Views/Sources/SourcesAddView.swift b/Feather/Views/Sources/SourcesAddView.swift
 --- a/Feather/Views/Sources/SourcesAddView.swift
 +++ b/Feather/Views/Sources/SourcesAddView.swift
 @@ -18,40 +18,6 @@
@@ -34522,6 +34555,7 @@
  		}
  	}
  	
+diff --git a/Feather/Views/Sources/SourcesView.swift b/Feather/Views/Sources/SourcesView.swift
 --- a/Feather/Views/Sources/SourcesView.swift
 +++ b/Feather/Views/Sources/SourcesView.swift
 @@ -13,9 +13,6 @@
@@ -34558,6 +34592,7 @@
 -		#endif
  	}
  }
+diff --git a/Makefile b/Makefile
 --- a/Makefile
 +++ b/Makefile
 @@ -1,52 +1,7 @@
@@ -34620,6 +34655,7 @@
 +	bash scripts/build.sh simulator
 +validate:
 +	python3 scripts/validate-source.py
+diff --git a/README.md b/README.md
 --- a/README.md
 +++ b/README.md
 @@ -1,74 +1,71 @@
@@ -34636,7 +34672,7 @@
 +The changes go beyond artwork: direct certificate/key downloads, automatic launch refresh, the `local.kravasign.com` installation host, the `kravasigner` URL handler, Settings changes, app metadata, cache identity, the orange #f97316 accent, original translations and full resource restoration. `docs/EVIDENCE.md` identifies their evidence and confidence. Most signing, repository, archive, database and installation code remains the pinned Feather reference because its original KravaSigner implementation cannot be recovered completely from this binary.
  
 -<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="Images/Image-dark.png"><source media="(prefers-color-scheme: light)" srcset="Images/Image-light.png"><img alt="Feather" src="Images/Image-light.png"></picture></p>
-+The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed two reference-only source features: the recommended-repository list and GitHub star prompt. The device workflow now compares compiled app type names and stored-field names with all 106 recovered original descriptors. This checks bounded metadata agreement, not every original method or view body.
++The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed two reference-only source features: the recommended-repository list and GitHub star prompt. The device workflow now compares compiled app type names and stored-field names with all 106 recovered original descriptors. The corrected [Actions run 38126989899](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899) passed both source builds and simulator startup; a separate check of its downloaded device executable also found all 106 recovered type names and fields match. This checks bounded metadata agreement, not every original method or view body.
  
 -### Features
 +## Build
@@ -34749,6 +34785,7 @@
 +The upstream GPL-3.0 license, copyright notices and bundled dependency licenses are retained. The original reference README is in `docs/FEATHER-UPSTREAM-README.md`. This project's authoring choices, scripts and tests are newly written; no claim of official affiliation or publisher signature is made.
 +
 +Review `docs/EVIDENCE.md` and `docs/STATUS.md` before treating any build as equivalent to the supplied app. Binary analysis cannot recover original comments, source formatting, the full private change set, signing identity, or the original project history.
+diff --git a/license_plist.yml b/license_plist.yml
 --- a/license_plist.yml
 +++ b/license_plist.yml
 @@ -3,7 +3,7 @@

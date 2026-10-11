@@ -1,0 +1,1105 @@
+{
+  "app_types": [
+    {
+      "name": "KravaSigner.Download",
+      "descriptor": "0x100e65858",
+      "fields": [
+        "_progress",
+        "_bytesDownloaded",
+        "_totalBytes",
+        "_unpackageProgress",
+        "task",
+        "resumeData",
+        "id",
+        "url",
+        "fileName",
+        "onlyArchiving"
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadManager",
+      "descriptor": "0x100e65998",
+      "fields": [
+        "_downloads",
+        "_session"
+      ]
+    },
+    {
+      "name": "KravaSigner.OptionsManager",
+      "descriptor": "0x100e65b84",
+      "fields": [
+        "_options",
+        "_key"
+      ]
+    },
+    {
+      "name": "KravaSigner.Options",
+      "descriptor": "0x100e65c2c",
+      "fields": [
+        "appName",
+        "appVersion",
+        "appIdentifier",
+        "appEntitlementsFile",
+        "appAppearance",
+        "minimumAppRequirement",
+        "signingOption",
+        "injectPath",
+        "injectFolder",
+        "ppqString",
+        "ppqProtection",
+        "dynamicProtection",
+        "identifiers",
+        "displayNames",
+        "injectionFiles",
+        "disInjectionFiles",
+        "removeFiles",
+        "fileSharing",
+        "itunesFileSharing",
+        "proMotion",
+        "gameMode",
+        "ipadFullscreen",
+        "removeURLScheme",
+        "removeProvisioning",
+        "changeLanguageFilesForCustomDisplayName",
+        "injectIntoExtensions",
+        "experiment_supportLiquidGlass",
+        "experiment_replaceSubstrateWithEllekit",
+        "post_installAppAfterSigned",
+        "post_deleteAppAfterSigned"
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.<context:2>.CodingKeys",
+      "descriptor": "0x100e65c5c",
+      "fields": [
+        "appName",
+        "appVersion",
+        "appIdentifier",
+        "appEntitlementsFile",
+        "appAppearance",
+        "minimumAppRequirement",
+        "signingOption",
+        "injectPath",
+        "injectFolder",
+        "ppqString",
+        "ppqProtection",
+        "dynamicProtection",
+        "identifiers",
+        "displayNames",
+        "injectionFiles",
+        "disInjectionFiles",
+        "removeFiles",
+        "fileSharing",
+        "itunesFileSharing",
+        "proMotion",
+        "gameMode",
+        "ipadFullscreen",
+        "removeURLScheme",
+        "removeProvisioning",
+        "changeLanguageFilesForCustomDisplayName",
+        "injectIntoExtensions",
+        "experiment_supportLiquidGlass",
+        "experiment_replaceSubstrateWithEllekit",
+        "post_installAppAfterSigned",
+        "post_deleteAppAfterSigned"
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.InjectFolder",
+      "descriptor": "0x100e65c78",
+      "fields": [
+        "root",
+        "frameworks"
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.InjectPath",
+      "descriptor": "0x100e65c94",
+      "fields": [
+        "executable_path",
+        "rpath"
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.SigningOption",
+      "descriptor": "0x100e65cb0",
+      "fields": [
+        "default",
+        "onlyModify"
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.MinimumAppRequirement",
+      "descriptor": "0x100e65ccc",
+      "fields": [
+        "default",
+        "v16",
+        "v15",
+        "v14",
+        "v13",
+        "v12"
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.AppAppearance",
+      "descriptor": "0x100e65ce8",
+      "fields": [
+        "default",
+        "light",
+        "dark"
+      ]
+    },
+    {
+      "name": "KravaSigner.ServerInstaller",
+      "descriptor": "0x100e65d04",
+      "fields": [
+        "id",
+        "port",
+        "_needsShutdown",
+        "packageUrl",
+        "app",
+        "_viewModel",
+        "_server"
+      ]
+    },
+    {
+      "name": "KravaSigner.Storage",
+      "descriptor": "0x100e65dfc",
+      "fields": [
+        "container",
+        "_name"
+      ]
+    },
+    {
+      "name": "KravaSigner.AnyApp",
+      "descriptor": "0x100e65e88",
+      "fields": [
+        "base",
+        "archive"
+      ]
+    },
+    {
+      "name": "KravaSigner.ARFileModel",
+      "descriptor": "0x100e65ea4",
+      "fields": [
+        "name",
+        "modificationDate",
+        "ownerId",
+        "groupId",
+        "mode",
+        "size",
+        "content"
+      ]
+    },
+    {
+      "name": "KravaSigner.AR",
+      "descriptor": "0x100e65ecc",
+      "fields": [
+        "_data"
+      ]
+    },
+    {
+      "name": "KravaSigner.ARError",
+      "descriptor": "0x100e65f38",
+      "fields": [
+        "badArchive"
+      ]
+    },
+    {
+      "name": "KravaSigner.Certificate",
+      "descriptor": "0x100e65f54",
+      "fields": [
+        "AppIDName",
+        "ApplicationIdentifierPrefix",
+        "CreationDate",
+        "Platform",
+        "IsXcodeManaged",
+        "DeveloperCertificates",
+        "derEncodedProfile",
+        "PPQCheck",
+        "Entitlements",
+        "ExpirationDate",
+        "Name",
+        "ProvisionsAllDevices",
+        "ProvisionedDevices",
+        "TeamIdentifier",
+        "TeamName",
+        "TimeToLive",
+        "UUID",
+        "Version"
+      ]
+    },
+    {
+      "name": "KravaSigner.Certificate.CodingKeys",
+      "descriptor": "0x100e65f7c",
+      "fields": [
+        "AppIDName",
+        "CreationDate",
+        "Platform",
+        "IsXcodeManaged",
+        "DeveloperCertificates",
+        "PPQCheck",
+        "Entitlements",
+        "ExpirationDate",
+        "Name",
+        "ProvisionedDevices",
+        "TeamIdentifier",
+        "TeamName",
+        "TimeToLive",
+        "UUID",
+        "Version",
+        "derEncodedProfile"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificateReader",
+      "descriptor": "0x100e65f98",
+      "fields": [
+        "file",
+        "decoded"
+      ]
+    },
+    {
+      "name": "KravaSigner.AppFileHandler",
+      "descriptor": "0x100e66000",
+      "fields": [
+        "_fileManager",
+        "_uuid",
+        "_uniqueWorkDir",
+        "uniqueWorkDirPayload",
+        "_ipa",
+        "_install",
+        "_download"
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.ImportedFileHandlerError",
+      "descriptor": "0x100e66050",
+      "fields": [
+        "payloadNotFound"
+      ]
+    },
+    {
+      "name": "KravaSigner.ArchiveHandler",
+      "descriptor": "0x100e6606c",
+      "fields": [
+        "_viewModel",
+        "_fileManager",
+        "_uuid",
+        "_payloadUrl",
+        "_app",
+        "_uniqueWorkDir"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificateFileHandler",
+      "descriptor": "0x100e660b4",
+      "fields": [
+        "_fileManager",
+        "_uuid",
+        "_key",
+        "_provision",
+        "_keyPassword",
+        "_certNickname",
+        "_isDefault",
+        "_certPair"
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.CertificateFileHandlerError",
+      "descriptor": "0x100e66104",
+      "fields": [
+        "certNotValid"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningHandler",
+      "descriptor": "0x100e66120",
+      "fields": [
+        "_fileManager",
+        "_uuid",
+        "_movedAppPath",
+        "_app",
+        "_options",
+        "_uniqueWorkDir",
+        "appIcon",
+        "appCertificate"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningFileHandlerError",
+      "descriptor": "0x100e66168",
+      "fields": [
+        "appNotFound",
+        "infoPlistNotFound",
+        "missingCertifcate",
+        "disinjectFailed",
+        "signFailed"
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandler",
+      "descriptor": "0x100e66184",
+      "fields": [
+        "_fileManager",
+        "_urlsToInject",
+        "_directoriesToCheck",
+        "_injectedDylibNames",
+        "_app",
+        "_options",
+        "_urls"
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandlerError",
+      "descriptor": "0x100e66294",
+      "fields": [
+        "unsupportedFileExtension",
+        "decompressionFailed",
+        "missingFile",
+        "noAccess"
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandler.<context:2>.<context:2>.DirectoryType",
+      "descriptor": "0x100e662c0",
+      "fields": [
+        "frameworks",
+        "dynamicLibraries",
+        "applicationSupport"
+      ]
+    },
+    {
+      "name": "KravaSigner.ZsignHandler",
+      "descriptor": "0x100e662dc",
+      "fields": [
+        "hadError",
+        "_appUrl",
+        "_options",
+        "_certificate"
+      ]
+    },
+    {
+      "name": "KravaSigner.AnyCodable",
+      "descriptor": "0x100e66324",
+      "fields": [
+        "value"
+      ]
+    },
+    {
+      "name": "KravaSigner.BackgroundAudioManager",
+      "descriptor": "0x100e66340",
+      "fields": [
+        "_engine"
+      ]
+    },
+    {
+      "name": "KravaSigner.BackgroundTaskManager",
+      "descriptor": "0x100e6638c",
+      "fields": [
+        "baseId",
+        "activeTasks",
+        "registeredTasks"
+      ]
+    },
+    {
+      "name": "KravaSigner.MobileGestalt",
+      "descriptor": "0x100e66410",
+      "fields": [
+        "_copyAnswerRef",
+        "_handle"
+      ]
+    },
+    {
+      "name": "KravaSigner.FRIconCache",
+      "descriptor": "0x100e66454",
+      "fields": [
+        "cache"
+      ]
+    },
+    {
+      "name": "KravaSigner.FRAppIconLoader",
+      "descriptor": "0x100e66490",
+      "fields": [
+        "_image",
+        "task"
+      ]
+    },
+    {
+      "name": "KravaSigner.FRAppIconView",
+      "descriptor": "0x100e664d8",
+      "fields": [
+        "app",
+        "size",
+        "_colorScheme",
+        "_loader",
+        "_selectedColorHex",
+        "_shouldTintIcons",
+        "_shouldChangeIconsBasedOffStyle"
+      ]
+    },
+    {
+      "name": "KravaSigner.FRExpirationPillView",
+      "descriptor": "0x100e66544",
+      "fields": [
+        "title",
+        "revoked",
+        "expiration"
+      ]
+    },
+    {
+      "name": "KravaSigner.FRIconCellView",
+      "descriptor": "0x100e66588",
+      "fields": [
+        "title",
+        "subtitle",
+        "iconUrl",
+        "size",
+        "isCircle"
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadHeaderView",
+      "descriptor": "0x100e665d8",
+      "fields": [
+        "_downloadManager"
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadItemView",
+      "descriptor": "0x100e665f4",
+      "fields": [
+        "download",
+        "_progress",
+        "_bytesDownloaded",
+        "_totalBytes",
+        "_unpackageProgress"
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryInfoView",
+      "descriptor": "0x100e66660",
+      "fields": [
+        "app"
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallPreviewView",
+      "descriptor": "0x100e666a4",
+      "fields": [
+        "_dismiss",
+        "__useShareSheet",
+        "__installationMethod",
+        "__serverMethod",
+        "__isWebviewPresenting",
+        "_progressTask",
+        "app",
+        "_viewModel",
+        "_installer",
+        "_isSharing"
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallProgressView",
+      "descriptor": "0x100e666f4",
+      "fields": [
+        "__isPulsing",
+        "app",
+        "_viewModel"
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallProgressView.PieShape",
+      "descriptor": "0x100e66710",
+      "fields": [
+        "progress"
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryCellView",
+      "descriptor": "0x100e66754",
+      "fields": [
+        "_horizontalSizeClass",
+        "_editMode",
+        "app",
+        "_selectedInfoAppPresenting",
+        "_selectedSigningAppPresenting",
+        "_selectedInstallAppPresenting",
+        "_selectedAppUUIDs"
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryView",
+      "descriptor": "0x100e667a4",
+      "fields": [
+        "_downloadManager",
+        "__selectedInfoAppPresenting",
+        "__selectedSigningAppPresenting",
+        "__selectedInstallAppPresenting",
+        "__isImportingPresenting",
+        "__isDownloadingPresenting",
+        "__alertDownloadString",
+        "__selectedAppUUIDs",
+        "__editMode",
+        "__searchText",
+        "__selectedScope",
+        "__namespace",
+        "__signedApps",
+        "__importedApps"
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryView.Scope",
+      "descriptor": "0x100e667cc",
+      "fields": [
+        "all",
+        "signed",
+        "imported"
+      ]
+    },
+    {
+      "name": "KravaSigner.ArchiveView",
+      "descriptor": "0x100e66810",
+      "fields": [
+        "__compressionLevel",
+        "__useShareSheet"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoEntitlementCellView",
+      "descriptor": "0x100e66854",
+      "fields": [
+        "key",
+        "value",
+        "__isExpanded"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoEntitlementView",
+      "descriptor": "0x100e66898",
+      "fields": [
+        "entitlements"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoView",
+      "descriptor": "0x100e668dc",
+      "fields": [
+        "_dismiss",
+        "_data",
+        "cert"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesAddView",
+      "descriptor": "0x100e6692c",
+      "fields": [
+        "_dismiss",
+        "__p12URL",
+        "__provisionURL",
+        "__p12Password",
+        "__certificateName",
+        "__isImportingP12Presenting",
+        "__isImportingMobileProvisionPresenting"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesCellView",
+      "descriptor": "0x100e6697c",
+      "fields": [
+        "_data",
+        "_cert"
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesView",
+      "descriptor": "0x100e669cc",
+      "fields": [
+        "__storedSelectedCert",
+        "__isAddingPresenting",
+        "__isRenamingPresenting",
+        "__isSelectedInfoPresenting",
+        "__certToRename",
+        "__newNickname",
+        "__certificates",
+        "_bindingSelectedCert"
+      ]
+    },
+    {
+      "name": "KravaSigner.ServerView",
+      "descriptor": "0x100e66a1c",
+      "fields": [
+        "__ipFix",
+        "__serverMethod",
+        "_serverMethods",
+        "_dataService"
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelHeaderView",
+      "descriptor": "0x100e66a60",
+      "fields": [
+        "_lastHeartbeatTime"
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelPulseRing",
+      "descriptor": "0x100e66a88",
+      "fields": [
+        "__animationProgress",
+        "_animationDuration",
+        "_colorStartThreshold",
+        "_colorTransitionDuration",
+        "_lastHeartbeat"
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelView",
+      "descriptor": "0x100e66b00",
+      "fields": [
+        "__isImportingPairingPresenting",
+        "_doesHavePairingFile",
+        "_isLocalDevVpnAvailable"
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallationView",
+      "descriptor": "0x100e66b44",
+      "fields": [
+        "__installationMethod",
+        "__showMethodChangedAlert",
+        "_installationMethods"
+      ]
+    },
+    {
+      "name": "KravaSigner.ResetView",
+      "descriptor": "0x100e66b88",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.ConfigurationDictAddView",
+      "descriptor": "0x100e66bcc",
+      "fields": [
+        "_dismiss",
+        "__newKey",
+        "__newValue",
+        "__showOverrideAlert",
+        "_dataDict"
+      ]
+    },
+    {
+      "name": "KravaSigner.ConfigurationDictView",
+      "descriptor": "0x100e66c1c",
+      "fields": [
+        "__isAddingPresenting",
+        "title",
+        "_dataDict"
+      ]
+    },
+    {
+      "name": "KravaSigner.ConfigurationView",
+      "descriptor": "0x100e66c60",
+      "fields": [
+        "__optionsManager",
+        "_isRandomAlertPresenting",
+        "_randomString"
+      ]
+    },
+    {
+      "name": "KravaSigner.SettingsView",
+      "descriptor": "0x100e66ca4",
+      "fields": [
+        "__storedSelectedCert",
+        "__certificates"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningAlternativeIconView",
+      "descriptor": "0x100e66cf4",
+      "fields": [
+        "_dismiss",
+        "__alternateIcons",
+        "app",
+        "_appIcon",
+        "_isModifing"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningDylibView",
+      "descriptor": "0x100e66d44",
+      "fields": [
+        "__dylibs",
+        "__hiddenDylibCount",
+        "app",
+        "_options"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningFrameworksView",
+      "descriptor": "0x100e66d94",
+      "fields": [
+        "__frameworks",
+        "__plugins",
+        "_frameworksPath",
+        "_pluginsPath",
+        "app",
+        "_options"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningOptionsView",
+      "descriptor": "0x100e66de4",
+      "fields": [
+        "_options",
+        "temporaryOptions"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningToggleCellView",
+      "descriptor": "0x100e66e34",
+      "fields": [
+        "title",
+        "_options",
+        "arrayKeyPath"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningPropertiesView",
+      "descriptor": "0x100e66e8c",
+      "fields": [
+        "_dismiss",
+        "_text",
+        "title",
+        "initialValue",
+        "_bindingValue"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningTweaksView",
+      "descriptor": "0x100e66edc",
+      "fields": [
+        "__isAddingPresenting",
+        "_options"
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningView",
+      "descriptor": "0x100e66f2c",
+      "fields": [
+        "_dismiss",
+        "__optionsManager",
+        "__temporaryOptions",
+        "__temporaryCertificate",
+        "__isAltPickerPresenting",
+        "__isFilePickerPresenting",
+        "__isImagePickerPresenting",
+        "__isSigning",
+        "__selectedPhoto",
+        "_appIcon",
+        "_certificates",
+        "app"
+      ]
+    },
+    {
+      "name": "KravaSigner.AppVersionInfo",
+      "descriptor": "0x100e66f7c",
+      "fields": [
+        "version",
+        "date",
+        "description"
+      ]
+    },
+    {
+      "name": "KravaSigner.ExpandableText",
+      "descriptor": "0x100e66fcc",
+      "fields": [
+        "text",
+        "lineLimit",
+        "_expanded",
+        "_truncated"
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderGeometry",
+      "descriptor": "0x100e67018",
+      "fields": [
+        "_offset",
+        "_windowHeight",
+        "_$observationRegistrar"
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderContentModifier",
+      "descriptor": "0x100e670f8",
+      "fields": [
+        "_geometry"
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderScrollViewModifier",
+      "descriptor": "0x100e6711c",
+      "fields": [
+        "_geometry"
+      ]
+    },
+    {
+      "name": "KravaSigner.ScreenshotPreviewView",
+      "descriptor": "0x100e67188",
+      "fields": [
+        "_dismiss",
+        "_currentIndex",
+        "screenshotURLs"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsDetailView",
+      "descriptor": "0x100e671d8",
+      "fields": [
+        "_downloadManager",
+        "__downloadProgress",
+        "_cancellable",
+        "__isScreenshotPreviewPresented",
+        "__selectedScreenshotIndex",
+        "source",
+        "app"
+      ]
+    },
+    {
+      "name": "KravaSigner.VersionHistoryView",
+      "descriptor": "0x100e67228",
+      "fields": [
+        "_dismiss",
+        "app",
+        "versions"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsCardInfoView",
+      "descriptor": "0x100e67278",
+      "fields": [
+        "new"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsCardView",
+      "descriptor": "0x100e672c8",
+      "fields": [
+        "new"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsView",
+      "descriptor": "0x100e67318",
+      "fields": [
+        "_isLoading",
+        "_hasLoadedInitialData",
+        "__selectedNewsPresenting",
+        "__namespace",
+        "news"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsTableRepresentableView.Coordinator",
+      "descriptor": "0x100e67368",
+      "fields": [
+        "sources",
+        "searchText",
+        "sortOption",
+        "sortAscending",
+        "onSelect",
+        "_groupedAppsByNameFirstLetter",
+        "_groupedAppsByDate",
+        "_sortedSectionTitles",
+        "_cachedSortedApps",
+        "uiTableView"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsTableRepresentableView",
+      "descriptor": "0x100e674e4",
+      "fields": [
+        "sources",
+        "_searchText",
+        "_sortOption",
+        "_sortAscending",
+        "onSelect"
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadButtonView",
+      "descriptor": "0x100e67500",
+      "fields": [
+        "app",
+        "_downloadManager",
+        "_downloadProgress",
+        "_cancellable"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsCellView",
+      "descriptor": "0x100e67550",
+      "fields": [
+        "__storeCellAppearance",
+        "source",
+        "app"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView.SourceAppRoute",
+      "descriptor": "0x100e675a0",
+      "fields": [
+        "source",
+        "app",
+        "id"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView",
+      "descriptor": "0x100e675c8",
+      "fields": [
+        "__sortOptionRawValue",
+        "__sortAscending",
+        "__sortOption",
+        "__selectedRoute",
+        "_isLoading",
+        "_hasLoadedOnce",
+        "__searchText",
+        "object",
+        "_viewModel",
+        "__sources"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView.SortOption",
+      "descriptor": "0x100e675f0",
+      "fields": [
+        "default",
+        "name",
+        "date"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesAddView",
+      "descriptor": "0x100e67634",
+      "fields": [
+        "_dismiss",
+        "_dataService",
+        "__isImporting",
+        "__sourceURL"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesCellView",
+      "descriptor": "0x100e67684",
+      "fields": [
+        "_horizontalSizeClass",
+        "source"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesView",
+      "descriptor": "0x100e676d4",
+      "fields": [
+        "_horizontalSizeClass",
+        "_viewModel",
+        "__isAddingPresenting",
+        "__addingSourceLoading",
+        "__searchText",
+        "__sources"
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesViewModel",
+      "descriptor": "0x100e67724",
+      "fields": [
+        "_dataService",
+        "isFinished",
+        "_sources"
+      ]
+    },
+    {
+      "name": "KravaSigner.ExtendedTabbarView",
+      "descriptor": "0x100e6776c",
+      "fields": [
+        "_horizontalSizeClass",
+        "_customization",
+        "_viewModel",
+        "__isAddingPresenting",
+        "__sources"
+      ]
+    },
+    {
+      "name": "KravaSigner.TabbarView",
+      "descriptor": "0x100e677bc",
+      "fields": [
+        "_selectedTab"
+      ]
+    },
+    {
+      "name": "KravaSigner.TabEnum",
+      "descriptor": "0x100e67800",
+      "fields": [
+        "sources",
+        "library",
+        "settings",
+        "certificates"
+      ]
+    },
+    {
+      "name": "KravaSigner.VariedTabbarView",
+      "descriptor": "0x100e6781c",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.AppDelegate",
+      "descriptor": "0x100e67860",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.FeatherApp",
+      "descriptor": "0x100e678b4",
+      "fields": [
+        "_appDelegate",
+        "heartbeat",
+        "_downloadManager",
+        "storage"
+      ]
+    },
+    {
+      "name": "KravaSigner.AltSource",
+      "descriptor": "0x100e67904",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.CertificatePair",
+      "descriptor": "0x100e67930",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.Imported",
+      "descriptor": "0x100e6795c",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.Signed",
+      "descriptor": "0x100e67988",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.<context:2>.ResourceBundleClass",
+      "descriptor": "0x100e679bc",
+      "fields": []
+    }
+  ],
+  "type_table_records": 2432,
+  "unparsed_all_modules": 293,
+  "limit": "Bounded metadata names/fields only; not original expressions, method bodies or whole-program equivalence.",
+  "reference_app_type_count": 106,
+  "mismatches": [],
+  "metadata_names_and_fields_match_original": true,
+  "tested_source_commit": "edad40232beca7ce0cd81363fc14812e0a8ca3b0",
+  "run_id": 38126989899,
+  "executable_sha256": "59fc10f980bbc94b072ecdb70b75773adf8730aa602dcaed6ec29d0dd9dd931d",
+  "comparison_passed": true,
+  "comparison_reference": "docs/evidence/swift-types.json"
+}
