@@ -1,0 +1,57 @@
+{
+  "commit": "90ba4ff66f784c1bad034b2b5976a70000078c75",
+  "run_id": 38102345171,
+  "ipa_sha256": "53fd4010ffdcc8bd3c0db2b9f95345e63cb2c459b3b07b901b49021c23d9c86c",
+  "executable_sha256": "31a3b0bb0279dcab53db9cb4c3ef2bdfc249c651762382f920d38e682de062f1",
+  "original_executable_reused": false,
+  "runtime_resources_verified": 66,
+  "platform": [
+    "iPhoneOS"
+  ],
+  "size": 13624279,
+  "repository": "https://github.com/JasperSoosaar25/kravasigner-reconstruction",
+  "run_url": "https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38102345171",
+  "jobs": {
+    "device": {
+      "id": 114360691302,
+      "conclusion": "success"
+    },
+    "simulator": {
+      "id": 114360691195,
+      "conclusion": "success"
+    }
+  },
+  "toolchain": {
+    "macos": "15.7.9",
+    "xcode": "26.0.1",
+    "xcode_build": "17A400",
+    "ios_sdk": "26.0"
+  },
+  "simulator": {
+    "runtime_resources_verified": 66,
+    "startup_pid": 92493,
+    "startup_check_seconds": 10,
+    "startup_passed": true,
+    "platform": [
+      "iPhoneSimulator"
+    ],
+    "screenshot_sha256": "9cdfa555a95c70fb034a0b27365f0fb26276d901a2736e120eab2c869b8569b4"
+  },
+  "tls_fixture_tests_passed": 4,
+  "physical_device_signing_installation_tested": false,
+  "original_official_source_recovered": false,
+  "artifacts": [
+    {
+      "filename": "KravaSigner-device-build.zip",
+      "github_artifact_id": 11688282529,
+      "bytes": 28089129,
+      "sha256": "735666fcd92df0dcea0873122e232a9fd68cb9f42c5d15d12f8e497e1c6acb56"
+    },
+    {
+      "filename": "KravaSigner-simulator-build.zip",
+      "github_artifact_id": 11688590945,
+      "bytes": 26717035,
+      "sha256": "293c46e514f54217847ee5618ff52050af8b2182e629caa5eae5837e0ee573e3"
+    }
+  ]
+}

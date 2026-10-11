@@ -1,6 +1,12 @@
 --- a/.gitignore
 +++ b/.gitignore
-@@ -6,3 +6,13 @@
+@@ -1,8 +1,18 @@
+ .DS_Store
+ packages
+-Payload
++/Payload/
+ *UserInterfaceState.xcuserstate
+ xcuserdata/
  deps
  cert.json
  _build
@@ -503,12 +509,6 @@
 +    "version": 1
    }
  }
-Binary resource differs: Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png
-Binary resource differs: Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_dark.png
-Binary resource differs: Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather_tint.png
-Binary resource differs: Feather/Resources/Assets.xcassets/App_Unknown.imageset/unknown2.png
-Binary resource differs: Feather/Resources/Assets.xcassets/Cert.imageset/Cert.png
-Binary resource differs: Feather/Resources/Assets.xcassets/Repositories.imageset/nekofiles_folder.png
 --- a/Feather/Resources/Info.plist
 +++ b/Feather/Resources/Info.plist
 @@ -19,7 +19,7 @@
@@ -34131,7 +34131,6 @@ Binary resource differs: Feather/Resources/Assets.xcassets/Repositories.imageset
  		</dict>
  	</array>
  	<key>StringsTable</key>
-Binary resource differs: Feather/Resources/feather_extension.png
 --- a/Feather/Utilities/FR.swift
 +++ b/Feather/Utilities/FR.swift
 @@ -127,31 +127,30 @@
@@ -34498,7 +34497,7 @@ Binary resource differs: Feather/Resources/feather_extension.png
 -[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/claration/Feather/total)](https://github.com/claration/Feather/releases)
 -[![GitHub License](https://img.shields.io/github/license/claration/Feather?color=%23C96FAD)](https://github.com/claration/Feather/blob/main/LICENSE)
 -[![Sponsor Me](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/khcrysalis)
-+This is an **unofficial reconstruction**, based on static analysis of the supplied KravaSigner IPA and the matching Feather release. It is not KravaSign's original official source, and it has not been certified as behaviorally identical. The source project is ready for an Xcode build attempt. See `docs/STATUS.md` for checks actually completed.
++This is an **unofficial reconstruction**, based on static analysis of the supplied KravaSigner IPA and the matching Feather release. It is not KravaSign's original official source, and it has not been certified as behaviorally identical. **Device and simulator source builds passed on GitHub Actions, and the simulator app launched successfully.** See `docs/BUILD-RESULTS.md` for the tested commit, artifacts and verification limits, and `docs/RECOVERY-COVERAGE.md` for exactly what was recovered.
  
 -This app allows you to install and manage applications contained in a single app, using certificate pairs and various installation techniques to allow apps to install to your device. This is an entirely stock application and uses built-in features to be able to do this!
 +The changes go beyond artwork: direct certificate/key downloads, automatic launch refresh, the `local.kravasign.com` installation host, the `kravasigner` URL handler, Settings changes, app metadata, cache identity, the orange #f97316 accent, original translations and full resource restoration. `docs/EVIDENCE.md` identifies their evidence and confidence. Most signing, repository, archive, database and installation code remains the pinned Feather reference because its original KravaSigner implementation cannot be recovered completely from this binary.
@@ -34525,7 +34524,7 @@ Binary resource differs: Feather/Resources/feather_extension.png
 +```
  
 -## Download
-+The result, if compilation succeeds, is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
++The result is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
  
 -Visit [releases](https://github.com/claration/Feather/releases) and get the latest `.ipa`.
 +```bash
@@ -34570,7 +34569,7 @@ Binary resource differs: Feather/Resources/feather_extension.png
 -   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=claration/Feather&type=Date" />
 - </picture>
 -</a>
-+`RecoveredResources/Bundle/` contains the original runtime resources. The build restores all **67 files byte-for-byte**, including the compiled catalog, loose icons, launch NIBs, Core Data model, translations, Settings bundle, acknowledgements and privacy manifests. Another **21 metadata files** are retained for reference. `docs/ipa-file-coverage.json` and `.csv` account for all **135 archive entries**.
++`RecoveredResources/Bundle/` contains the original runtime resources. The build restores all **66 files byte-for-byte**, including the compiled catalog, loose icons, launch NIBs, Core Data model, translations, Settings bundle, acknowledgements and privacy manifests. Another **21 metadata files** are retained for reference. `docs/ipa-file-coverage.json` and `.csv` account for all **135 archive entries**.
  
 -## Acknowledgements
 +All nine catalog bitmap renditions were decoded successfully; the six unique raster images are editable in `Feather/Resources/Assets.xcassets`, with light/dark/tinted icon entries. This recovers distributed pixels, not original vector/layer designer files. The original catalog is restored after compilation for exact runtime resource preservation. The default tint is the binary-observed orange **#f97316**; saved appearance preferences and iOS system colours still apply.

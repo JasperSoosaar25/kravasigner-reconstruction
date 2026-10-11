@@ -20,11 +20,12 @@
 | IDevice XCFramework checksum and device/simulator slices | Passed |
 | Full iOS source compilation on this Linux machine | Attempted; stopped because xcodebuild is unavailable |
 | GitHub repository creation | Created: JasperSoosaar25/kravasigner-reconstruction, private |
-| GitHub Actions source build | First run reached Xcode 26.0.1; validation caught ignored archive metadata files. Fixed; next run pending |
-| iOS Simulator launch / screen inspection | Not performed; script and workflow prepared |
+| GitHub Actions source build | Passed: device and simulator, Xcode 26.0.1; run 38102345171, commit 90ba4ff |
+| Built resource preservation | Passed: all 66 original runtime files match their recorded hashes in both products |
+| iOS Simulator launch / screen inspection | Passed: installed, launched and survived the 10-second startup check; actual screenshot inspected |
 | Physical-device signing and installation | Not tested |
 | Full equivalence to the supplied KravaSigner release | Not established |
 
-The local build attempt returned exit 2 with: `An Apple macOS host with Xcode is required; xcodebuild was not found.` It did not generate an IPA. The prepared workflow saves the unsigned IPA only after a successful device source build and validates its identity and recovered resources. Its separate simulator job installs and launches a simulator build, checks startup survival, and retains a screenshot and logs.
+The local build attempt returned exit 2 with: `An Apple macOS host with Xcode is required; xcodebuild was not found.` The GitHub Actions macOS jobs subsequently compiled both products successfully. The workflow produced a new unsigned device IPA and a simulator app, validates their identity and recovered resources, and retains build logs and result bundles. The simulator job installed and launched the new app, checked startup survival, and captured its screen and system log.
 
-The GitHub connection exposes existing repositories but no repository-creation capability. No unrelated repository was modified. The owner authorized browser fallback after the follow-up audit. The private repository was created successfully, and its first 423 uploaded file blobs matched local git hashes. The first Actions run (38102244524) selected Xcode 26.0.1 successfully, then correctly stopped resource validation: the broad Payload ignore rule had excluded 13 AppleDouble reference files. The rule is now restricted to the root build-output directory; all 13 metadata files are included, and validation also checks that recovered files are tracked. Full compilation and simulator execution remain pending.
+The owner authorized creation of the dedicated private repository after the follow-up audit. The first Actions run (38102244524) correctly stopped resource validation because a broad Payload ignore rule had excluded 13 AppleDouble reference files. The rule was restricted to the root build-output directory; all 13 files are included, and validation checks tracked-file inclusion. The corrected run (38102345171) passed both jobs. All 436 files in that tested source tree matched the local Git blob hashes and modes. Subsequent changes only document the completed results and recovery coverage; they do not alter the tested app source or workflow. See `BUILD-RESULTS.md`.

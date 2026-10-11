@@ -1,6 +1,6 @@
 # KravaSigner 2.8.2 — reconstructed source
 
-This is an **unofficial reconstruction**, based on static analysis of the supplied KravaSigner IPA and the matching Feather release. It is not KravaSign's original official source, and it has not been certified as behaviorally identical. The source project is ready for an Xcode build attempt. See `docs/STATUS.md` for checks actually completed.
+This is an **unofficial reconstruction**, based on static analysis of the supplied KravaSigner IPA and the matching Feather release. It is not KravaSign's original official source, and it has not been certified as behaviorally identical. **Device and simulator source builds passed on GitHub Actions, and the simulator app launched successfully.** See `docs/BUILD-RESULTS.md` for the tested commit, artifacts and verification limits, and `docs/RECOVERY-COVERAGE.md` for exactly what was recovered.
 
 The changes go beyond artwork: direct certificate/key downloads, automatic launch refresh, the `local.kravasign.com` installation host, the `kravasigner` URL handler, Settings changes, app metadata, cache identity, the orange #f97316 accent, original translations and full resource restoration. `docs/EVIDENCE.md` identifies their evidence and confidence. Most signing, repository, archive, database and installation code remains the pinned Feather reference because its original KravaSigner implementation cannot be recovered completely from this binary.
 
@@ -12,7 +12,7 @@ Use macOS with **Xcode 26.0.1** (iOS 26.0 SDK), matching the uploaded app's SDK 
 bash scripts/build.sh device
 ```
 
-The result, if compilation succeeds, is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
+The result is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
 
 ```bash
 bash scripts/build.sh simulator

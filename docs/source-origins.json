@@ -303,6 +303,19 @@
   "new_or_recovered_files": [
     ".github/workflows/reconstruct.yml",
     "Feather/Utilities/TLSAssetDownloader.swift",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Donor@2x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Donor@3x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V0@2x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V0@3x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1@2x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1@3x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1Mac@2x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1Mac@3x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V2Mac@2x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V2Mac@3x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Wing@2x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Wing@3x.png",
+    "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._feather_extension.png",
     "RecoveredResources/Bundle/AppIcon60x60@2x.png",
     "RecoveredResources/Bundle/AppIcon76x76@2x~ipad.png",
     "RecoveredResources/Bundle/Assets.car",
@@ -313,7 +326,6 @@
     "RecoveredResources/Bundle/Feather.momd/Feather.omo",
     "RecoveredResources/Bundle/Feather.momd/VersionInfo.plist",
     "RecoveredResources/Bundle/Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy",
-    "RecoveredResources/Bundle/Frameworks/OpenSSL.framework/_CodeSignature/CodeResources",
     "RecoveredResources/Bundle/Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
     "RecoveredResources/Bundle/Launch Screen.storyboardc/Info.plist",
     "RecoveredResources/Bundle/Launch Screen.storyboardc/UIViewController-01J-lp-oVM.nib",
@@ -387,10 +399,13 @@
     "RecoveredResources/Reference/swift-nio-ssl_NIOSSL.bundle/Info.plist",
     "RecoveredResources/Reference/swift-nio_NIOPosix.bundle/Info.plist",
     "RecoveredResources/Reference/swift-nio__NIOFileSystem.bundle/Info.plist",
+    "docs/BUILD-RESULTS.md",
     "docs/EVIDENCE.md",
     "docs/FEATHER-UPSTREAM-README.md",
     "docs/FEATHER-UPSTREAM-app-repo.json",
+    "docs/RECOVERY-COVERAGE.md",
     "docs/STATUS.md",
+    "docs/evidence/build-verification.json",
     "docs/evidence/catalog-metadata.json",
     "docs/evidence/constant-functions.asm",
     "docs/evidence/constant-references.json",
@@ -431,5 +446,5 @@
     "scripts/verify-built-app.py",
     "tests/TLSAssetDownloaderTests.swift"
   ],
-  "note": "Snapshot before this follow-up commit; resources and binary-derived evidence remain distinctly identified. Original private source is not claimed."
+  "note": "Final documentation snapshot. Source build/run verification identifies tested code commit 90ba4ff66f784c1bad034b2b5976a70000078c75 separately. This is documented reference/reconstructed source, not original official source."
 }
