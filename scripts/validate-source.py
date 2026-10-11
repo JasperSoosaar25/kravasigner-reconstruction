@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Structural validation. This does not claim Xcode typechecking/build success."""
 from pathlib import Path
-import hashlib,json,plistlib,re,sys,xml.etree.ElementTree as ET
+import hashlib,json,plistlib,re,subprocess,sys,xml.etree.ElementTree as ET
 
 root=Path(__file__).resolve().parents[1]
 def require(condition,message):
@@ -38,9 +38,11 @@ for path in root.rglob('*'):
     if path.is_file() and not any(x in path.parts for x in ['private-signing-assets','.git','DerivedData-device','DerivedData-simulator','SourcePackages']):
         require(path.suffix not in ['.p12','.mobileprovision','.ipa'],f'Private/binary app input in source: {path.relative_to(root)}')
 manifest=json.loads((root/'docs/recovered-resources.json').read_text())
+tracked=set(subprocess.check_output(['git','ls-files'],cwd=root,text=True).splitlines()) if (root/'.git').exists() else None
 for row in manifest:
     data=(root/row['path']).read_bytes()
     require(hashlib.sha256(data).hexdigest()==row['sha256'],f'Recovered bytes changed: {row["path"]}')
+    if tracked is not None:require(row['path'] in tracked,f'Recovered file missing from git: {row["path"]}')
 coverage=json.loads((root/'docs/ipa-file-coverage.json').read_text())
 require(len(coverage['entries'])==coverage['zip_entries']==135,'Original archive coverage incomplete')
 require(len({x['ipa_path'] for x in coverage['entries']})==135,'Duplicate archive entry in coverage')
