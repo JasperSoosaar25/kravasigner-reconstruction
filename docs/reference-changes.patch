@@ -1,8 +1,229 @@
+diff --git a/.github/ISSUE_TEMPLATE/blank.yml b/.github/ISSUE_TEMPLATE/blank.yml
+index ec46a9d..7dc851c 100644
+--- a/.github/ISSUE_TEMPLATE/blank.yml
++++ b/.github/ISSUE_TEMPLATE/blank.yml
+@@ -1,26 +1,10 @@
+-name: Create Blank Issue
+-description: Blank issue report for Feather. Use this for anything other than a bug or feature request.
+-
++name: Question or discussion
++description: Ask about the code, building a fork or a contribution.
+ body:
+-  - type: markdown
+-    attributes:
+-      value: >-
+-        Make sure you read the [Code of
+-        Conduct](https://github.com/khcrysalis/Feather/blob/main/CODE_OF_CONDUCT.md)
+-        before making an issue, and make sure there aren't already the same bug
+-        reported.
+-
+   - type: textarea
+-    id: text
++    id: question
+     attributes:
+-      label: Content
++      label: Your question or topic
++      description: Please keep personal data and signing material private.
+     validations:
+       required: true
+-
+-  - type: checkboxes
+-    id: agreement
+-    attributes:
+-      label: Request Agreement
+-      options:
+-        - label: I have read the requirements for opening an issue above
+-          required: true
+diff --git a/.github/ISSUE_TEMPLATE/bug.yml b/.github/ISSUE_TEMPLATE/bug.yml
+index 69fc2fd..3c47af5 100644
+--- a/.github/ISSUE_TEMPLATE/bug.yml
++++ b/.github/ISSUE_TEMPLATE/bug.yml
+@@ -1,37 +1,38 @@
+-name: Create Bug Report
+-description: Report a bug or crash in Feather.
++name: Bug report
++description: Report a problem in this community reconstruction.
+ title: '[Bug] '
+-labels:
+-  - bug
+-
+ body:
+   - type: markdown
+     attributes:
+-      value: >-
+-        Make sure you read the [Code of
+-        Conduct](https://github.com/khcrysalis/Feather/blob/main/CODE_OF_CONDUCT.md)
+-        before making an issue, and make sure there aren't already the same bug
+-        reported.
+-
++      value: Please redact credentials and personal data. For sensitive security details, read SECURITY.md.
++  - type: input
++    id: version
++    attributes:
++      label: Commit or app version
++      placeholder: Commit SHA, development/baseline mode and build source
++    validations:
++      required: true
++  - type: input
++    id: environment
++    attributes:
++      label: Environment
++      placeholder: Device or simulator, iOS and Xcode version if relevant
++    validations:
++      required: true
+   - type: textarea
+-    id: text
++    id: reproduction
+     attributes:
+-      label: Report
++      label: Steps to reproduce
+     validations:
+       required: true
+-
+-  - type: checkboxes
+-    id: agreement
++  - type: textarea
++    id: behavior
+     attributes:
+-      label: Request Agreement
+-      options:
+-        - label: I have read the requirements for opening an issue above
+-          required: true
+-
+-  - type: checkboxes
+-    id: agreement2
++      label: Expected and actual behavior
++    validations:
++      required: true
++  - type: textarea
++    id: evidence
+     attributes:
+-      label: Contributor Checks
+-      options:
+-        - label: I am willing to attempt to make a pull request to fix this bug
+-          required: false
++      label: Redacted logs or screenshots
++      description: Do not attach signing keys, profiles, pairing records, private IPAs or tokens.
+diff --git a/.github/ISSUE_TEMPLATE/feature.yml b/.github/ISSUE_TEMPLATE/feature.yml
+index 3119bb0..dccdf69 100644
+--- a/.github/ISSUE_TEMPLATE/feature.yml
++++ b/.github/ISSUE_TEMPLATE/feature.yml
+@@ -1,37 +1,28 @@
+-name: Create Feature Request
+-description: Suggest a feature to be implemented to Feather.
++name: Feature idea
++description: Suggest an improvement or an idea for a fork.
+ title: '[Feature] '
+-labels:
+-  - enhancement
+-
+ body:
+-  - type: markdown
++  - type: textarea
++    id: problem
+     attributes:
+-      value: >-
+-        Make sure you read the [Code of
+-        Conduct](https://github.com/khcrysalis/Feather/blob/main/CODE_OF_CONDUCT.md)
+-        before making an issue, and make sure there aren't already the same bug
+-        reported.
+-
++      label: What would this help you do?
++    validations:
++      required: true
+   - type: textarea
+-    id: text
++    id: idea
+     attributes:
+-      label: Request
++      label: Proposed behavior
++      description: Include how a user would use it and what a good result looks like.
+     validations:
+       required: true
+-
+-  - type: checkboxes
+-    id: agreement
++  - type: textarea
++    id: alternatives
+     attributes:
+-      label: Request Agreement
+-      options:
+-        - label: I have read the requirements for opening an issue above
+-          required: true
+-
++      label: Alternatives or examples
+   - type: checkboxes
+-    id: agreement2
++    id: participation
+     attributes:
+-      label: Contributor Checks
++      label: Would you like to help?
+       options:
+-        - label: I am willing to attempt to make a pull request with these requested features
+-          required: false
+\ No newline at end of file
++        - label: I can try implementing this.
++        - label: I can help test or give feedback.
+diff --git a/.github/ISSUE_TEMPLATE/repo.yml b/.github/ISSUE_TEMPLATE/repo.yml
+index 80641b1..c0af4c9 100644
+--- a/.github/ISSUE_TEMPLATE/repo.yml
++++ b/.github/ISSUE_TEMPLATE/repo.yml
+@@ -1,43 +1,16 @@
+-name: Create Repo Support Request
+-description: Suggest a repository to be supported by Feather.
+-title: '[Repo Support] '
+-labels:
+-  - enhancement
+-
++name: Repository compatibility
++description: Report an app-source format or repository compatibility issue.
+ body:
+-  - type: markdown
+-    attributes:
+-      value: >-
+-        Make sure you read the [Code of
+-        Conduct](https://github.com/khcrysalis/Feather/blob/main/CODE_OF_CONDUCT.md)
+-        before making an issue, and make sure there aren't already the same bug
+-        reported.
+-
+-        When it comes to requesting a repository to be supported, please make sure to include any generator websites you may have used for these.
+-
+-        If possible link any reference guides you may have used when creating said repository.
+-
+-        If you haven't created the repository yourself but you want it to be supported, please do also link it below (only AltStore repositories will be used in Feather, no other repositories like you've seen in Scarlet, or APT repositories). 
+-
+   - type: input
+-    id: repo
++    id: source
+     attributes:
+-      label: Repository
+-      placeholder: AltStore repository or anything similar
++      label: Public repository URL or invented example
++      description: Do not include private access tokens or paid/private repository credentials.
+     validations:
+       required: true
+-
+   - type: textarea
+-    id: text
++    id: behavior
+     attributes:
+-      label: Request
++      label: Expected behavior and current result
+     validations:
+       required: true
+-
+-  - type: checkboxes
+-    id: agreement
+-    attributes:
+-      label: Request Agreement
+-      options:
+-        - label: I have read the requirements for opening an issue above
+-          required: true
 diff --git a/.gitignore b/.gitignore
-index eea17a7..8147697 100644
+index eea17a7..93100f8 100644
 --- a/.gitignore
 +++ b/.gitignore
-@@ -1,8 +1,21 @@
+@@ -1,8 +1,29 @@
  .DS_Store
  packages
 -Payload
@@ -18,13 +239,137 @@ index eea17a7..8147697 100644
 +private-signing-metadata/
 +*.ipa
 +*.p12
++*.pfx
++*.pem
++*.key
 +*.mobileprovision
++*.pairing
++*.pairingrecord
++/pairing-records/
++.env
++.env.*
 +DerivedData*/
 +artifacts/
 +.build/
 +SourcePackages/
 +__pycache__/
 +*.pyc
+diff --git a/CODE_OF_CONDUCT.md b/CODE_OF_CONDUCT.md
+index 3fee771..58d7be1 100644
+--- a/CODE_OF_CONDUCT.md
++++ b/CODE_OF_CONDUCT.md
+@@ -1,13 +1,10 @@
+ # Code of Conduct
+ 
+-Welcome to Feather's Code of Conduct! This document outlines essential guidelines and important information regarding interacting with the repository.
++This community welcomes newcomers and people with different levels of experience. Be respectful, explain your ideas clearly and give useful feedback about the work.
+ 
+-## Rules 
+-- **Be respectful** when interacting in issues or us in general.
+-  - This includes any comments that may be harmful to a specific individual or group of people.
+-  - This includes different opinions.
+-- **Give good criticsm!** Most issues and pull-requests will be noticed, if some are actually required we will do something about it.
+-- **No piracy**.
+-- **No trolling or spam**.
++- Critique code and behavior without insulting or harassing people.
++- Respect privacy. Do not post anyone's credentials, personal information or private app data.
++- Avoid spam, trolling, threats, discriminatory language and piracy.
++- Disagree constructively and give contributors room to learn.
+ 
+-Multiple violations of these rules could end up you being restricted from the repository.
+\ No newline at end of file
++Maintainers may edit or remove harmful content and restrict participation for repeated or serious violations. Use GitHub's reporting controls for abusive content. For security problems, follow [SECURITY.md](SECURITY.md).
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index f37f8a5..e3d450e 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -1,62 +1,36 @@
+-# Contributing
++# Contributing to KravaSigner reconstruction
+ 
+-Feather is a sideloading app meant to be used on stock versions, to keep compatibility we have to utililize stock features to keep it working. As such, we have specific contribution rules in place to maintain this and Feathers integrity.
++You can fork this project, add features, fix bugs, improve accessibility or translations, and send a pull request here. First-time contributors and small changes are welcome. This is an unofficial community reconstruction; see [recovery coverage](docs/RECOVERY-COVERAGE.md) for the parts that remain uncertain.
+ 
+-Any contributions should follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
++## Your first contribution
+ 
+-## Rules
++1. Fork [this repository](https://github.com/JasperSoosaar25/kravasigner-reconstruction/fork).
++2. Clone your fork. The local packages are included; recursive submodule cloning is unnecessary.
++3. Create a branch, for example `git switch -c feature/source-search`.
++4. Follow the [development guide](docs/DEVELOPMENT.md), make your change and run `bash scripts/check.sh development`.
++5. Build the app on macOS or run **Build KravaSigner** with mode **development** in your fork's Actions tab. Include what you tested and screenshots for visible UI changes.
++6. Commit, push your branch and open a pull request against this repository's `main` branch. Use the PR template to describe the problem and resulting behavior.
+ 
+-- **No usage of any exploits of any kind**.
+-- **No contributions related to retrieving any signing certificates owned by companies**.
+-- **Modifying any hardcoded links should be discussed before changing**.
+-- **If you're planning on making a large contribution, please [make an issue](https://github.com/khcrysalis/Feather) beforehand**.
+-- **Your contributions should be licensed appropriately**. 
+-  - Feather: GPLv3
+-  - AltSourceKit: MIT
+-  - NimbleKit: MIT 
+-  - Zsign: MIT
+-- **Typo contributions are okay**, just make sure they are appropriate.
+-  - This includes localizations
+-- **Code cleaning contributions are okay**.
++For a larger design, database change or change to installation/signing, open a feature issue first so people can agree on the direction. A small typo or isolated bug fix can go directly to a PR. There is no requirement to contribute to Feather before contributing here.
+ 
+-## Contributing to Feather
++## Development and audit builds
+ 
+-#### Compiling requirements
++**Development** is the default for Xcode, the build script and normal CI. It compiles editable artwork, translations, launch screen and database models. New types/properties and features are allowed; old compiled type equality is not a feature gate.
+ 
+-- Xcode 16.0
+-- Swift 6.0
+-- iOS 16.0
++**Baseline** is an explicit reconstruction audit. It restores the distributed original resources and compares the device executable's selected metadata with the original. Use `bash scripts/build.sh device baseline` or select baseline in Actions. Feature changes can intentionally fail that comparison. Do not edit the original snapshots to make a feature pass. Historical evidence remains historical.
+ 
+-1. Clone repository
+-    ```sh
+-    git clone https://github.com/khcrysalis/Feather --recursive
+-    ```
+-    - `Zsign` is a submodule, recursive is required.
++Keep `RecoveredResources/` and original evidence intact. Describe newly added behavior as new behavior. Evidence changes need a clear explanation and the input digest/method that supports them.
+ 
+-2. Opening with Xcode
+-    ```sh
+-    cd Feather && open Feather.xcworkspace
+-    ```
++## Review expectations
+ 
+-#### Localizations
+-- For localizations, you will need Xcode 15 or higher to edit the `Feather/Resources/Localizable.xcstrings` file, or some alternative software which allows you to edit an `.xcstrings` file. 
+-- We use a newer format for convenience, but at a cost of less accessibility when it comes to actually editing it.
+-  - **Disclaimer: do NOT edit by hand.**
+-- Some localizations were imported from V1, if they don't make sense please feel free to change them.
+-- After localizing, please have another person review your localizations (unless the owners have asked you personally to help translate). 
+-  - We want high quality localizations and have them actually make sense when in the application.
+-  - They will not be merged unless the latter was done.
++- Keep a PR focused and describe the visible behavior or failure it improves.
++- Use the existing SwiftUI and service/storage patterns; keep views readable and asynchronous network work off the main thread.
++- Check light/dark appearance, Dynamic Type, VoiceOver labels, loading/empty/error states and the supported iOS versions relevant to the change.
++- Add meaningful regression tests for behavior changes; avoid tests that merely repeat the implementation. Documentation-only changes need no new tests.
++- Treat certificate material, pairing records, tokens and user app data as private. Use invented fixtures. Do not upload private inputs in issues, PRs, logs or screenshots.
++- Preserve stock-iOS compatibility. Do not contribute exploits, piracy features or retrieval of signing credentials belonging to other people or organizations.
++- Preserve existing copyright/license notices. App changes and new project tooling are contributed under GPL-3.0; vendored package changes retain their package's license. You must have the right to contribute the content. See [NOTICE](NOTICE.md).
+ 
+-#### Making a pull request
++CI uses read-only repository permissions and no signing secrets. GitHub may ask a maintainer to approve a first-time fork's workflow run. Passing checks helps review; it does not automatically merge a PR.
+ 
+-- Make sure your contributions stay isolated in their own branch, and not `main`.
+-- When contributing don't be afraid of any reviewers requesting changes or judging how you wrote something, it's all to keep the project clean and tidy.
+-
+-## Contributing to Zsign
+-
+-When contributing to Zsign, head over to [khcrysalis/Zsign-Package](https://github.com/khcrysalis/Zsign-Package/tree/package) and make your contributions.
+-
+-Any contributions to here will be immediately updated to here, to keep things consistent.
+-
+-## Contributing to the wiki
+-- If you want to add a page or suggest edits, make an issue with your proposed changes.
++Please follow the [Code of Conduct](CODE_OF_CONDUCT.md). Ideas and friendly questions are welcome through the issue forms. Maintainers cannot promise a response time or acceptance of every proposal.
 diff --git a/Feather/Backend/Server/ServerInstaller+TLS.swift b/Feather/Backend/Server/ServerInstaller+TLS.swift
 index 14f720b..5dc3dd1 100644
 --- a/Feather/Backend/Server/ServerInstaller+TLS.swift
@@ -60837,10 +61182,10 @@ index 766cafb..192e76b 100644
  	}
  }
 diff --git a/Feather.xcconfig b/Feather.xcconfig
-index f3125e8..620a28f 100644
+index f3125e8..c2026a9 100644
 --- a/Feather.xcconfig
 +++ b/Feather.xcconfig
-@@ -6,7 +6,7 @@
+@@ -6,10 +6,13 @@
  //
  
  FEATHER_PROJECT_VERSION=2.8.2
@@ -60849,6 +61194,12 @@ index f3125e8..620a28f 100644
  FEATHER_DISAMBIGUATOR=${DEVELOPMENT_TEAM}
  
  AD_HOC_CODE_SIGNING_ALLOWED = YES
+ 
+ DEPLOYMENT_LOCATION = YES
+ DSTROOT = $(SRCROOT)/_build/
++
++// Feature work uses editable resources; audit builds override this on the CLI.
++KRAVA_BUILD_MODE = development
 diff --git a/Feather.xcodeproj/project.pbxproj b/Feather.xcodeproj/project.pbxproj
 index c938feb..e5fffe7 100644
 --- a/Feather.xcodeproj/project.pbxproj
@@ -61196,10 +61547,10 @@ index 700f153..7c10bb1
 +validate:
 +	python3 scripts/validate-source.py
 diff --git a/README.md b/README.md
-index 84d12cf..d5e96d2 100644
+index 84d12cf..d0267be 100644
 --- a/README.md
 +++ b/README.md
-@@ -1,74 +1,73 @@
+@@ -1,74 +1,86 @@
 -# Feather
 +# KravaSigner 2.8.2 — reconstructed source
  
@@ -61210,13 +61561,16 @@ index 84d12cf..d5e96d2 100644
 +This is an **unofficial reconstruction**, based on static analysis of the supplied KravaSigner IPA and the matching Feather release. It is not KravaSign's original official source, and it has not been certified as behaviorally identical. **Device and simulator source builds passed on GitHub Actions, and the simulator app launched successfully.** See `docs/BUILD-RESULTS.md` for the tested commit, artifacts and verification limits, and `docs/RECOVERY-COVERAGE.md` for exactly what was recovered.
  
 -This app allows you to install and manage applications contained in a single app, using certificate pairs and various installation techniques to allow apps to install to your device. This is an entirely stock application and uses built-in features to be able to do this!
-+The changes go beyond artwork: direct certificate/key downloads, automatic launch refresh, the `local.kravasign.com` installation host, the `kravasigner` URL handler, Settings changes, app metadata, cache identity, the orange #f97316 accent, original translations and full resource restoration. `docs/EVIDENCE.md` identifies their evidence and confidence. Most signing, repository, archive, database and installation code remains the pinned Feather reference because its original KravaSigner implementation cannot be recovered completely from this binary.
++## Fork it and add your ideas
  
 -<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="Images/Image-dark.png"><source media="(prefers-color-scheme: light)" srcset="Images/Image-light.png"><img alt="Feather" src="Images/Image-light.png"></picture></p>
-+The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed two reference-only source features: the recommended-repository list and GitHub star prompt. The device workflow now compares compiled app type names and stored-field names with all 106 recovered original descriptors. The corrected [Actions run 38126989899](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899) passed both source builds and simulator startup; a separate check of its downloaded device executable also found all 106 recovered type names and fields match. This checks bounded metadata agreement, not every original method or view body.
++You can fork this repository, build your own app and send improvements back here. Start with [the development guide](docs/DEVELOPMENT.md), [contribution steps](CONTRIBUTING.md) and [possible starting ideas](docs/ROADMAP.md). This is a community reconstruction with documented limits, not an official source release.
  
 -### Features
-+The continued audit in `docs/EXTENDED-STRUCTURE.md` checks field types, mutability, descriptor flags and recorded superclass types. Against the actual corrected device product, all 106 recovered types and 462 reflection records agree; 380 have nonempty type expressions and 82 are enum cases without a payload type. The full 98,071-byte reflection-name section also matches the original exactly. The device workflow now checks the stronger structure against an original metadata snapshot, without using the old executable as a build input. The stronger check and both builds passed in [run 38128927828](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38128927828), and the downloaded products passed independently. These are bounded structural checks; original function and UI bodies remain uncertain.
++```bash
++bash scripts/check.sh development
++bash scripts/build.sh simulator development  # macOS / Xcode 26.0.1
++```
  
 -- User friendly, and clean UI.
 -- Sign and install applications.
@@ -61229,15 +61583,13 @@ index 84d12cf..d5e96d2 100644
 -- Actively maintained: always ensuring most apps get installed properly.
 -- No tracking or analytics, ensuring user privacy.
 -- Of course, open source and free.
-+## Build
++On Windows, Linux or a phone, edit your fork and use **Actions → Build KravaSigner → Run workflow → development**. CI needs no signing secrets. The default development build compiles editable resources and permits new types, fields, colors and translations. **Baseline** is an optional historical audit that restores the original resources and checks selected binary metadata; it is not a gate for new features. See [NOTICE](NOTICE.md) for licenses, attribution and artwork/branding limits.
  
 -## Download
-+Use macOS with **Xcode 26.0.1** (iOS 26.0 SDK), matching the uploaded app's SDK generation. The shared workspace and scheme still have the names `Feather.xcworkspace` and `Feather`; their app product and Swift module are `KravaSigner`. Those project names acknowledge the reference project's origin.
++The changes go beyond artwork: direct certificate/key downloads, automatic launch refresh, the `local.kravasign.com` installation host, the `kravasigner` URL handler, Settings changes, app metadata, cache identity, the orange #f97316 accent, original translations and full resource restoration. `docs/EVIDENCE.md` identifies their evidence and confidence. Most signing, repository, archive, database and installation code remains the pinned Feather reference because its original KravaSigner implementation cannot be recovered completely from this binary.
  
 -Visit [releases](https://github.com/claration/Feather/releases) and get the latest `.ipa`.
-+```bash
-+bash scripts/build.sh device
-+```
++The independent follow-up audit in `docs/DOUBLE-CHECK.md` also found and removed two reference-only source features: the recommended-repository list and GitHub star prompt. The device workflow now compares compiled app type names and stored-field names with all 106 recovered original descriptors. The corrected [Actions run 38126989899](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38126989899) passed both source builds and simulator startup; a separate check of its downloaded device executable also found all 106 recovered type names and fields match. This checks bounded metadata agreement, not every original method or view body.
  
 -<a href="https://celloserenity.github.io/altdirect/?url=https://raw.githubusercontent.com/claration/Feather/refs/heads/main/app-repo.json" target="_blank">
 -   <img src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/AltSource_Blue.png?raw=true" alt="Add AltSource" width="200">
@@ -61245,31 +61597,29 @@ index 84d12cf..d5e96d2 100644
 -<a href="https://github.com/claration/Feather/releases/latest/download/Feather.ipa" target="_blank">
 -   <img src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/Download_Blue.png?raw=true" alt="Download .ipa" width="200">
 -</a>
-+The result is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
++The continued audit in `docs/EXTENDED-STRUCTURE.md` checks field types, mutability, descriptor flags and recorded superclass types. Against the actual corrected device product, all 106 recovered types and 462 reflection records agree; 380 have nonempty type expressions and 82 are enum cases without a payload type. The full 98,071-byte reflection-name section also matches the original exactly. The device workflow now checks the stronger structure against an original metadata snapshot, without using the old executable as a build input. The stronger check and both builds passed in [run 38128927828](https://github.com/JasperSoosaar25/kravasigner-reconstruction/actions/runs/38128927828), and the downloaded products passed independently. These are bounded structural checks; original function and UI bodies remain uncertain.
  
 -## How does it work?
-+```bash
-+bash scripts/build.sh simulator
-+bash scripts/simulator-smoke.sh
-+```
++## Build
  
 -Visit the [HOW IT WORKS](./HOW_IT_WORKS.md) page.
-+The simulator script installs and launches the app, checks that it remains alive after startup, and records a screenshot and logs. It does not establish real-device signing or installation reliability.
++Use macOS with **Xcode 26.0.1** (iOS 26.0 SDK), matching the uploaded app's SDK generation. The shared workspace and scheme still have the names `Feather.xcworkspace` and `Feather`; their app product and Swift module are `KravaSigner`. Those project names acknowledge the reference project's origin.
  
 -## Sponsors
-+The GitHub Actions workflow `.github/workflows/reconstruct.yml` runs these two jobs on `macos-15`, selects Xcode 26.0.1 explicitly, uses the dependency lockfiles, and saves logs, build-result bundles and generated artifacts. It runs on pushes to `main`, pull requests and manual dispatch. Action implementations are pinned to inspected commit SHAs. No releases are automatically published.
++```bash
++bash scripts/build.sh device baseline
++```
  
 -| Thanks to all my [sponsors](https://github.com/sponsors/claration)!! |
 -|:-:|
 -| <img src="https://raw.githubusercontent.com/claration/github-sponsor-graph/main/graph.png"> |
 -| _**"samara is cute" - Vendicated**_ |
-+## Local behavioral tests
++The result is `artifacts/KravaSigner-reconstructed-unsigned.ipa`. It needs an appropriate signing identity before installation on a physical device. This builds a new executable from source; the original executable is not packaged or used by the build.
  
 -## Star History
 +```bash
-+python3 scripts/validate-source.py
-+swiftc Feather/Utilities/TLSAssetDownloader.swift tests/TLSAssetDownloaderTests.swift -o /tmp/krava-tls-tests
-+/tmp/krava-tls-tests
++bash scripts/build.sh simulator baseline
++bash scripts/simulator-smoke.sh
 +```
  
 -<a href="https://star-history.com/#claration/Feather&Date">
@@ -61279,10 +61629,10 @@ index 84d12cf..d5e96d2 100644
 -   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=claration/Feather&type=Date" />
 - </picture>
 -</a>
-+These offline tests exercise the same reconstructed download helper used by the app: request order/policy, successful output, second-request failure, invalid UTF-8, and write failure. They use invented fixtures, not signing credentials or the live TLS endpoints. Linux Swift can run this helper; it cannot compile UIKit or launch the iOS app.
++The simulator script installs and launches the app, checks that it remains alive after startup, and records a screenshot and logs. It does not establish real-device signing or installation reliability.
  
 -## Acknowledgements
-+## Original resources and optional private inputs
++The GitHub Actions workflow `.github/workflows/reconstruct.yml` supports development (default) and baseline modes and runs these two jobs on `macos-15`, selects Xcode 26.0.1 explicitly, uses the dependency lockfiles, and saves logs, build-result bundles and generated artifacts. It runs on pushes to `main`, pull requests and manual dispatch. Action implementations are pinned to inspected commit SHAs. No releases are automatically published. Normal pushes and PRs use development mode; manually choose baseline for the original metadata comparisons.
  
 -- [Samara](https://github.com/claration) - The maker
 -- [idevice](https://github.com/jkcoxson/idevice) - Backend for builds with this included, used for communication with `installd`.
@@ -61293,15 +61643,29 @@ index 84d12cf..d5e96d2 100644
 -- [Nuke](https://github.com/kean/Nuke) - Image caching.
 -- [Asspp](https://github.com/Lakr233/Asspp) - Some code for setting up the http server.
 -- [plistserver](https://github.com/nekohaxx/plistserver) - Hosted on https://api.palera.in.
-+`RecoveredResources/Bundle/` contains the original runtime resources. The build restores all **66 files byte-for-byte**, including the compiled catalog, loose icons, launch NIBs, Core Data model, translations, Settings bundle, acknowledgements and privacy manifests. Another **21 metadata files** are retained for reference. `docs/ipa-file-coverage.json` and `.csv` account for all **135 archive entries**.
++## Local behavioral tests
  
 -## License 
-+All nine catalog bitmap renditions were decoded successfully; the six unique raster images are editable in `Feather/Resources/Assets.xcassets`, with light/dark/tinted icon entries. This recovers distributed pixels, not original vector/layer designer files. The original catalog is restored after compilation for exact runtime resource preservation. The default tint is the binary-observed orange **#f97316**; saved appearance preferences and iOS system colours still apply.
++```bash
++python3 scripts/validate-source.py --mode baseline
++swiftc Feather/Utilities/TLSAssetDownloader.swift tests/TLSAssetDownloaderTests.swift -o /tmp/krava-tls-tests
++/tmp/krava-tls-tests
++```
  
 -This project is licensed under the GPL-3.0 license. You can see the full details of the license [here](https://github.com/claration/Feather/blob/main/LICENSE). It's under this specific license because I wanted to make a project that is transparent to the user thats related to certificate paired sideloading, before this project there weren't any open source projects that filled in this gap.
-+The uploaded IPA included two default signing-asset folders. Their PKCS#12 keys, provisioning profiles and passwords are **excluded** from this source archive and repository. You can import your own certificates through the app. To recreate the bundled defaults locally from your own IPA:
++These offline tests exercise the same reconstructed download helper used by the app: request order/policy, successful output, second-request failure, invalid UTF-8, and write failure. They use invented fixtures, not signing credentials or the live TLS endpoints. Linux Swift can run this helper; it cannot compile UIKit or launch the iOS app.
  
 -By contributing to this project, you agree to license your code under the GPL-3.0 license as well (including agreeing to license exceptions), ensuring that your work, like all other contributions, remains freely accessible and open.
++## Original resources and optional private inputs
++
++`RecoveredResources/Bundle/` contains the original runtime resources. The build restores all **66 files byte-for-byte**, including the compiled catalog, loose icons, launch NIBs, Core Data model, translations, Settings bundle, acknowledgements and privacy manifests. Another **21 metadata files** are retained for reference. `docs/ipa-file-coverage.json` and `.csv` account for all **135 archive entries**.
++
++The original distributed `Feather.xcconfig` is now preserved separately at `RecoveredResources/Bundle/Feather.xcconfig`; the root config is editable for development.
++
++All nine catalog bitmap renditions were decoded successfully; the six unique raster images are editable in `Feather/Resources/Assets.xcassets`, with light/dark/tinted icon entries. This recovers distributed pixels, not original vector/layer designer files. The original catalog is restored after compilation for exact runtime resource preservation. The default tint is the binary-observed orange **#f97316**; saved appearance preferences and iOS system colours still apply.
++
++The uploaded IPA included two default signing-asset folders. Their PKCS#12 keys, provisioning profiles and passwords are **excluded** from this source archive and repository. You can import your own certificates through the app. To recreate the bundled defaults locally from your own IPA:
++
 +```bash
 +python3 scripts/import-private-signing-assets.py /path/to/KravaSigner.ipa
 +```

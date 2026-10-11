@@ -12,7 +12,15 @@ private-signing-assets/
 private-signing-metadata/
 *.ipa
 *.p12
+*.pfx
+*.pem
+*.key
 *.mobileprovision
+*.pairing
+*.pairingrecord
+/pairing-records/
+.env
+.env.*
 DerivedData*/
 artifacts/
 .build/

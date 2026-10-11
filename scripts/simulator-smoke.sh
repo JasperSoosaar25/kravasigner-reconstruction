@@ -5,7 +5,9 @@ device_id="$(xcrun simctl list devices available -j | python3 -c 'import json,sy
 xcrun simctl boot "$device_id" || test "$(xcrun simctl list devices -j | python3 -c 'import json,sys; ident=sys.argv[1]; print(next(x["state"] for items in json.load(sys.stdin)["devices"].values() for x in items if x["udid"]==ident))' "$device_id")" = Booted
 xcrun simctl bootstatus "$device_id" -b
 xcrun simctl install "$device_id" DerivedData-simulator/Build/Products/Release-iphonesimulator/KravaSigner.app
-launch_output="$(xcrun simctl launch --terminate-running-process "$device_id" com.kravasign.KravaSigner)"
+app_info=DerivedData-simulator/Build/Products/Release-iphonesimulator/KravaSigner.app/Info.plist
+bundle_id="$(python3 -c 'import plistlib,sys; print(plistlib.load(open(sys.argv[1],"rb"))["CFBundleIdentifier"])' "$app_info")"
+launch_output="$(xcrun simctl launch --terminate-running-process "$device_id" "$bundle_id")"
 echo "$launch_output" | tee artifacts/simulator-launch.log
 app_pid="${launch_output##*: }"
 [[ "$app_pid" =~ ^[0-9]+$ ]]

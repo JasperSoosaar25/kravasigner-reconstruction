@@ -560,7 +560,7 @@
     "kind": "preserved-reference"
   },
   {
-    "path": "Feather.xcconfig",
+    "path": "RecoveredResources/Bundle/Feather.xcconfig",
     "ipa_path": "Payload/KravaSigner.app/Feather.xcconfig",
     "sha256": "c30e33b39b4212eb10479b8da2028bf229404f533156ce9bc535decd6a8e5395",
     "size": 300,

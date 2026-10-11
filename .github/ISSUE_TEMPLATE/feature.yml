@@ -1,37 +1,28 @@
-name: Create Feature Request
-description: Suggest a feature to be implemented to Feather.
+name: Feature idea
+description: Suggest an improvement or an idea for a fork.
 title: '[Feature] '
-labels:
-  - enhancement
-
 body:
-  - type: markdown
-    attributes:
-      value: >-
-        Make sure you read the [Code of
-        Conduct](https://github.com/khcrysalis/Feather/blob/main/CODE_OF_CONDUCT.md)
-        before making an issue, and make sure there aren't already the same bug
-        reported.
-
   - type: textarea
-    id: text
+    id: problem
     attributes:
-      label: Request
+      label: What would this help you do?
     validations:
       required: true
-
-  - type: checkboxes
-    id: agreement
+  - type: textarea
+    id: idea
     attributes:
-      label: Request Agreement
-      options:
-        - label: I have read the requirements for opening an issue above
-          required: true
-
-  - type: checkboxes
-    id: agreement2
+      label: Proposed behavior
+      description: Include how a user would use it and what a good result looks like.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
     attributes:
-      label: Contributor Checks
+      label: Alternatives or examples
+  - type: checkboxes
+    id: participation
+    attributes:
+      label: Would you like to help?
       options:
-        - label: I am willing to attempt to make a pull request with these requested features
-          required: false
+        - label: I can try implementing this.
+        - label: I can help test or give feedback.

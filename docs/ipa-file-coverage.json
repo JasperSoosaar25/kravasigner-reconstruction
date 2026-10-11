@@ -968,7 +968,7 @@
       "ipa_path": "Payload/KravaSigner.app/Feather.xcconfig",
       "size": 300,
       "sha256": "c30e33b39b4212eb10479b8da2028bf229404f533156ce9bc535decd6a8e5395",
-      "source_path": "Feather.xcconfig",
+      "source_path": "RecoveredResources/Bundle/Feather.xcconfig",
       "built_path": "Feather.xcconfig",
       "disposition": "preserved-resource",
       "reason": "Exact distributed bytes restored after resource compilation"

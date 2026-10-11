@@ -13,3 +13,6 @@ AD_HOC_CODE_SIGNING_ALLOWED = YES
 
 DEPLOYMENT_LOCATION = YES
 DSTROOT = $(SRCROOT)/_build/
+
+// Feature work uses editable resources; audit builds override this on the CLI.
+KRAVA_BUILD_MODE = development

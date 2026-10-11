@@ -36,9 +36,7 @@ with zipfile.ZipFile(args.ipa) as archive:
                     stale = root/'RecoveredResources/Bundle'/relative
                     if stale.is_file(): stale.unlink()
                 else:
-                    if relative == 'Feather.xcconfig':
-                        target = root/'Feather.xcconfig'; built = relative
-                    elif relative == 'Info.plist' or (relative and (relative.startswith('Frameworks/') or '.bundle/' in relative) and relative.endswith('Info.plist')):
+                    if relative == 'Info.plist' or (relative and (relative.startswith('Frameworks/') or '.bundle/' in relative) and relative.endswith('Info.plist')):
                         target = root/'RecoveredResources/Reference'/relative; built = None
                     elif relative:
                         target = root/'RecoveredResources/Bundle'/relative; built = relative
@@ -59,6 +57,6 @@ audit = {'ipa_sha256': hashlib.sha256(args.ipa.read_bytes()).hexdigest(),
 (root/'docs/ipa-file-coverage.json').write_text(json.dumps(audit, indent=2)+'\n')
 (root/'docs/recovered-resources.json').write_text(json.dumps(resources, indent=2)+'\n')
 with (root/'docs/ipa-file-coverage.csv').open('w', newline='') as f:
-    writer = csv.DictWriter(f, fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)
+    writer = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator='\n'); writer.writeheader(); writer.writerows(rows)
 print(f'PASS all {len(rows)} archive entries accounted for: {summary}')
 print(f'PASS {len(resources)} exact resource/reference files recovered; no credentials or old executable exported')

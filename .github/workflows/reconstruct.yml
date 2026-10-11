@@ -1,13 +1,27 @@
-name: Build reconstructed KravaSigner
+name: Build KravaSigner
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Development accepts new features; baseline compares with the original app
+        required: true
+        default: development
+        type: choice
+        options: [development, baseline]
   push:
     branches: [main]
   pull_request:
 
 permissions:
   contents: read
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  KRAVA_BUILD_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'development' }}
 
 jobs:
   ios:
@@ -27,21 +41,22 @@ jobs:
           xcodebuild -version
       - name: Validate source and test reconstructed TLS behavior
         run: |
-          python3 scripts/validate-source.py
+          python3 scripts/validate-source.py --mode "$KRAVA_BUILD_MODE"
+          python3 tests/BuildModesTests.py
           mkdir -p artifacts
           swiftc Feather/Utilities/TLSAssetDownloader.swift tests/TLSAssetDownloaderTests.swift -o /tmp/krava-tls-tests
           /tmp/krava-tls-tests | tee artifacts/tls-tests.log
       - name: Build from source
-        run: bash scripts/build.sh '${{ matrix.platform }}'
+        run: bash scripts/build.sh '${{ matrix.platform }}' "$KRAVA_BUILD_MODE"
       - name: Compare compiled app type metadata with the original
-        if: matrix.platform == 'device'
+        if: matrix.platform == 'device' && env.KRAVA_BUILD_MODE == 'baseline'
         run: >-
           python3 scripts/inspect-swift-metadata.py
           DerivedData-device/Build/Products/Release-iphoneos/KravaSigner.app/KravaSigner
           --reference docs/evidence/swift-types.json
           --output artifacts/swift-metadata-device.json
       - name: Compare recovered field types, flags and superclass references
-        if: matrix.platform == 'device'
+        if: matrix.platform == 'device' && env.KRAVA_BUILD_MODE == 'baseline'
         run: >-
           python3 scripts/compare-swift-structure.py
           docs/evidence/original-swift-structure.json
@@ -54,7 +69,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: kravasigner-${{ matrix.platform }}-${{ github.sha }}
+          name: kravasigner-${{ env.KRAVA_BUILD_MODE }}-${{ matrix.platform }}-${{ github.sha }}
           path: |
             artifacts/
             DerivedData-simulator/Build/Products/Release-iphonesimulator/KravaSigner.app

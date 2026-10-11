@@ -1,37 +1,38 @@
-name: Create Bug Report
-description: Report a bug or crash in Feather.
+name: Bug report
+description: Report a problem in this community reconstruction.
 title: '[Bug] '
-labels:
-  - bug
-
 body:
   - type: markdown
     attributes:
-      value: >-
-        Make sure you read the [Code of
-        Conduct](https://github.com/khcrysalis/Feather/blob/main/CODE_OF_CONDUCT.md)
-        before making an issue, and make sure there aren't already the same bug
-        reported.
-
-  - type: textarea
-    id: text
+      value: Please redact credentials and personal data. For sensitive security details, read SECURITY.md.
+  - type: input
+    id: version
     attributes:
-      label: Report
+      label: Commit or app version
+      placeholder: Commit SHA, development/baseline mode and build source
     validations:
       required: true
-
-  - type: checkboxes
-    id: agreement
+  - type: input
+    id: environment
     attributes:
-      label: Request Agreement
-      options:
-        - label: I have read the requirements for opening an issue above
-          required: true
-
-  - type: checkboxes
-    id: agreement2
+      label: Environment
+      placeholder: Device or simulator, iOS and Xcode version if relevant
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
     attributes:
-      label: Contributor Checks
-      options:
-        - label: I am willing to attempt to make a pull request to fix this bug
-          required: false
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted logs or screenshots
+      description: Do not attach signing keys, profiles, pairing records, private IPAs or tokens.
