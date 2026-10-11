@@ -1,0 +1,27 @@
+name: BitByteData, nameSpecified: BitByteData, owner: tsolomko, version: 2.0.4, source: https://github.com/tsolomko/BitByteData
+
+name: Nuke, nameSpecified: Nuke, owner: kean, version: 12.8.0, source: https://github.com/kean/Nuke
+
+name: SWCompression, nameSpecified: SWCompression, owner: tsolomko, version: 4.8.6, source: https://github.com/tsolomko/SWCompression
+
+name: vapor, nameSpecified: vapor, owner: vapor, version: 4.104.0, source: https://github.com/vapor/vapor
+
+name: Zip, nameSpecified: Zip, owner: marmelroy, version: 2.1.2, source: https://github.com/marmelroy/Zip
+
+name: ElleKit, nameSpecified: , version: 
+body: Copyright (c) 2022 É…
+
+name: idevice, nameSpecified: , version: 
+body: MIT…
+
+name: LiveContainer, nameSpecified: , version: 
+body:                     …
+
+name: Zsign, nameSpecified: , version: 
+body: MIT License
+
+Copyrig…
+
+add-version-numbers: false
+
+LicensePlist Version: 3.27.1

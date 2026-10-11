@@ -1,0 +1,48 @@
+name: Build reconstructed KravaSigner
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  ios:
+    name: iOS ${{ matrix.platform }}
+    runs-on: macos-15
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [device, simulator]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Select Xcode 26.0.1
+        run: |
+          test -d /Applications/Xcode_26.0.1.app
+          sudo xcode-select -s /Applications/Xcode_26.0.1.app/Contents/Developer
+          xcodebuild -version
+      - name: Validate source and test reconstructed TLS behavior
+        run: |
+          python3 scripts/validate-source.py
+          mkdir -p artifacts
+          swiftc Feather/Utilities/TLSAssetDownloader.swift tests/TLSAssetDownloaderTests.swift -o /tmp/krava-tls-tests
+          /tmp/krava-tls-tests | tee artifacts/tls-tests.log
+      - name: Build from source
+        run: bash scripts/build.sh '${{ matrix.platform }}'
+      - name: Launch app in iOS Simulator
+        if: matrix.platform == 'simulator'
+        run: bash scripts/simulator-smoke.sh
+      - name: Save build logs, results and app
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: kravasigner-${{ matrix.platform }}-${{ github.sha }}
+          path: |
+            artifacts/
+            DerivedData-simulator/Build/Products/Release-iphonesimulator/KravaSigner.app
+          if-no-files-found: warn
+          retention-days: 14

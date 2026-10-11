@@ -1,0 +1,3 @@
+PASS metadata, URL handler, TLS wiring, lockfiles and recovered resource hashes
+PASS credential exclusion and self-contained local package inputs
+Structural checks passed; Xcode compilation is a separate check.

@@ -1,0 +1,453 @@
+[
+  {
+    "locale": "ar",
+    "count": 268,
+    "missing_keys": [
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "يدعم الاستيراد من KravaSign/MapleSign و ESign."
+      }
+    ],
+    "changed_values": []
+  },
+  {
+    "locale": "cs",
+    "count": 157,
+    "missing_keys": [
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Podporuje import z Feather a ESign"
+      }
+    ],
+    "changed_values": []
+  },
+  {
+    "locale": "de",
+    "count": 230,
+    "missing_keys": [
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Unterstützt das importieren via Feather und ESign."
+      }
+    ],
+    "changed_values": []
+  },
+  {
+    "locale": "en",
+    "count": 271,
+    "missing_keys": [
+      {
+        "key": "Change Nickname",
+        "reference": null,
+        "original": "Change Nickname"
+      },
+      {
+        "key": "Less",
+        "reference": null,
+        "original": "Less"
+      },
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Supports importing from Feather and ESign."
+      }
+    ],
+    "changed_values": []
+  },
+  {
+    "locale": "es",
+    "count": 38,
+    "missing_keys": [],
+    "changed_values": []
+  },
+  {
+    "locale": "fr",
+    "count": 39,
+    "missing_keys": [],
+    "changed_values": []
+  },
+  {
+    "locale": "id",
+    "count": 163,
+    "missing_keys": [
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Mendukung impor dari Feather dan ESign"
+      }
+    ],
+    "changed_values": []
+  },
+  {
+    "locale": "it",
+    "count": 233,
+    "missing_keys": [
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Suporta l’importazione da Feather e ESign."
+      }
+    ],
+    "changed_values": []
+  },
+  {
+    "locale": "pl",
+    "count": 269,
+    "missing_keys": [
+      {
+        "key": "Change Nickname",
+        "reference": null,
+        "original": "Zmień nazwę"
+      },
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Obsługuje importowanie z Feather i ESign"
+      }
+    ],
+    "changed_values": [
+      {
+        "key": "Inject into Extensions",
+        "reference": null,
+        "original": "Załaduj do rozszerzeń"
+      }
+    ]
+  },
+  {
+    "locale": "ru",
+    "count": 39,
+    "missing_keys": [],
+    "changed_values": []
+  },
+  {
+    "locale": "tr",
+    "count": 273,
+    "missing_keys": [
+      {
+        "key": "Change Nickname",
+        "reference": null,
+        "original": "Takma Adı Değiştir"
+      },
+      {
+        "key": "Less",
+        "reference": null,
+        "original": "Daha Az"
+      },
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Feather ve ESign’den içe aktarmayı destekler"
+      }
+    ],
+    "changed_values": [
+      {
+        "key": "%lld required system dylibs not shown.",
+        "reference": "%lld gerekli sistem dylib kütüphanesi gösterilmiyor.",
+        "original": "%lld gerekli sistem dylib kütüphanesi gizlendi."
+      },
+      {
+        "key": "Add and manage certificates used for signing applications.",
+        "reference": null,
+        "original": "Uygulamaları imzalamak için kullanılan sertifikaları ekleyin ve yönetin."
+      },
+      {
+        "key": "Advanced Installation Method",
+        "reference": null,
+        "original": "Gelişmiş Kurulum Yöntemi"
+      },
+      {
+        "key": "An awesome application",
+        "reference": "Harika bir uygulama.",
+        "original": "Harika bir uygulama"
+      },
+      {
+        "key": "Certificates updated successfully.",
+        "reference": null,
+        "original": "Sertifikalar başarıyla güncellendi."
+      },
+      {
+        "key": "Check Revokage",
+        "reference": "İptal Kontrolü",
+        "original": "Sertifika İptal Kontrolü"
+      },
+      {
+        "key": "Choose from Files",
+        "reference": "Dosyalar’dan Seç",
+        "original": "Dosyalardan Seç"
+      },
+      {
+        "key": "Choose from Photos",
+        "reference": "Fotoğraflar’dan Seç",
+        "original": "Fotoğraflardan Seç"
+      },
+      {
+        "key": "Copy Download URLs",
+        "reference": "İndirme URL’sini Kopyala",
+        "original": "İndirme URL’lerini Kopyala"
+      },
+      {
+        "key": "Custom Theme Color",
+        "reference": null,
+        "original": "Özel Tema Rengi"
+      },
+      {
+        "key": "Display Names",
+        "reference": "Görünen Ad",
+        "original": "Görünen Adlar"
+      },
+      {
+        "key": "Dynamic Icons",
+        "reference": null,
+        "original": "Dinamik Simgeler"
+      },
+      {
+        "key": "Export",
+        "reference": "Dışarı Aktar",
+        "original": "Dışa Aktar"
+      },
+      {
+        "key": "Failed to download, check your internet connection and try again.",
+        "reference": "İndirme sırasında hata oluştu, internet bağlantınızı kontrol edip tekrar deneyin.",
+        "original": "İndirme başarısız oldu. İnternet bağlantınızı kontrol edip tekrar deneyin."
+      },
+      {
+        "key": "Inject into Extensions",
+        "reference": null,
+        "original": "Uzantılara Dahil Et"
+      },
+      {
+        "key": "Injection Folder",
+        "reference": "Enjeksiyon Klasörü",
+        "original": "Ekleme Konumu"
+      },
+      {
+        "key": "Injection Path",
+        "reference": "Enjeksiyon Yolu",
+        "original": "Ekleme Yolu"
+      },
+      {
+        "key": "Install After Signing",
+        "reference": null,
+        "original": "İmzaladıktan Sonra Yükle"
+      },
+      {
+        "key": "Installation Type",
+        "reference": "Yükleme Türü",
+        "original": "Kurulum Türü"
+      },
+      {
+        "key": "Join Us on Discord",
+        "reference": null,
+        "original": "Discord’da Bize Katılın"
+      },
+      {
+        "key": "No Repositories",
+        "reference": "Depor Yok",
+        "original": "Depo Yok"
+      },
+      {
+        "key": "No files chosen.",
+        "reference": "Hiçbir Dosya seçilmedi.",
+        "original": "Hiçbir dosya seçilmedi."
+      },
+      {
+        "key": "No pairing file found, please import it.",
+        "reference": "Eşleştirme dosyası bulunamadı, lütfen içe aktarın.",
+        "original": "Eşleştirme dosyası bulunamadı. Lütfen içe aktarın."
+      },
+      {
+        "key": "No sources to copy",
+        "reference": null,
+        "original": "Kopyalanacak kaynak yok"
+      },
+      {
+        "key": "Pro Motion",
+        "reference": null,
+        "original": "Pro Motion"
+      },
+      {
+        "key": "Restart Heartbeat",
+        "reference": "Heartbeat’ı Sıfırla",
+        "original": "Heartbeat’i Yeniden Başlat"
+      },
+      {
+        "key": "Sources copied to clipboard",
+        "reference": null,
+        "original": "Kaynaklar panoya kopyalandı"
+      },
+      {
+        "key": "Switch Back",
+        "reference": null,
+        "original": "Geri Dön"
+      },
+      {
+        "key": "Tinted Icons",
+        "reference": null,
+        "original": "Renklendirilmiş Simgeler"
+      },
+      {
+        "key": "Tweaks",
+        "reference": null,
+        "original": "Yamalar"
+      },
+      {
+        "key": "URL",
+        "reference": null,
+        "original": "URL"
+      },
+      {
+        "key": "What's New",
+        "reference": "Neler Yeni",
+        "original": "Yenilikler"
+      },
+      {
+        "key": "Your pairing file is invalid and is incompatible with your device, please import a valid pairing file.",
+        "reference": "Eşleştirme dosyanız geçersiz ve cihazınızla uyumlu değil, lütfen geçerli bir eşleştirme dosyası içe aktarın.",
+        "original": "Eşleştirme dosyanız geçersiz ve cihazınızla uyumlu değil. Lütfen geçerli bir eşleştirme dosyası içe aktarın."
+      },
+      {
+        "key": "idevice",
+        "reference": null,
+        "original": "idevice"
+      },
+      {
+        "key": "idevice warning",
+        "reference": null,
+        "original": "Bu kurulum yöntemi yalnızca ileri düzey kullanıcılar içindir!\n\nBilgisayarınız üzerinden alınmış bir eşleştirme dosyası ve VPN gerektirir.\n\nSunucu kurulum yöntemine geri dönmeniz önerilir."
+      }
+    ]
+  },
+  {
+    "locale": "vi",
+    "count": 268,
+    "missing_keys": [
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "Hỗ trợ nhập từ Feather và ESign"
+      }
+    ],
+    "changed_values": []
+  },
+  {
+    "locale": "zh-Hans",
+    "count": 272,
+    "missing_keys": [
+      {
+        "key": "Change Nickname",
+        "reference": null,
+        "original": "修改昵称"
+      },
+      {
+        "key": "Supports importing from Feather and ESign.",
+        "reference": null,
+        "original": "支持通过Feather和ESign导入。"
+      }
+    ],
+    "changed_values": [
+      {
+        "key": "Add and manage certificates used for signing applications.",
+        "reference": null,
+        "original": "添加和管理用于签名应用的证书。"
+      },
+      {
+        "key": "Advanced Installation Method",
+        "reference": null,
+        "original": "高级安装方式"
+      },
+      {
+        "key": "Certificates updated successfully.",
+        "reference": null,
+        "original": "证书更新成功。"
+      },
+      {
+        "key": "Custom Theme Color",
+        "reference": null,
+        "original": "自定义主题颜色"
+      },
+      {
+        "key": "Dylibs",
+        "reference": null,
+        "original": "插件动态库"
+      },
+      {
+        "key": "Dynamic Icons",
+        "reference": null,
+        "original": "动态图标"
+      },
+      {
+        "key": "Enable Liquid Glass",
+        "reference": "启用Liquid Glass",
+        "original": "启用液态玻璃"
+      },
+      {
+        "key": "GitHub Repository",
+        "reference": "GitHub Repo",
+        "original": "GitHub仓库"
+      },
+      {
+        "key": "Go to our GitHub and give us a star!",
+        "reference": "来我们的GitHub添加星标！",
+        "original": "来我们的GitHub仓库添加星标！"
+      },
+      {
+        "key": "Inject into Extensions",
+        "reference": null,
+        "original": "注入到扩展"
+      },
+      {
+        "key": "Join Us on Discord",
+        "reference": null,
+        "original": "加入我们的Discord"
+      },
+      {
+        "key": "No sources to copy",
+        "reference": null,
+        "original": "没有可复制的软件源"
+      },
+      {
+        "key": "Pro Motion",
+        "reference": null,
+        "original": "Pro Motion"
+      },
+      {
+        "key": "Sources copied to clipboard",
+        "reference": null,
+        "original": "软件源已复制到剪贴板"
+      },
+      {
+        "key": "Switch Back",
+        "reference": null,
+        "original": "切换回去"
+      },
+      {
+        "key": "Tinted Icons",
+        "reference": null,
+        "original": "彩色图标"
+      },
+      {
+        "key": "Tweaks",
+        "reference": null,
+        "original": "插件"
+      },
+      {
+        "key": "URL",
+        "reference": null,
+        "original": "网址"
+      },
+      {
+        "key": "idevice",
+        "reference": null,
+        "original": "idevice"
+      },
+      {
+        "key": "idevice warning",
+        "reference": null,
+        "original": "此安装方式仅适用于高级用户！\n\n需要VPN和来自电脑的配对文件。\n\n建议您返回服务器安装方式。"
+      }
+    ]
+  }
+]

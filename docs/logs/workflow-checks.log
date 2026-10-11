@@ -1,0 +1,4 @@
+bash -n: all three shell scripts passed.
+Workflow YAML: push/manual/PR triggers, read-only permissions, device/simulator matrix passed.
+Action refs inspected and pinned.
+Not executed on GitHub.

@@ -1,0 +1,5 @@
+PASS successful paired download and exact request policy
+PASS second download failure leaves files untouched
+PASS invalid UTF-8 leaves files untouched
+PASS filesystem failure propagates
+4 TLS behavior tests passed

@@ -1,0 +1,152 @@
+{
+  "Imported": {
+    "class": "Imported",
+    "attributes": {
+      "source": {
+        "type": "URI",
+        "optional": true
+      },
+      "uuid": {
+        "type": "String",
+        "optional": false
+      },
+      "identifier": {
+        "type": "String",
+        "optional": false
+      },
+      "version": {
+        "type": "String",
+        "optional": false
+      },
+      "date": {
+        "type": "Date",
+        "optional": false
+      },
+      "icon": {
+        "type": "String",
+        "optional": true
+      },
+      "name": {
+        "type": "String",
+        "optional": false
+      }
+    },
+    "relationships": {}
+  },
+  "AltSource": {
+    "class": "AltSource",
+    "attributes": {
+      "iconURL": {
+        "type": "URI",
+        "optional": true
+      },
+      "sourceURL": {
+        "type": "URI",
+        "optional": true
+      },
+      "identifier": {
+        "type": "String",
+        "optional": false
+      },
+      "name": {
+        "type": "String",
+        "optional": true
+      },
+      "date": {
+        "type": "Date",
+        "optional": false
+      }
+    },
+    "relationships": {}
+  },
+  "CertificatePair": {
+    "class": "CertificatePair",
+    "attributes": {
+      "password": {
+        "type": "String",
+        "optional": true
+      },
+      "ppQCheck": {
+        "type": "Boolean",
+        "optional": false
+      },
+      "nickname": {
+        "type": "String",
+        "optional": true
+      },
+      "date": {
+        "type": "Date",
+        "optional": false
+      },
+      "isDefault": {
+        "type": "Boolean",
+        "optional": true
+      },
+      "uuid": {
+        "type": "String",
+        "optional": false
+      },
+      "revoked": {
+        "type": "Boolean",
+        "optional": true
+      },
+      "expiration": {
+        "type": "Date",
+        "optional": false
+      }
+    },
+    "relationships": {
+      "signedApps": {
+        "optional": true,
+        "destination": "Signed",
+        "inverse": "certificate",
+        "deleteRule": 1,
+        "minCount": 0,
+        "maxCount": 0
+      }
+    }
+  },
+  "Signed": {
+    "class": "Signed",
+    "attributes": {
+      "source": {
+        "type": "URI",
+        "optional": true
+      },
+      "uuid": {
+        "type": "String",
+        "optional": false
+      },
+      "identifier": {
+        "type": "String",
+        "optional": false
+      },
+      "version": {
+        "type": "String",
+        "optional": false
+      },
+      "date": {
+        "type": "Date",
+        "optional": false
+      },
+      "icon": {
+        "type": "String",
+        "optional": true
+      },
+      "name": {
+        "type": "String",
+        "optional": false
+      }
+    },
+    "relationships": {
+      "certificate": {
+        "optional": true,
+        "destination": "CertificatePair",
+        "inverse": "signedApps",
+        "deleteRule": 1,
+        "minCount": 0,
+        "maxCount": 1
+      }
+    }
+  }
+}

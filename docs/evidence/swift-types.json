@@ -1,0 +1,4434 @@
+{
+  "types": [
+    {
+      "name": "KravaSigner.Download",
+      "kind": "class",
+      "descriptor": "0x100e6583c",
+      "metadata_access_function": "0x100009634",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_progress",
+          "type_reference_address": "0x100e85ea4",
+          "flags": 2
+        },
+        {
+          "name": "_bytesDownloaded",
+          "type_reference_address": "0x100e85eae",
+          "flags": 2
+        },
+        {
+          "name": "_totalBytes",
+          "type_reference_address": "0x100e85eae",
+          "flags": 2
+        },
+        {
+          "name": "_unpackageProgress",
+          "type_reference_address": "0x100e85ea4",
+          "flags": 2
+        },
+        {
+          "name": "task",
+          "type_reference_address": "0x100e85ebc",
+          "flags": 2
+        },
+        {
+          "name": "resumeData",
+          "type_reference_address": "0x100e85edc",
+          "flags": 2
+        },
+        {
+          "name": "id",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "url",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 0
+        },
+        {
+          "name": "fileName",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "onlyArchiving",
+          "type_reference_address": "0x100e90840",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadManager",
+      "kind": "class",
+      "descriptor": "0x100e6597c",
+      "metadata_access_function": "0x10000974c",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_downloads",
+          "type_reference_address": "0x100e85f0c",
+          "flags": 2
+        },
+        {
+          "name": "_session",
+          "type_reference_address": "0x100e85f1e",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.OptionsManager",
+      "kind": "class",
+      "descriptor": "0x100e65b68",
+      "metadata_access_function": "0x10000a980",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e8608e",
+          "flags": 2
+        },
+        {
+          "name": "_key",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options",
+      "kind": "struct",
+      "descriptor": "0x100e65c10",
+      "metadata_access_function": "0x10000aa20",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "appName",
+          "type_reference_address": "0x100e860ca",
+          "flags": 2
+        },
+        {
+          "name": "appVersion",
+          "type_reference_address": "0x100e860ca",
+          "flags": 2
+        },
+        {
+          "name": "appIdentifier",
+          "type_reference_address": "0x100e860ca",
+          "flags": 2
+        },
+        {
+          "name": "appEntitlementsFile",
+          "type_reference_address": "0x100e85fc4",
+          "flags": 2
+        },
+        {
+          "name": "appAppearance",
+          "type_reference_address": "0x100e860d0",
+          "flags": 2
+        },
+        {
+          "name": "minimumAppRequirement",
+          "type_reference_address": "0x100e860d6",
+          "flags": 2
+        },
+        {
+          "name": "signingOption",
+          "type_reference_address": "0x100e90a20",
+          "flags": 2
+        },
+        {
+          "name": "injectPath",
+          "type_reference_address": "0x100e860dc",
+          "flags": 2
+        },
+        {
+          "name": "injectFolder",
+          "type_reference_address": "0x100e860e2",
+          "flags": 2
+        },
+        {
+          "name": "ppqString",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "ppqProtection",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "dynamicProtection",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "identifiers",
+          "type_reference_address": "0x100e860e8",
+          "flags": 2
+        },
+        {
+          "name": "displayNames",
+          "type_reference_address": "0x100e860e8",
+          "flags": 2
+        },
+        {
+          "name": "injectionFiles",
+          "type_reference_address": "0x100e860f0",
+          "flags": 2
+        },
+        {
+          "name": "disInjectionFiles",
+          "type_reference_address": "0x100e860fa",
+          "flags": 2
+        },
+        {
+          "name": "removeFiles",
+          "type_reference_address": "0x100e860fa",
+          "flags": 2
+        },
+        {
+          "name": "fileSharing",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "itunesFileSharing",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "proMotion",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "gameMode",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "ipadFullscreen",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "removeURLScheme",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "removeProvisioning",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "changeLanguageFilesForCustomDisplayName",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "injectIntoExtensions",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "experiment_supportLiquidGlass",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "experiment_replaceSubstrateWithEllekit",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "post_installAppAfterSigned",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "post_deleteAppAfterSigned",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.<context:2>.CodingKeys",
+      "kind": "enum",
+      "descriptor": "0x100e65c40",
+      "metadata_access_function": "0x10000ff94",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "appName",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "appVersion",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "appIdentifier",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "appEntitlementsFile",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "appAppearance",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "minimumAppRequirement",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "signingOption",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "injectPath",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "injectFolder",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "ppqString",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "ppqProtection",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "dynamicProtection",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "identifiers",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "displayNames",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "injectionFiles",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "disInjectionFiles",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "removeFiles",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "fileSharing",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "itunesFileSharing",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "proMotion",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "gameMode",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "ipadFullscreen",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "removeURLScheme",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "removeProvisioning",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "changeLanguageFilesForCustomDisplayName",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "injectIntoExtensions",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "experiment_supportLiquidGlass",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "experiment_replaceSubstrateWithEllekit",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "post_installAppAfterSigned",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "post_deleteAppAfterSigned",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.InjectFolder",
+      "kind": "enum",
+      "descriptor": "0x100e65c5c",
+      "metadata_access_function": "0x10000ffa4",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "root",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "frameworks",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.InjectPath",
+      "kind": "enum",
+      "descriptor": "0x100e65c78",
+      "metadata_access_function": "0x10000ffc8",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "executable_path",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "rpath",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.SigningOption",
+      "kind": "enum",
+      "descriptor": "0x100e65c94",
+      "metadata_access_function": "0x100010118",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "default",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "onlyModify",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.MinimumAppRequirement",
+      "kind": "enum",
+      "descriptor": "0x100e65cb0",
+      "metadata_access_function": "0x100010268",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "default",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "v16",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "v15",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "v14",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "v13",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "v12",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Options.AppAppearance",
+      "kind": "enum",
+      "descriptor": "0x100e65ccc",
+      "metadata_access_function": "0x1000103b8",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "default",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "light",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "dark",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ServerInstaller",
+      "kind": "class",
+      "descriptor": "0x100e65ce8",
+      "metadata_access_function": "0x100011708",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "id",
+          "type_reference_address": "0x100e861fa",
+          "flags": 0
+        },
+        {
+          "name": "port",
+          "type_reference_address": "0x100e86200",
+          "flags": 0
+        },
+        {
+          "name": "_needsShutdown",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "packageUrl",
+          "type_reference_address": "0x100e85fc4",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_viewModel",
+          "type_reference_address": "0x100e8620c",
+          "flags": 2
+        },
+        {
+          "name": "_server",
+          "type_reference_address": "0x100e8621a",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Storage",
+      "kind": "class",
+      "descriptor": "0x100e65de0",
+      "metadata_access_function": "0x100015b88",
+      "flags": "0x80000050",
+      "fields": [
+        {
+          "name": "container",
+          "type_reference_address": "0x100e86310",
+          "flags": 0
+        },
+        {
+          "name": "_name",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AnyApp",
+      "kind": "struct",
+      "descriptor": "0x100e65e6c",
+      "metadata_access_function": "0x100017c24",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "base",
+          "type_reference_address": "0x100e86204",
+          "flags": 0
+        },
+        {
+          "name": "archive",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ARFileModel",
+      "kind": "struct",
+      "descriptor": "0x100e65e88",
+      "metadata_access_function": "0x1000197dc",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "name",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "modificationDate",
+          "type_reference_address": "0x100e86420",
+          "flags": 2
+        },
+        {
+          "name": "ownerId",
+          "type_reference_address": "0x100e86200",
+          "flags": 2
+        },
+        {
+          "name": "groupId",
+          "type_reference_address": "0x100e86200",
+          "flags": 2
+        },
+        {
+          "name": "mode",
+          "type_reference_address": "0x100e86200",
+          "flags": 2
+        },
+        {
+          "name": "size",
+          "type_reference_address": "0x100e86200",
+          "flags": 2
+        },
+        {
+          "name": "content",
+          "type_reference_address": "0x100e86426",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AR",
+      "kind": "class",
+      "descriptor": "0x100e65eb0",
+      "metadata_access_function": "0x10001b1c0",
+      "flags": "0x80000050",
+      "fields": [
+        {
+          "name": "_data",
+          "type_reference_address": "0x100e86426",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ARError",
+      "kind": "enum",
+      "descriptor": "0x100e65f1c",
+      "metadata_access_function": "0x10001be94",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "badArchive",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Certificate",
+      "kind": "struct",
+      "descriptor": "0x100e65f38",
+      "metadata_access_function": "0x10001d130",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "AppIDName",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "ApplicationIdentifierPrefix",
+          "type_reference_address": "0x100e8646a",
+          "flags": 2
+        },
+        {
+          "name": "CreationDate",
+          "type_reference_address": "0x100e86420",
+          "flags": 2
+        },
+        {
+          "name": "Platform",
+          "type_reference_address": "0x100e860fa",
+          "flags": 2
+        },
+        {
+          "name": "IsXcodeManaged",
+          "type_reference_address": "0x100e86474",
+          "flags": 2
+        },
+        {
+          "name": "DeveloperCertificates",
+          "type_reference_address": "0x100e8647a",
+          "flags": 2
+        },
+        {
+          "name": "derEncodedProfile",
+          "type_reference_address": "0x100e86426",
+          "flags": 2
+        },
+        {
+          "name": "PPQCheck",
+          "type_reference_address": "0x100e86474",
+          "flags": 2
+        },
+        {
+          "name": "Entitlements",
+          "type_reference_address": "0x100e86486",
+          "flags": 2
+        },
+        {
+          "name": "ExpirationDate",
+          "type_reference_address": "0x100e86420",
+          "flags": 2
+        },
+        {
+          "name": "Name",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "ProvisionsAllDevices",
+          "type_reference_address": "0x100e86474",
+          "flags": 2
+        },
+        {
+          "name": "ProvisionedDevices",
+          "type_reference_address": "0x100e8646a",
+          "flags": 2
+        },
+        {
+          "name": "TeamIdentifier",
+          "type_reference_address": "0x100e860fa",
+          "flags": 2
+        },
+        {
+          "name": "TeamName",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "TimeToLive",
+          "type_reference_address": "0x100e86200",
+          "flags": 2
+        },
+        {
+          "name": "UUID",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "Version",
+          "type_reference_address": "0x100e86200",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.Certificate.CodingKeys",
+      "kind": "enum",
+      "descriptor": "0x100e65f60",
+      "metadata_access_function": "0x10001e940",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "AppIDName",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "CreationDate",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "Platform",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "IsXcodeManaged",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "DeveloperCertificates",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "PPQCheck",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "Entitlements",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "ExpirationDate",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "Name",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "ProvisionedDevices",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "TeamIdentifier",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "TeamName",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "TimeToLive",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "UUID",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "Version",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "derEncodedProfile",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificateReader",
+      "kind": "class",
+      "descriptor": "0x100e65f7c",
+      "metadata_access_function": "0x10001f064",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "file",
+          "type_reference_address": "0x100e85fc4",
+          "flags": 0
+        },
+        {
+          "name": "decoded",
+          "type_reference_address": "0x100e8634a",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AppFileHandler",
+      "kind": "class",
+      "descriptor": "0x100e65fe4",
+      "metadata_access_function": "0x100021718",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_fileManager",
+          "type_reference_address": "0x100e864f0",
+          "flags": 0
+        },
+        {
+          "name": "_uuid",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "_uniqueWorkDir",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 0
+        },
+        {
+          "name": "uniqueWorkDirPayload",
+          "type_reference_address": "0x100e85fc4",
+          "flags": 2
+        },
+        {
+          "name": "_ipa",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 2
+        },
+        {
+          "name": "_install",
+          "type_reference_address": "0x100e90840",
+          "flags": 0
+        },
+        {
+          "name": "_download",
+          "type_reference_address": "0x100e85fac",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.ImportedFileHandlerError",
+      "kind": "enum",
+      "descriptor": "0x100e66034",
+      "metadata_access_function": "0x100021bd8",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "payloadNotFound",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ArchiveHandler",
+      "kind": "class",
+      "descriptor": "0x100e66050",
+      "metadata_access_function": "0x100023968",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_viewModel",
+          "type_reference_address": "0x100e8620c",
+          "flags": 2
+        },
+        {
+          "name": "_fileManager",
+          "type_reference_address": "0x100e864f0",
+          "flags": 0
+        },
+        {
+          "name": "_uuid",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "_payloadUrl",
+          "type_reference_address": "0x100e85fc4",
+          "flags": 2
+        },
+        {
+          "name": "_app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_uniqueWorkDir",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificateFileHandler",
+      "kind": "class",
+      "descriptor": "0x100e66098",
+      "metadata_access_function": "0x1000249f4",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_fileManager",
+          "type_reference_address": "0x100e864f0",
+          "flags": 0
+        },
+        {
+          "name": "_uuid",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "_key",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 0
+        },
+        {
+          "name": "_provision",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 0
+        },
+        {
+          "name": "_keyPassword",
+          "type_reference_address": "0x100e860ca",
+          "flags": 0
+        },
+        {
+          "name": "_certNickname",
+          "type_reference_address": "0x100e860ca",
+          "flags": 0
+        },
+        {
+          "name": "_isDefault",
+          "type_reference_address": "0x100e90840",
+          "flags": 0
+        },
+        {
+          "name": "_certPair",
+          "type_reference_address": "0x100e8634a",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.CertificateFileHandlerError",
+      "kind": "enum",
+      "descriptor": "0x100e660e8",
+      "metadata_access_function": "0x1000250f8",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "certNotValid",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningHandler",
+      "kind": "class",
+      "descriptor": "0x100e66104",
+      "metadata_access_function": "0x10002b3f8",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_fileManager",
+          "type_reference_address": "0x100e864f0",
+          "flags": 0
+        },
+        {
+          "name": "_uuid",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "_movedAppPath",
+          "type_reference_address": "0x100e85fc4",
+          "flags": 2
+        },
+        {
+          "name": "_app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e860c4",
+          "flags": 2
+        },
+        {
+          "name": "_uniqueWorkDir",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 0
+        },
+        {
+          "name": "appIcon",
+          "type_reference_address": "0x100e86542",
+          "flags": 2
+        },
+        {
+          "name": "appCertificate",
+          "type_reference_address": "0x100e86550",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningFileHandlerError",
+      "kind": "enum",
+      "descriptor": "0x100e6614c",
+      "metadata_access_function": "0x10002d0e0",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "appNotFound",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "infoPlistNotFound",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "missingCertifcate",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "disinjectFailed",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "signFailed",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandler",
+      "kind": "class",
+      "descriptor": "0x100e66168",
+      "metadata_access_function": "0x100034ddc",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_fileManager",
+          "type_reference_address": "0x100e864f0",
+          "flags": 0
+        },
+        {
+          "name": "_urlsToInject",
+          "type_reference_address": "0x100e860f0",
+          "flags": 2
+        },
+        {
+          "name": "_directoriesToCheck",
+          "type_reference_address": "0x100e860f0",
+          "flags": 2
+        },
+        {
+          "name": "_injectedDylibNames",
+          "type_reference_address": "0x100e860fa",
+          "flags": 2
+        },
+        {
+          "name": "_app",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 0
+        },
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e860c4",
+          "flags": 2
+        },
+        {
+          "name": "_urls",
+          "type_reference_address": "0x100e860f0",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandlerError",
+      "kind": "enum",
+      "descriptor": "0x100e66278",
+      "metadata_access_function": "0x100036a48",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "unsupportedFileExtension",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "decompressionFailed",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "missingFile",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "noAccess",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TweakHandler.<context:2>.<context:2>.DirectoryType",
+      "kind": "enum",
+      "descriptor": "0x100e662a4",
+      "metadata_access_function": "0x100036a58",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "frameworks",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "dynamicLibraries",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "applicationSupport",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ZsignHandler",
+      "kind": "class",
+      "descriptor": "0x100e662c0",
+      "metadata_access_function": "0x1000375b8",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "hadError",
+          "type_reference_address": "0x100e86604",
+          "flags": 2
+        },
+        {
+          "name": "_appUrl",
+          "type_reference_address": "0x100e85ee8",
+          "flags": 2
+        },
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e860c4",
+          "flags": 2
+        },
+        {
+          "name": "_certificate",
+          "type_reference_address": "0x100e86550",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AnyCodable",
+      "kind": "struct",
+      "descriptor": "0x100e66308",
+      "metadata_access_function": "0x100037938",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "value",
+          "type_reference_address": "0x100e86614",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.BackgroundAudioManager",
+      "kind": "class",
+      "descriptor": "0x100e66324",
+      "metadata_access_function": "0x100038bb4",
+      "flags": "0x80000050",
+      "fields": [
+        {
+          "name": "_engine",
+          "type_reference_address": "0x100e86656",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.BackgroundTaskManager",
+      "kind": "class",
+      "descriptor": "0x100e66370",
+      "metadata_access_function": "0x100039f18",
+      "flags": "0x80000050",
+      "fields": [
+        {
+          "name": "baseId",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "activeTasks",
+          "type_reference_address": "0x100e8667e",
+          "flags": 2
+        },
+        {
+          "name": "registeredTasks",
+          "type_reference_address": "0x100e866a4",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.MobileGestalt",
+      "kind": "class",
+      "descriptor": "0x100e663f4",
+      "metadata_access_function": "0x100040124",
+      "flags": "0x80000050",
+      "fields": [
+        {
+          "name": "_copyAnswerRef",
+          "type_reference_address": "0x100e86828",
+          "flags": 0
+        },
+        {
+          "name": "_handle",
+          "type_reference_address": "0x100e86838",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRIconCache",
+      "kind": "class",
+      "descriptor": "0x100e66438",
+      "metadata_access_function": "0x100040194",
+      "flags": "0x80000050",
+      "fields": [
+        {
+          "name": "cache",
+          "type_reference_address": "0x100e86844",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRAppIconLoader",
+      "kind": "class",
+      "descriptor": "0x100e66474",
+      "metadata_access_function": "0x10004079c",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_image",
+          "type_reference_address": "0x100e86870",
+          "flags": 2
+        },
+        {
+          "name": "task",
+          "type_reference_address": "0x100e86886",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRAppIconView",
+      "kind": "struct",
+      "descriptor": "0x100e664bc",
+      "metadata_access_function": "0x100041180",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "app",
+          "type_reference_address": "0x100e868c0",
+          "flags": 0
+        },
+        {
+          "name": "size",
+          "type_reference_address": "0x100e86082",
+          "flags": 0
+        },
+        {
+          "name": "_colorScheme",
+          "type_reference_address": "0x100e868ac",
+          "flags": 2
+        },
+        {
+          "name": "_loader",
+          "type_reference_address": "0x100e868ca",
+          "flags": 2
+        },
+        {
+          "name": "_selectedColorHex",
+          "type_reference_address": "0x100e868d8",
+          "flags": 2
+        },
+        {
+          "name": "_shouldTintIcons",
+          "type_reference_address": "0x100e868e2",
+          "flags": 2
+        },
+        {
+          "name": "_shouldChangeIconsBasedOffStyle",
+          "type_reference_address": "0x100e868e2",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRExpirationPillView",
+      "kind": "struct",
+      "descriptor": "0x100e66528",
+      "metadata_access_function": "0x1000436ac",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "title",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "revoked",
+          "type_reference_address": "0x100e90840",
+          "flags": 0
+        },
+        {
+          "name": "expiration",
+          "type_reference_address": "0x100e86cfe",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.FRIconCellView",
+      "kind": "struct",
+      "descriptor": "0x100e6656c",
+      "metadata_access_function": "0x1000443c8",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "title",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "subtitle",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "iconUrl",
+          "type_reference_address": "0x100e85fc4",
+          "flags": 2
+        },
+        {
+          "name": "size",
+          "type_reference_address": "0x100e86082",
+          "flags": 2
+        },
+        {
+          "name": "isCircle",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadHeaderView",
+      "kind": "struct",
+      "descriptor": "0x100e665bc",
+      "metadata_access_function": "0x10004568c",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "_downloadManager",
+          "type_reference_address": "0x100e87246",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadItemView",
+      "kind": "struct",
+      "descriptor": "0x100e665d8",
+      "metadata_access_function": "0x1000472d4",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "download",
+          "type_reference_address": "0x100e85e9e",
+          "flags": 0
+        },
+        {
+          "name": "_progress",
+          "type_reference_address": "0x100e8742e",
+          "flags": 2
+        },
+        {
+          "name": "_bytesDownloaded",
+          "type_reference_address": "0x100e87438",
+          "flags": 2
+        },
+        {
+          "name": "_totalBytes",
+          "type_reference_address": "0x100e87438",
+          "flags": 2
+        },
+        {
+          "name": "_unpackageProgress",
+          "type_reference_address": "0x100e8742e",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryInfoView",
+      "kind": "struct",
+      "descriptor": "0x100e66644",
+      "metadata_access_function": "0x10004777c",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallPreviewView",
+      "kind": "struct",
+      "descriptor": "0x100e66688",
+      "metadata_access_function": "0x10004ef98",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "__useShareSheet",
+          "type_reference_address": "0x100e868e2",
+          "flags": 2
+        },
+        {
+          "name": "__installationMethod",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "__serverMethod",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "__isWebviewPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_progressTask",
+          "type_reference_address": "0x100e87fea",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_viewModel",
+          "type_reference_address": "0x100e88000",
+          "flags": 2
+        },
+        {
+          "name": "_installer",
+          "type_reference_address": "0x100e8800e",
+          "flags": 2
+        },
+        {
+          "name": "_isSharing",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallProgressView",
+      "kind": "struct",
+      "descriptor": "0x100e666d8",
+      "metadata_access_function": "0x100050ae4",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "__isPulsing",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_viewModel",
+          "type_reference_address": "0x100e8620c",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallProgressView.PieShape",
+      "kind": "struct",
+      "descriptor": "0x100e666f4",
+      "metadata_access_function": "0x1000517e8",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "progress",
+          "type_reference_address": "0x100e85f90",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryCellView",
+      "kind": "struct",
+      "descriptor": "0x100e66738",
+      "metadata_access_function": "0x100052f78",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "type_reference_address": "0x100e89350",
+          "flags": 2
+        },
+        {
+          "name": "_editMode",
+          "type_reference_address": "0x100e89360",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_selectedInfoAppPresenting",
+          "type_reference_address": "0x100e8937c",
+          "flags": 2
+        },
+        {
+          "name": "_selectedSigningAppPresenting",
+          "type_reference_address": "0x100e8937c",
+          "flags": 2
+        },
+        {
+          "name": "_selectedInstallAppPresenting",
+          "type_reference_address": "0x100e8937c",
+          "flags": 2
+        },
+        {
+          "name": "_selectedAppUUIDs",
+          "type_reference_address": "0x100e8938c",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryView",
+      "kind": "struct",
+      "descriptor": "0x100e66788",
+      "metadata_access_function": "0x100058e54",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_downloadManager",
+          "type_reference_address": "0x100e89e30",
+          "flags": 2
+        },
+        {
+          "name": "__selectedInfoAppPresenting",
+          "type_reference_address": "0x100e89e3e",
+          "flags": 2
+        },
+        {
+          "name": "__selectedSigningAppPresenting",
+          "type_reference_address": "0x100e89e3e",
+          "flags": 2
+        },
+        {
+          "name": "__selectedInstallAppPresenting",
+          "type_reference_address": "0x100e89e3e",
+          "flags": 2
+        },
+        {
+          "name": "__isImportingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__isDownloadingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__alertDownloadString",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__selectedAppUUIDs",
+          "type_reference_address": "0x100e89e58",
+          "flags": 2
+        },
+        {
+          "name": "__editMode",
+          "type_reference_address": "0x100e89e00",
+          "flags": 2
+        },
+        {
+          "name": "__searchText",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__selectedScope",
+          "type_reference_address": "0x100e89e66",
+          "flags": 2
+        },
+        {
+          "name": "__namespace",
+          "type_reference_address": "0x100e89e74",
+          "flags": 2
+        },
+        {
+          "name": "__signedApps",
+          "type_reference_address": "0x100e89e0e",
+          "flags": 2
+        },
+        {
+          "name": "__importedApps",
+          "type_reference_address": "0x100e89e1c",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.LibraryView.Scope",
+      "kind": "enum",
+      "descriptor": "0x100e667b0",
+      "metadata_access_function": "0x100060884",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "all",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "signed",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "imported",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ArchiveView",
+      "kind": "struct",
+      "descriptor": "0x100e667f4",
+      "metadata_access_function": "0x100060b2c",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "__compressionLevel",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "__useShareSheet",
+          "type_reference_address": "0x100e868e2",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoEntitlementCellView",
+      "kind": "struct",
+      "descriptor": "0x100e66838",
+      "metadata_access_function": "0x1000616c8",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "key",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "value",
+          "type_reference_address": "0x100e86614",
+          "flags": 0
+        },
+        {
+          "name": "__isExpanded",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoEntitlementView",
+      "kind": "struct",
+      "descriptor": "0x100e6687c",
+      "metadata_access_function": "0x100063754",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "entitlements",
+          "type_reference_address": "0x100e864ac",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesInfoView",
+      "kind": "struct",
+      "descriptor": "0x100e668c0",
+      "metadata_access_function": "0x100065c94",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "_data",
+          "type_reference_address": "0x100e8b89e",
+          "flags": 2
+        },
+        {
+          "name": "cert",
+          "type_reference_address": "0x100e8635e",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesAddView",
+      "kind": "struct",
+      "descriptor": "0x100e66910",
+      "metadata_access_function": "0x10006b3cc",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "__p12URL",
+          "type_reference_address": "0x100e8c65c",
+          "flags": 2
+        },
+        {
+          "name": "__provisionURL",
+          "type_reference_address": "0x100e8c65c",
+          "flags": 2
+        },
+        {
+          "name": "__p12Password",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__certificateName",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__isImportingP12Presenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__isImportingMobileProvisionPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesCellView",
+      "kind": "struct",
+      "descriptor": "0x100e66960",
+      "metadata_access_function": "0x10006ddc0",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_data",
+          "type_reference_address": "0x100e8b89e",
+          "flags": 2
+        },
+        {
+          "name": "_cert",
+          "type_reference_address": "0x100e8cb90",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.CertificatesView",
+      "kind": "struct",
+      "descriptor": "0x100e669b0",
+      "metadata_access_function": "0x10006fc9c",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__storedSelectedCert",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "__isAddingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__isRenamingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__isSelectedInfoPresenting",
+          "type_reference_address": "0x100e8cdf4",
+          "flags": 2
+        },
+        {
+          "name": "__certToRename",
+          "type_reference_address": "0x100e8cdf4",
+          "flags": 2
+        },
+        {
+          "name": "__newNickname",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__certificates",
+          "type_reference_address": "0x100e8cdd6",
+          "flags": 2
+        },
+        {
+          "name": "_bindingSelectedCert",
+          "type_reference_address": "0x100e8ce04",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ServerView",
+      "kind": "struct",
+      "descriptor": "0x100e66a00",
+      "metadata_access_function": "0x100074558",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "__ipFix",
+          "type_reference_address": "0x100e868e2",
+          "flags": 2
+        },
+        {
+          "name": "__serverMethod",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "_serverMethods",
+          "type_reference_address": "0x100e860fa",
+          "flags": 0
+        },
+        {
+          "name": "_dataService",
+          "type_reference_address": "0x100e8db58",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelHeaderView",
+      "kind": "struct",
+      "descriptor": "0x100e66a44",
+      "metadata_access_function": "0x100075b88",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_lastHeartbeatTime",
+          "type_reference_address": "0x100e8ded2",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelPulseRing",
+      "kind": "struct",
+      "descriptor": "0x100e66a6c",
+      "metadata_access_function": "0x1000760e4",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__animationProgress",
+          "type_reference_address": "0x100e8742e",
+          "flags": 2
+        },
+        {
+          "name": "_animationDuration",
+          "type_reference_address": "0x100e85f90",
+          "flags": 0
+        },
+        {
+          "name": "_colorStartThreshold",
+          "type_reference_address": "0x100e85f90",
+          "flags": 0
+        },
+        {
+          "name": "_colorTransitionDuration",
+          "type_reference_address": "0x100e85f90",
+          "flags": 0
+        },
+        {
+          "name": "_lastHeartbeat",
+          "type_reference_address": "0x100e8df52",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TunnelView",
+      "kind": "struct",
+      "descriptor": "0x100e66ae4",
+      "metadata_access_function": "0x100079980",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "__isImportingPairingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_doesHavePairingFile",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_isLocalDevVpnAvailable",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.InstallationView",
+      "kind": "struct",
+      "descriptor": "0x100e66b28",
+      "metadata_access_function": "0x10007aed4",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "__installationMethod",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "__showMethodChangedAlert",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_installationMethods",
+          "type_reference_address": "0x100e860fa",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ResetView",
+      "kind": "struct",
+      "descriptor": "0x100e66b6c",
+      "metadata_access_function": "0x10007d094",
+      "flags": "0x51",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.ConfigurationDictAddView",
+      "kind": "struct",
+      "descriptor": "0x100e66bb0",
+      "metadata_access_function": "0x10007e258",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "__newKey",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__newValue",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__showOverrideAlert",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_dataDict",
+          "type_reference_address": "0x100e8ec80",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ConfigurationDictView",
+      "kind": "struct",
+      "descriptor": "0x100e66c00",
+      "metadata_access_function": "0x10007f298",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "__isAddingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "title",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "_dataDict",
+          "type_reference_address": "0x100e8ec80",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ConfigurationView",
+      "kind": "struct",
+      "descriptor": "0x100e66c44",
+      "metadata_access_function": "0x100082c10",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "__optionsManager",
+          "type_reference_address": "0x100e8ef9c",
+          "flags": 2
+        },
+        {
+          "name": "_isRandomAlertPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_randomString",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SettingsView",
+      "kind": "struct",
+      "descriptor": "0x100e66c88",
+      "metadata_access_function": "0x100083390",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__storedSelectedCert",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "__certificates",
+          "type_reference_address": "0x100e8cdd6",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningAlternativeIconView",
+      "kind": "struct",
+      "descriptor": "0x100e66cd8",
+      "metadata_access_function": "0x1000858dc",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "__alternateIcons",
+          "type_reference_address": "0x100e8f6aa",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_appIcon",
+          "type_reference_address": "0x100e8f6c6",
+          "flags": 2
+        },
+        {
+          "name": "_isModifing",
+          "type_reference_address": "0x100e8f6dc",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningDylibView",
+      "kind": "struct",
+      "descriptor": "0x100e66d28",
+      "metadata_access_function": "0x100089400",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__dylibs",
+          "type_reference_address": "0x100e8ff4e",
+          "flags": 2
+        },
+        {
+          "name": "__hiddenDylibCount",
+          "type_reference_address": "0x100e8ff5c",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e8ff38",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningFrameworksView",
+      "kind": "struct",
+      "descriptor": "0x100e66d78",
+      "metadata_access_function": "0x10008bf10",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__frameworks",
+          "type_reference_address": "0x100e8ff4e",
+          "flags": 2
+        },
+        {
+          "name": "__plugins",
+          "type_reference_address": "0x100e8ff4e",
+          "flags": 2
+        },
+        {
+          "name": "_frameworksPath",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "_pluginsPath",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        },
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e8ff38",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningOptionsView",
+      "kind": "struct",
+      "descriptor": "0x100e66dc8",
+      "metadata_access_function": "0x10008f4c8",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e90310",
+          "flags": 2
+        },
+        {
+          "name": "temporaryOptions",
+          "type_reference_address": "0x100e86132",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningToggleCellView",
+      "kind": "struct",
+      "descriptor": "0x100e66e18",
+      "metadata_access_function": "0x100094edc",
+      "flags": "0xd1",
+      "fields": [
+        {
+          "name": "title",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e90b74",
+          "flags": 2
+        },
+        {
+          "name": "arrayKeyPath",
+          "type_reference_address": "0x100e90b80",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningPropertiesView",
+      "kind": "struct",
+      "descriptor": "0x100e66e70",
+      "metadata_access_function": "0x100096570",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "_text",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "title",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "initialValue",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "_bindingValue",
+          "type_reference_address": "0x100e90bc2",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningTweaksView",
+      "kind": "struct",
+      "descriptor": "0x100e66ec0",
+      "metadata_access_function": "0x100098284",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__isAddingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_options",
+          "type_reference_address": "0x100e90310",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SigningView",
+      "kind": "struct",
+      "descriptor": "0x100e66f10",
+      "metadata_access_function": "0x1000a1bac",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "__optionsManager",
+          "type_reference_address": "0x100e8ef9c",
+          "flags": 2
+        },
+        {
+          "name": "__temporaryOptions",
+          "type_reference_address": "0x100e912bc",
+          "flags": 2
+        },
+        {
+          "name": "__temporaryCertificate",
+          "type_reference_address": "0x100e8ff5c",
+          "flags": 2
+        },
+        {
+          "name": "__isAltPickerPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__isFilePickerPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__isImagePickerPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__isSigning",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__selectedPhoto",
+          "type_reference_address": "0x100e912ca",
+          "flags": 2
+        },
+        {
+          "name": "_appIcon",
+          "type_reference_address": "0x100e912e0",
+          "flags": 2
+        },
+        {
+          "name": "_certificates",
+          "type_reference_address": "0x100e8cdd6",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e86204",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AppVersionInfo",
+      "kind": "struct",
+      "descriptor": "0x100e66f60",
+      "metadata_access_function": "0x1000a52e4",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "version",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "date",
+          "type_reference_address": "0x100e86364",
+          "flags": 0
+        },
+        {
+          "name": "description",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ExpandableText",
+      "kind": "struct",
+      "descriptor": "0x100e66fb0",
+      "metadata_access_function": "0x1000a6104",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "text",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        },
+        {
+          "name": "lineLimit",
+          "type_reference_address": "0x100e86200",
+          "flags": 0
+        },
+        {
+          "name": "_expanded",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_truncated",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderGeometry",
+      "kind": "class",
+      "descriptor": "0x100e66ffc",
+      "metadata_access_function": "0x1000a7270",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_offset",
+          "type_reference_address": "0x100e86082",
+          "flags": 2
+        },
+        {
+          "name": "_windowHeight",
+          "type_reference_address": "0x100e86082",
+          "flags": 2
+        },
+        {
+          "name": "_$observationRegistrar",
+          "type_reference_address": "0x100e93a40",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderContentModifier",
+      "kind": "struct",
+      "descriptor": "0x100e670dc",
+      "metadata_access_function": "0x1000a752c",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "_geometry",
+          "type_reference_address": "0x100e93a60",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.<context:2>.FlexibleHeaderScrollViewModifier",
+      "kind": "struct",
+      "descriptor": "0x100e67100",
+      "metadata_access_function": "0x1000a7598",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "_geometry",
+          "type_reference_address": "0x100e93a4c",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ScreenshotPreviewView",
+      "kind": "struct",
+      "descriptor": "0x100e6716c",
+      "metadata_access_function": "0x1000a85ec",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "_currentIndex",
+          "type_reference_address": "0x100e8ff5c",
+          "flags": 2
+        },
+        {
+          "name": "screenshotURLs",
+          "type_reference_address": "0x100e860f0",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsDetailView",
+      "kind": "struct",
+      "descriptor": "0x100e671bc",
+      "metadata_access_function": "0x1000adc5c",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_downloadManager",
+          "type_reference_address": "0x100e87246",
+          "flags": 2
+        },
+        {
+          "name": "__downloadProgress",
+          "type_reference_address": "0x100e8742e",
+          "flags": 2
+        },
+        {
+          "name": "_cancellable",
+          "type_reference_address": "0x100e94406",
+          "flags": 2
+        },
+        {
+          "name": "__isScreenshotPreviewPresented",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__selectedScreenshotIndex",
+          "type_reference_address": "0x100e8ff5c",
+          "flags": 2
+        },
+        {
+          "name": "source",
+          "type_reference_address": "0x100e94416",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e9441c",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.VersionHistoryView",
+      "kind": "struct",
+      "descriptor": "0x100e6720c",
+      "metadata_access_function": "0x1000b92ec",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e9441c",
+          "flags": 0
+        },
+        {
+          "name": "versions",
+          "type_reference_address": "0x100e9813a",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsCardInfoView",
+      "kind": "struct",
+      "descriptor": "0x100e6725c",
+      "metadata_access_function": "0x1000bbefc",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "new",
+          "type_reference_address": "0x100e984d2",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsCardView",
+      "kind": "struct",
+      "descriptor": "0x100e672ac",
+      "metadata_access_function": "0x1000be820",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "new",
+          "type_reference_address": "0x100e984d2",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceNewsView",
+      "kind": "struct",
+      "descriptor": "0x100e672fc",
+      "metadata_access_function": "0x1000c15b8",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_isLoading",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_hasLoadedInitialData",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__selectedNewsPresenting",
+          "type_reference_address": "0x100e999ec",
+          "flags": 2
+        },
+        {
+          "name": "__namespace",
+          "type_reference_address": "0x100e89e74",
+          "flags": 2
+        },
+        {
+          "name": "news",
+          "type_reference_address": "0x100e99a02",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsTableRepresentableView.Coordinator",
+      "kind": "class",
+      "descriptor": "0x100e6734c",
+      "metadata_access_function": "0x1000c7a74",
+      "flags": "0x80000050",
+      "fields": [
+        {
+          "name": "sources",
+          "type_reference_address": "0x100e99ef8",
+          "flags": 2
+        },
+        {
+          "name": "searchText",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 2
+        },
+        {
+          "name": "sortOption",
+          "type_reference_address": "0x100e99f02",
+          "flags": 2
+        },
+        {
+          "name": "sortAscending",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "onSelect",
+          "type_reference_address": "0x100e99f08",
+          "flags": 0
+        },
+        {
+          "name": "_groupedAppsByNameFirstLetter",
+          "type_reference_address": "0x100e99f10",
+          "flags": 2
+        },
+        {
+          "name": "_groupedAppsByDate",
+          "type_reference_address": "0x100e99f10",
+          "flags": 2
+        },
+        {
+          "name": "_sortedSectionTitles",
+          "type_reference_address": "0x100e860fa",
+          "flags": 2
+        },
+        {
+          "name": "_cachedSortedApps",
+          "type_reference_address": "0x100e99f32",
+          "flags": 2
+        },
+        {
+          "name": "uiTableView",
+          "type_reference_address": "0x100e99f4e",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsTableRepresentableView",
+      "kind": "struct",
+      "descriptor": "0x100e674c8",
+      "metadata_access_function": "0x1000d0f38",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "sources",
+          "type_reference_address": "0x100e99ef8",
+          "flags": 2
+        },
+        {
+          "name": "_searchText",
+          "type_reference_address": "0x100e99f6a",
+          "flags": 2
+        },
+        {
+          "name": "_sortOption",
+          "type_reference_address": "0x100e99f74",
+          "flags": 2
+        },
+        {
+          "name": "_sortAscending",
+          "type_reference_address": "0x100e8f6dc",
+          "flags": 2
+        },
+        {
+          "name": "onSelect",
+          "type_reference_address": "0x100e99f08",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.DownloadButtonView",
+      "kind": "struct",
+      "descriptor": "0x100e674e4",
+      "metadata_access_function": "0x1000d3178",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "app",
+          "type_reference_address": "0x100e9441c",
+          "flags": 0
+        },
+        {
+          "name": "_downloadManager",
+          "type_reference_address": "0x100e87246",
+          "flags": 2
+        },
+        {
+          "name": "_downloadProgress",
+          "type_reference_address": "0x100e8742e",
+          "flags": 2
+        },
+        {
+          "name": "_cancellable",
+          "type_reference_address": "0x100e94406",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsCellView",
+      "kind": "struct",
+      "descriptor": "0x100e67534",
+      "metadata_access_function": "0x1000d8684",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__storeCellAppearance",
+          "type_reference_address": "0x100e87fd6",
+          "flags": 2
+        },
+        {
+          "name": "source",
+          "type_reference_address": "0x100e94416",
+          "flags": 2
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e9441c",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView.SourceAppRoute",
+      "kind": "struct",
+      "descriptor": "0x100e67584",
+      "metadata_access_function": "0x1000dcad8",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "source",
+          "type_reference_address": "0x100e94416",
+          "flags": 0
+        },
+        {
+          "name": "app",
+          "type_reference_address": "0x100e9441c",
+          "flags": 0
+        },
+        {
+          "name": "id",
+          "type_reference_address": "0x100e85ee4",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView",
+      "kind": "struct",
+      "descriptor": "0x100e675ac",
+      "metadata_access_function": "0x1000e1424",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "__sortOptionRawValue",
+          "type_reference_address": "0x100e868d8",
+          "flags": 2
+        },
+        {
+          "name": "__sortAscending",
+          "type_reference_address": "0x100e868e2",
+          "flags": 2
+        },
+        {
+          "name": "__sortOption",
+          "type_reference_address": "0x100e9b6bc",
+          "flags": 2
+        },
+        {
+          "name": "__selectedRoute",
+          "type_reference_address": "0x100e9b6a6",
+          "flags": 2
+        },
+        {
+          "name": "_isLoading",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "_hasLoadedOnce",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__searchText",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "object",
+          "type_reference_address": "0x100e9b6ca",
+          "flags": 2
+        },
+        {
+          "name": "_viewModel",
+          "type_reference_address": "0x100e9b6d4",
+          "flags": 2
+        },
+        {
+          "name": "__sources",
+          "type_reference_address": "0x100e9b6e2",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourceAppsView.SortOption",
+      "kind": "enum",
+      "descriptor": "0x100e675d4",
+      "metadata_access_function": "0x1000e153c",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "default",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "name",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "date",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesAddView",
+      "kind": "struct",
+      "descriptor": "0x100e67618",
+      "metadata_access_function": "0x1000e81d8",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_dismiss",
+          "type_reference_address": "0x100e87fc2",
+          "flags": 2
+        },
+        {
+          "name": "_dataService",
+          "type_reference_address": "0x100e8db58",
+          "flags": 0
+        },
+        {
+          "name": "__isImporting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__sourceURL",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesCellView",
+      "kind": "struct",
+      "descriptor": "0x100e67668",
+      "metadata_access_function": "0x1000ed684",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "type_reference_address": "0x100e89350",
+          "flags": 2
+        },
+        {
+          "name": "source",
+          "type_reference_address": "0x100e9c522",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesView",
+      "kind": "struct",
+      "descriptor": "0x100e676b8",
+      "metadata_access_function": "0x1000efa8c",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "type_reference_address": "0x100e89350",
+          "flags": 2
+        },
+        {
+          "name": "_viewModel",
+          "type_reference_address": "0x100e9c6ae",
+          "flags": 2
+        },
+        {
+          "name": "__isAddingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__addingSourceLoading",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__searchText",
+          "type_reference_address": "0x100e89e4e",
+          "flags": 2
+        },
+        {
+          "name": "__sources",
+          "type_reference_address": "0x100e9c69a",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.SourcesViewModel",
+      "kind": "class",
+      "descriptor": "0x100e67708",
+      "metadata_access_function": "0x1000f5ec0",
+      "flags": "0x80010050",
+      "fields": [
+        {
+          "name": "_dataService",
+          "type_reference_address": "0x100e8db58",
+          "flags": 0
+        },
+        {
+          "name": "isFinished",
+          "type_reference_address": "0x100e90840",
+          "flags": 2
+        },
+        {
+          "name": "_sources",
+          "type_reference_address": "0x100e9bf92",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.ExtendedTabbarView",
+      "kind": "struct",
+      "descriptor": "0x100e67750",
+      "metadata_access_function": "0x1000f9b80",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_horizontalSizeClass",
+          "type_reference_address": "0x100e89350",
+          "flags": 2
+        },
+        {
+          "name": "_customization",
+          "type_reference_address": "0x100e9d660",
+          "flags": 2
+        },
+        {
+          "name": "_viewModel",
+          "type_reference_address": "0x100e9c6ae",
+          "flags": 2
+        },
+        {
+          "name": "__isAddingPresenting",
+          "type_reference_address": "0x100e87fe0",
+          "flags": 2
+        },
+        {
+          "name": "__sources",
+          "type_reference_address": "0x100e9c69a",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TabbarView",
+      "kind": "struct",
+      "descriptor": "0x100e677a0",
+      "metadata_access_function": "0x1000fb658",
+      "flags": "0x51",
+      "fields": [
+        {
+          "name": "_selectedTab",
+          "type_reference_address": "0x100e9e962",
+          "flags": 2
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.TabEnum",
+      "kind": "enum",
+      "descriptor": "0x100e677e4",
+      "metadata_access_function": "0x1000fbe8c",
+      "flags": "0x52",
+      "fields": [
+        {
+          "name": "sources",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "library",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "settings",
+          "type_reference_address": null,
+          "flags": 0
+        },
+        {
+          "name": "certificates",
+          "type_reference_address": null,
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.VariedTabbarView",
+      "kind": "struct",
+      "descriptor": "0x100e67800",
+      "metadata_access_function": "0x1000fca70",
+      "flags": "0x51",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.AppDelegate",
+      "kind": "class",
+      "descriptor": "0x100e67844",
+      "metadata_access_function": "0x1000ff8fc",
+      "flags": "0x80000050",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.FeatherApp",
+      "kind": "struct",
+      "descriptor": "0x100e678a0",
+      "metadata_access_function": "0x1000ff8c4",
+      "flags": "0x10051",
+      "fields": [
+        {
+          "name": "_appDelegate",
+          "type_reference_address": "0x100e9eb5c",
+          "flags": 2
+        },
+        {
+          "name": "heartbeat",
+          "type_reference_address": "0x100e9eb70",
+          "flags": 0
+        },
+        {
+          "name": "_downloadManager",
+          "type_reference_address": "0x100e89e30",
+          "flags": 2
+        },
+        {
+          "name": "storage",
+          "type_reference_address": "0x100e8630a",
+          "flags": 0
+        }
+      ]
+    },
+    {
+      "name": "KravaSigner.AltSource",
+      "kind": "class",
+      "descriptor": "0x100e678f0",
+      "metadata_access_function": "0x100104fc0",
+      "flags": "0x50",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.CertificatePair",
+      "kind": "class",
+      "descriptor": "0x100e6791c",
+      "metadata_access_function": "0x100105178",
+      "flags": "0x50",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.Imported",
+      "kind": "class",
+      "descriptor": "0x100e67948",
+      "metadata_access_function": "0x10010532c",
+      "flags": "0x50",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.Signed",
+      "kind": "class",
+      "descriptor": "0x100e67974",
+      "metadata_access_function": "0x1001055d8",
+      "flags": "0x50",
+      "fields": []
+    },
+    {
+      "name": "KravaSigner.<context:2>.ResourceBundleClass",
+      "kind": "class",
+      "descriptor": "0x100e679a8",
+      "metadata_access_function": "0x10010572c",
+      "flags": "0x80000050",
+      "fields": []
+    }
+  ],
+  "errors": [
+    {
+      "record": "0x100f34ae4",
+      "error": "0x10000000e69124"
+    },
+    {
+      "record": "0x100f34b24",
+      "error": "0x10000000e69494"
+    },
+    {
+      "record": "0x100f34b3c",
+      "error": "0x10000000e69588"
+    },
+    {
+      "record": "0x100f34cbc",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f34cc0",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f34cc8",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f34ce4",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34ce8",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34cec",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34cf0",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34cf4",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d0c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d10",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d14",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d18",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d1c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d60",
+      "error": "0x10000000e6c660"
+    },
+    {
+      "record": "0x100f34d64",
+      "error": "0x10000000e6c660"
+    },
+    {
+      "record": "0x100f34d68",
+      "error": "0x10000000e6c660"
+    },
+    {
+      "record": "0x100f34d90",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d94",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d98",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34d9c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34da0",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34da4",
+      "error": "0x20000000e6a484"
+    },
+    {
+      "record": "0x100f34da8",
+      "error": "0x20000000e6a484"
+    },
+    {
+      "record": "0x100f34dac",
+      "error": "0x10000000e6b66c"
+    },
+    {
+      "record": "0x100f34dcc",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34dd8",
+      "error": "0x10000000e6b838"
+    },
+    {
+      "record": "0x100f34ddc",
+      "error": "0x10000000e6b838"
+    },
+    {
+      "record": "0x100f34de0",
+      "error": "0x10000000e6b838"
+    },
+    {
+      "record": "0x100f34e60",
+      "error": "0x10000000e6b838"
+    },
+    {
+      "record": "0x100f34e64",
+      "error": "0x10000000e6b838"
+    },
+    {
+      "record": "0x100f34e68",
+      "error": "0x10000000e6b838"
+    },
+    {
+      "record": "0x100f34e7c",
+      "error": "0x10000000e6be00"
+    },
+    {
+      "record": "0x100f34e80",
+      "error": "0x10000000e6be00"
+    },
+    {
+      "record": "0x100f34e84",
+      "error": "0x10000000e6be00"
+    },
+    {
+      "record": "0x100f34e88",
+      "error": "0x10000000e6be00"
+    },
+    {
+      "record": "0x100f34ed0",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f18",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f1c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f20",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f24",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f28",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f2c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f3c",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f34f4c",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f34f50",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f34f54",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f34f6c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f70",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f74",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f78",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f7c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34f90",
+      "error": "0x10000000e6c994"
+    },
+    {
+      "record": "0x100f34f98",
+      "error": "0x10000000e6c994"
+    },
+    {
+      "record": "0x100f34f9c",
+      "error": "0x10000000e6c994"
+    },
+    {
+      "record": "0x100f34fa0",
+      "error": "0x10000000e6c994"
+    },
+    {
+      "record": "0x100f34fb0",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34fe4",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34fe8",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34fec",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34ff0",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34ff4",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f34ff8",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35004",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35008",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f3500c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35010",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35014",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35020",
+      "error": "0x10000000e6c6d4"
+    },
+    {
+      "record": "0x100f35138",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f3513c",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35140",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35144",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35148",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f3514c",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35150",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35154",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35158",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f3515c",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35160",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35164",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f3516c",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35170",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35174",
+      "error": "0x10000000e6da5c"
+    },
+    {
+      "record": "0x100f35178",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f3517c",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35180",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35184",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f35188",
+      "error": "0x10000000e6a484"
+    },
+    {
+      "record": "0x100f351bc",
+      "error": "0x10000000e6e19c"
+    },
+    {
+      "record": "0x100f351c0",
+      "error": "0x10000000e6e19c"
+    },
+    {
+      "record": "0x100f351f4",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f351f8",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f351fc",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35200",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35204",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35208",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f3520c",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35210",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35214",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35218",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f3521c",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35220",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35224",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f35228",
+      "error": "0x10000000e6e518"
+    },
+    {
+      "record": "0x100f352c0",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f352c4",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f352c8",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f352cc",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35314",
+      "error": "0x10000000e6f008"
+    },
+    {
+      "record": "0x100f35318",
+      "error": "0x10000000e6f008"
+    },
+    {
+      "record": "0x100f3534c",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35350",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35354",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35358",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f3535c",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35360",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35364",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35368",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f3536c",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35370",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35378",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f3537c",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35380",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35384",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35388",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f3538c",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35390",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35394",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f35398",
+      "error": "0x10000000e6ec98"
+    },
+    {
+      "record": "0x100f353ac",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f353b0",
+      "error": "0x10000000e6f5e8"
+    },
+    {
+      "record": "0x100f353b4",
+      "error": "0x10000000e6f5e8"
+    },
+    {
+      "record": "0x100f353f4",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f353f8",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f353fc",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f35400",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f35404",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f35410",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f3541c",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f35428",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f3542c",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f35430",
+      "error": "0x10000000e6f49c"
+    },
+    {
+      "record": "0x100f3543c",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35440",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35444",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35448",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f3544c",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35450",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35454",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35458",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f3545c",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35460",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35464",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35468",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f3546c",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35470",
+      "error": "0x10000000e6fed8"
+    },
+    {
+      "record": "0x100f35508",
+      "error": "0x10000000e70760"
+    },
+    {
+      "record": "0x100f3550c",
+      "error": "0x10000000e70760"
+    },
+    {
+      "record": "0x100f35510",
+      "error": "0x10000000e70760"
+    },
+    {
+      "record": "0x100f3552c",
+      "error": "0x20000000e708b0"
+    },
+    {
+      "record": "0x100f35530",
+      "error": "0x10000000e708b0"
+    },
+    {
+      "record": "0x100f35570",
+      "error": "0x20000000e71130"
+    },
+    {
+      "record": "0x100f3572c",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f35730",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f3574c",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f35750",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f35754",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f35758",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f35760",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f35764",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f35768",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f3576c",
+      "error": "0x10000000e727fc"
+    },
+    {
+      "record": "0x100f3584c",
+      "error": "0x10000000e72fcc"
+    },
+    {
+      "record": "0x100f35850",
+      "error": "0x10000000e731c4"
+    },
+    {
+      "record": "0x100f35854",
+      "error": "0x10000000e731c4"
+    },
+    {
+      "record": "0x100f35858",
+      "error": "0x10000000e731c4"
+    },
+    {
+      "record": "0x100f3588c",
+      "error": "0x10000000e73c20"
+    },
+    {
+      "record": "0x100f35890",
+      "error": "0x10000000e73bf0"
+    },
+    {
+      "record": "0x100f35d88",
+      "error": "0x10000000e78e1c"
+    },
+    {
+      "record": "0x100f35d94",
+      "error": "0x10000000e78e1c"
+    },
+    {
+      "record": "0x100f35d98",
+      "error": "0x10000000e78e1c"
+    },
+    {
+      "record": "0x100f35f78",
+      "error": "0x10000000e79eec"
+    },
+    {
+      "record": "0x100f36100",
+      "error": "0x10000000e7ace0"
+    },
+    {
+      "record": "0x100f36160",
+      "error": "0x10000000e7b1d0"
+    },
+    {
+      "record": "0x100f36164",
+      "error": "0x10000000e7b1d0"
+    },
+    {
+      "record": "0x100f36168",
+      "error": "0x10000000e7b1d0"
+    },
+    {
+      "record": "0x100f3616c",
+      "error": "0x10000000e7b1d0"
+    },
+    {
+      "record": "0x100f36170",
+      "error": "0x10000000e7b1d0"
+    },
+    {
+      "record": "0x100f36448",
+      "error": "0x10000000e7d1ac"
+    },
+    {
+      "record": "0x100f36598",
+      "error": "0x10000000e7ecf0"
+    },
+    {
+      "record": "0x100f365a0",
+      "error": "0x10000000e7ed60"
+    },
+    {
+      "record": "0x100f365a4",
+      "error": "0x20000000e7ed60"
+    },
+    {
+      "record": "0x100f365a8",
+      "error": "0x20000000e7ed60"
+    },
+    {
+      "record": "0x100f365c8",
+      "error": "0x10000000e7efc8"
+    },
+    {
+      "record": "0x100f365cc",
+      "error": "0x10000000e7efc8"
+    },
+    {
+      "record": "0x100f365d4",
+      "error": "0x10000000e7efc8"
+    },
+    {
+      "record": "0x100f365d8",
+      "error": "0x10000000e7efc8"
+    },
+    {
+      "record": "0x100f365dc",
+      "error": "0x10000000e7efc8"
+    },
+    {
+      "record": "0x100f365e0",
+      "error": "0x10000000e7efc8"
+    },
+    {
+      "record": "0x100f36600",
+      "error": "0x10000000e7f0dc"
+    },
+    {
+      "record": "0x100f36614",
+      "error": "0x10000000e7f2b4"
+    },
+    {
+      "record": "0x100f36618",
+      "error": "0x10000000e7f2b4"
+    },
+    {
+      "record": "0x100f3661c",
+      "error": "0x10000000e7f2b4"
+    },
+    {
+      "record": "0x100f36620",
+      "error": "0x10000000e7f2b4"
+    },
+    {
+      "record": "0x100f36624",
+      "error": "0x10000000e7f2b4"
+    },
+    {
+      "record": "0x100f36628",
+      "error": "0x10000000e7f2b4"
+    },
+    {
+      "record": "0x100f36630",
+      "error": "0x10000000e7f368"
+    },
+    {
+      "record": "0x100f36634",
+      "error": "0x10000000e7f368"
+    },
+    {
+      "record": "0x100f3663c",
+      "error": "0x10000000e7f3ec"
+    },
+    {
+      "record": "0x100f36648",
+      "error": "0x10000000e7f4a4"
+    },
+    {
+      "record": "0x100f3664c",
+      "error": "0x10000000e7f4a4"
+    },
+    {
+      "record": "0x100f36650",
+      "error": "0x20000000e7f4a4"
+    },
+    {
+      "record": "0x100f3665c",
+      "error": "0x10000000e7f4a4"
+    },
+    {
+      "record": "0x100f36660",
+      "error": "0x10000000e7f594"
+    },
+    {
+      "record": "0x100f36664",
+      "error": "0x10000000e7f594"
+    },
+    {
+      "record": "0x100f36668",
+      "error": "0x10000000e7f648"
+    },
+    {
+      "record": "0x100f3666c",
+      "error": "0x10000000e7f648"
+    },
+    {
+      "record": "0x100f36670",
+      "error": "0x10000000e7f648"
+    },
+    {
+      "record": "0x100f36678",
+      "error": "0x10000000e7f738"
+    },
+    {
+      "record": "0x100f3667c",
+      "error": "0x10000000e7f738"
+    },
+    {
+      "record": "0x100f36680",
+      "error": "0x10000000e7f738"
+    },
+    {
+      "record": "0x100f36688",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f3668c",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f36690",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f36694",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f36698",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366a0",
+      "error": "0x10000000e7f8cc"
+    },
+    {
+      "record": "0x100f366a4",
+      "error": "0x10000000e7f8cc"
+    },
+    {
+      "record": "0x100f366a8",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366ac",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366b0",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366b4",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366b8",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366bc",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366c0",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366c4",
+      "error": "0x10000000e7f86c"
+    },
+    {
+      "record": "0x100f366c8",
+      "error": "0x10000000e7fa54"
+    },
+    {
+      "record": "0x100f366cc",
+      "error": "0x10000000e7fa54"
+    },
+    {
+      "record": "0x100f366d0",
+      "error": "0x10000000e7fa54"
+    },
+    {
+      "record": "0x100f366d4",
+      "error": "0x10000000e7fa54"
+    },
+    {
+      "record": "0x100f366d8",
+      "error": "0x10000000e7fa54"
+    },
+    {
+      "record": "0x100f366dc",
+      "error": "0x10000000e7fa54"
+    },
+    {
+      "record": "0x100f366e8",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f366ec",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f366f0",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f366f8",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f366fc",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f36700",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f36708",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f36714",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f36718",
+      "error": "0x10000000e7fc54"
+    },
+    {
+      "record": "0x100f3687c",
+      "error": "0x20000000e815b4"
+    },
+    {
+      "record": "0x100f36880",
+      "error": "0x20000000e815b4"
+    },
+    {
+      "record": "0x100f36884",
+      "error": "0x20000000e815b4"
+    },
+    {
+      "record": "0x100f36888",
+      "error": "0x20000000e815b4"
+    },
+    {
+      "record": "0x100f368ec",
+      "error": "0x10000000e817b0"
+    },
+    {
+      "record": "0x100f369c4",
+      "error": "0x10000000e82614"
+    },
+    {
+      "record": "0x100f369d4",
+      "error": "0x10000000e8281c"
+    },
+    {
+      "record": "0x100f369d8",
+      "error": "0x10000000e8281c"
+    },
+    {
+      "record": "0x100f369dc",
+      "error": "0x10000000e8281c"
+    },
+    {
+      "record": "0x100f369e4",
+      "error": "0x10000000e828ac"
+    },
+    {
+      "record": "0x100f369e8",
+      "error": "0x10000000e828ac"
+    },
+    {
+      "record": "0x100f369ec",
+      "error": "0x20000000e828ac"
+    },
+    {
+      "record": "0x100f36ac4",
+      "error": "0x10000000e832b4"
+    },
+    {
+      "record": "0x100f36ac8",
+      "error": "0x10000000e832b4"
+    },
+    {
+      "record": "0x100f36bd0",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36bd4",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36bd8",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36bdc",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36be0",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36be4",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36be8",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36bec",
+      "error": "0x10000000e83de8"
+    },
+    {
+      "record": "0x100f36cbc",
+      "error": "0x10000000e84920"
+    },
+    {
+      "record": "0x100f36cc4",
+      "error": "0x10000000e84a44"
+    },
+    {
+      "record": "0x100f36cc8",
+      "error": "0x20000000e84a44"
+    },
+    {
+      "record": "0x100f36d74",
+      "error": "0x10000000e8543c"
+    },
+    {
+      "record": "0x100f36d78",
+      "error": "0x10000000e8543c"
+    },
+    {
+      "record": "0x100f36d7c",
+      "error": "0x10000000e8543c"
+    },
+    {
+      "record": "0x100f36d80",
+      "error": "0x10000000e8543c"
+    },
+    {
+      "record": "0x100f36d88",
+      "error": "0x10000000e8543c"
+    },
+    {
+      "record": "0x100f36db4",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36db8",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36dbc",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36dc0",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36dc4",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36dc8",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36dcc",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36dd0",
+      "error": "0x10000000e85718"
+    },
+    {
+      "record": "0x100f36dd8",
+      "error": "0x20000000e85718"
+    }
+  ]
+}

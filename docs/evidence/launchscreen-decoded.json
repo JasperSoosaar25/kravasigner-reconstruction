@@ -1,0 +1,938 @@
+[
+  {
+    "file": "01J-lp-oVM-view-Ze5-6b-2t3.nib",
+    "objects": [
+      {
+        "index": 0,
+        "class": "NSObject",
+        "values": {
+          "UINibTopLevelObjectsKey": {
+            "type": "OBJECT_REF",
+            "data": 1
+          },
+          "UINibObjectsKey": {
+            "type": "OBJECT_REF",
+            "data": 23
+          },
+          "UINibConnectionsKey": {
+            "type": "OBJECT_REF",
+            "data": 26
+          },
+          "UINibVisibleWindowsKey": {
+            "type": "OBJECT_REF",
+            "data": 29
+          },
+          "UINibAccessibilityConfigurationsKey": {
+            "type": "OBJECT_REF",
+            "data": 29
+          },
+          "UINibTraitStorageListsKey": {
+            "type": "OBJECT_REF",
+            "data": 29
+          },
+          "UINibKeyValuePairsKey": {
+            "type": "OBJECT_REF",
+            "data": 29
+          }
+        }
+      },
+      {
+        "index": 1,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 6
+          }
+        }
+      },
+      {
+        "index": 2,
+        "class": "UIProxyObject",
+        "values": {
+          "UIProxiedObjectIdentifier": {
+            "type": "OBJECT_REF",
+            "data": 3
+          }
+        }
+      },
+      {
+        "index": 3,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "494246696c65734f776e6572"
+          }
+        }
+      },
+      {
+        "index": 4,
+        "class": "UIProxyObject",
+        "values": {
+          "UIProxiedObjectIdentifier": {
+            "type": "OBJECT_REF",
+            "data": 5
+          }
+        }
+      },
+      {
+        "index": 5,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "49424669727374526573706f6e646572"
+          }
+        }
+      },
+      {
+        "index": 6,
+        "class": "UIView",
+        "values": {
+          "UIBounds": {
+            "type": "DATA",
+            "data": [
+              0.0,
+              0.0,
+              393.0,
+              852.0
+            ]
+          },
+          "UICenter": {
+            "type": "DATA",
+            "data": [
+              196.5,
+              426.0
+            ]
+          },
+          "UISubviews": {
+            "type": "OBJECT_REF",
+            "data": 7
+          },
+          "UIBackgroundColor": {
+            "type": "OBJECT_REF",
+            "data": 18
+          },
+          "UIDeepDrawRect": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIOpaque": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIAutoresizeSubviews": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIAutoresizingMask": {
+            "type": "INT8",
+            "data": 18
+          },
+          "UITintColor": {
+            "type": "OBJECT_REF",
+            "data": 9
+          },
+          "UIViewAutolayoutConstraints": {
+            "type": "OBJECT_REF",
+            "data": 20
+          },
+          "UIViewSemanticContentAttribute": {
+            "type": "INT8",
+            "data": 0
+          },
+          "UIViewLargeContentStoredProperties": {
+            "type": "NIL",
+            "data": null
+          }
+        }
+      },
+      {
+        "index": 7,
+        "class": "NSMutableArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 8
+          }
+        }
+      },
+      {
+        "index": 8,
+        "class": "UIImageView",
+        "values": {
+          "UIBounds": {
+            "type": "DATA",
+            "data": [
+              0.0,
+              0.0,
+              155.0,
+              105.0
+            ]
+          },
+          "UICenter": {
+            "type": "DATA",
+            "data": [
+              196.5,
+              426.1666666666667
+            ]
+          },
+          "UIDeepDrawRect": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIOpaque": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIUserInteractionDisabled": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIAutoresizeSubviews": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIAutoresizingMask": {
+            "type": "INT8",
+            "data": 36
+          },
+          "UIContentMode": {
+            "type": "INT8",
+            "data": 1
+          },
+          "UIClipsToBounds": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UITintColor": {
+            "type": "OBJECT_REF",
+            "data": 9
+          },
+          "UIViewDoesNotTranslateAutoresizingMaskIntoConstraints": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UIViewAutolayoutConstraints": {
+            "type": "OBJECT_REF",
+            "data": 11
+          },
+          "UIViewContentHuggingPriority": {
+            "type": "OBJECT_REF",
+            "data": 15
+          },
+          "UIViewSemanticContentAttribute": {
+            "type": "INT8",
+            "data": 0
+          },
+          "UIViewLargeContentStoredProperties": {
+            "type": "NIL",
+            "data": null
+          },
+          "UIImage": {
+            "type": "OBJECT_REF",
+            "data": 16
+          }
+        }
+      },
+      {
+        "index": 9,
+        "class": "UIColor",
+        "values": {
+          "UISystemColorName": {
+            "type": "OBJECT_REF",
+            "data": 10
+          },
+          "UIColorComponentCount": {
+            "type": "INT8",
+            "data": 2
+          },
+          "UIWhite": {
+            "type": "FLOAT",
+            "data": 0.0
+          },
+          "UIAlpha": {
+            "type": "FLOAT",
+            "data": 1.0
+          },
+          "NSWhite": {
+            "type": "DATA",
+            "data": "30"
+          },
+          "NSColorSpace": {
+            "type": "INT8",
+            "data": 4
+          }
+        }
+      },
+      {
+        "index": 10,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "6c6162656c436f6c6f72"
+          }
+        }
+      },
+      {
+        "index": 11,
+        "class": "NSMutableArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 14
+          }
+        }
+      },
+      {
+        "index": 12,
+        "class": "NSLayoutConstraint",
+        "values": {
+          "NSFirstItem": {
+            "type": "OBJECT_REF",
+            "data": 8
+          },
+          "NSFirstAttributeV2": {
+            "type": "INT8",
+            "data": 7
+          },
+          "NSFirstAttribute": {
+            "type": "INT8",
+            "data": 7
+          },
+          "NSConstantV2": {
+            "type": "DOUBLE",
+            "data": 155.0
+          },
+          "NSShouldBeArchived": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "NSConstant": {
+            "type": "DOUBLE",
+            "data": 155.0
+          }
+        }
+      },
+      {
+        "index": 13,
+        "class": "NSLayoutConstraint",
+        "values": {
+          "NSFirstItem": {
+            "type": "OBJECT_REF",
+            "data": 8
+          },
+          "NSFirstAttributeV2": {
+            "type": "INT8",
+            "data": 7
+          },
+          "NSFirstAttribute": {
+            "type": "INT8",
+            "data": 7
+          },
+          "NSMultiplier": {
+            "type": "DOUBLE",
+            "data": 1.476190447807312
+          },
+          "NSSecondItem": {
+            "type": "OBJECT_REF",
+            "data": 8
+          },
+          "NSSecondAttributeV2": {
+            "type": "INT8",
+            "data": 8
+          },
+          "NSSecondAttribute": {
+            "type": "INT8",
+            "data": 8
+          },
+          "NSShouldBeArchived": {
+            "type": "BOOL_FALSE",
+            "data": false
+          }
+        }
+      },
+      {
+        "index": 14,
+        "class": "NSLayoutConstraint",
+        "values": {
+          "NSFirstItem": {
+            "type": "OBJECT_REF",
+            "data": 8
+          },
+          "NSFirstAttributeV2": {
+            "type": "INT8",
+            "data": 8
+          },
+          "NSFirstAttribute": {
+            "type": "INT8",
+            "data": 8
+          },
+          "NSConstantV2": {
+            "type": "DOUBLE",
+            "data": 105.0
+          },
+          "NSShouldBeArchived": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "NSConstant": {
+            "type": "DOUBLE",
+            "data": 105.0
+          }
+        }
+      },
+      {
+        "index": 15,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "7b3235312c203235317d"
+          }
+        }
+      },
+      {
+        "index": 16,
+        "class": "UIImageNibPlaceholder",
+        "values": {
+          "UIImageWidth": {
+            "type": "FLOAT",
+            "data": 1.0
+          },
+          "UIImageHeight": {
+            "type": "FLOAT",
+            "data": 1.0
+          },
+          "UIResourceName": {
+            "type": "OBJECT_REF",
+            "data": 17
+          },
+          "UISystemSymbolResourceName": {
+            "type": "NIL",
+            "data": null
+          },
+          "UISymbolImageConfiguration": {
+            "type": "NIL",
+            "data": null
+          },
+          "UIResourceCatalogName": {
+            "type": "NIL",
+            "data": null
+          }
+        }
+      },
+      {
+        "index": 17,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "476c797068"
+          }
+        }
+      },
+      {
+        "index": 18,
+        "class": "UIColor",
+        "values": {
+          "UISystemColorName": {
+            "type": "OBJECT_REF",
+            "data": 19
+          },
+          "UIColorComponentCount": {
+            "type": "INT8",
+            "data": 2
+          },
+          "UIWhite": {
+            "type": "FLOAT",
+            "data": 1.0
+          },
+          "UIAlpha": {
+            "type": "FLOAT",
+            "data": 1.0
+          },
+          "NSWhite": {
+            "type": "DATA",
+            "data": "31"
+          },
+          "NSColorSpace": {
+            "type": "INT8",
+            "data": 4
+          }
+        }
+      },
+      {
+        "index": 19,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "73797374656d4261636b67726f756e64436f6c6f72"
+          }
+        }
+      },
+      {
+        "index": 20,
+        "class": "NSMutableArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 22
+          }
+        }
+      },
+      {
+        "index": 21,
+        "class": "NSLayoutConstraint",
+        "values": {
+          "NSFirstItem": {
+            "type": "OBJECT_REF",
+            "data": 8
+          },
+          "NSFirstAttributeV2": {
+            "type": "INT8",
+            "data": 9
+          },
+          "NSFirstAttribute": {
+            "type": "INT8",
+            "data": 9
+          },
+          "NSSecondItem": {
+            "type": "OBJECT_REF",
+            "data": 6
+          },
+          "NSSecondAttributeV2": {
+            "type": "INT8",
+            "data": 9
+          },
+          "NSSecondAttribute": {
+            "type": "INT8",
+            "data": 9
+          },
+          "NSShouldBeArchived": {
+            "type": "BOOL_FALSE",
+            "data": false
+          }
+        }
+      },
+      {
+        "index": 22,
+        "class": "NSLayoutConstraint",
+        "values": {
+          "NSFirstItem": {
+            "type": "OBJECT_REF",
+            "data": 8
+          },
+          "NSFirstAttributeV2": {
+            "type": "INT8",
+            "data": 10
+          },
+          "NSFirstAttribute": {
+            "type": "INT8",
+            "data": 10
+          },
+          "NSSecondItem": {
+            "type": "OBJECT_REF",
+            "data": 6
+          },
+          "NSSecondAttributeV2": {
+            "type": "INT8",
+            "data": 10
+          },
+          "NSSecondAttribute": {
+            "type": "INT8",
+            "data": 10
+          },
+          "NSShouldBeArchived": {
+            "type": "BOOL_FALSE",
+            "data": false
+          }
+        }
+      },
+      {
+        "index": 23,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 14
+          }
+        }
+      },
+      {
+        "index": 24,
+        "class": "UILayoutGuide",
+        "values": {
+          "UILayoutGuideOwningView": {
+            "type": "NIL",
+            "data": null
+          },
+          "UILayoutGuideIdentifier": {
+            "type": "OBJECT_REF",
+            "data": 25
+          },
+          "UILayoutGuideOwningViewIsLocked": {
+            "type": "BOOL_TRUE",
+            "data": true
+          },
+          "UILayoutGuideShouldBeArchived": {
+            "type": "BOOL_TRUE",
+            "data": true
+          },
+          "UILayoutGuideAllowsNegativeDimensions": {
+            "type": "BOOL_TRUE",
+            "data": true
+          }
+        }
+      },
+      {
+        "index": 25,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": ""
+          }
+        }
+      },
+      {
+        "index": 26,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 27
+          }
+        }
+      },
+      {
+        "index": 27,
+        "class": "UIRuntimeOutletConnection",
+        "values": {
+          "UILabel": {
+            "type": "OBJECT_REF",
+            "data": 28
+          },
+          "UISource": {
+            "type": "OBJECT_REF",
+            "data": 2
+          },
+          "UIDestination": {
+            "type": "OBJECT_REF",
+            "data": 6
+          }
+        }
+      },
+      {
+        "index": 28,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "76696577"
+          }
+        }
+      },
+      {
+        "index": 29,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "UIViewController-01J-lp-oVM.nib",
+    "objects": [
+      {
+        "index": 0,
+        "class": "NSObject",
+        "values": {
+          "UINibTopLevelObjectsKey": {
+            "type": "OBJECT_REF",
+            "data": 1
+          },
+          "UINibObjectsKey": {
+            "type": "OBJECT_REF",
+            "data": 12
+          },
+          "UINibConnectionsKey": {
+            "type": "OBJECT_REF",
+            "data": 13
+          },
+          "UINibVisibleWindowsKey": {
+            "type": "OBJECT_REF",
+            "data": 18
+          },
+          "UINibAccessibilityConfigurationsKey": {
+            "type": "OBJECT_REF",
+            "data": 18
+          },
+          "UINibTraitStorageListsKey": {
+            "type": "OBJECT_REF",
+            "data": 18
+          },
+          "UINibKeyValuePairsKey": {
+            "type": "OBJECT_REF",
+            "data": 18
+          },
+          "IBUINibLNEVersionKey": {
+            "type": "INT8",
+            "data": 1
+          }
+        }
+      },
+      {
+        "index": 1,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 8
+          }
+        }
+      },
+      {
+        "index": 2,
+        "class": "UIProxyObject",
+        "values": {
+          "UIProxiedObjectIdentifier": {
+            "type": "OBJECT_REF",
+            "data": 3
+          }
+        }
+      },
+      {
+        "index": 3,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "494246696c65734f776e6572"
+          }
+        }
+      },
+      {
+        "index": 4,
+        "class": "UIProxyObject",
+        "values": {
+          "UIProxiedObjectIdentifier": {
+            "type": "OBJECT_REF",
+            "data": 5
+          }
+        }
+      },
+      {
+        "index": 5,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "49424669727374526573706f6e646572"
+          }
+        }
+      },
+      {
+        "index": 6,
+        "class": "UIProxyObject",
+        "values": {
+          "UIProxiedObjectIdentifier": {
+            "type": "OBJECT_REF",
+            "data": 7
+          }
+        }
+      },
+      {
+        "index": 7,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "554953746f7279626f617264506c616365686f6c646572"
+          }
+        }
+      },
+      {
+        "index": 8,
+        "class": "UIClassSwapper",
+        "values": {
+          "UIExternalObjectsTableForViewLoading": {
+            "type": "OBJECT_REF",
+            "data": 9
+          },
+          "UINibName": {
+            "type": "OBJECT_REF",
+            "data": 10
+          },
+          "UIClassName": {
+            "type": "OBJECT_REF",
+            "data": 11
+          },
+          "UIOriginalClassName": {
+            "type": "OBJECT_REF",
+            "data": 11
+          }
+        }
+      },
+      {
+        "index": 9,
+        "class": "NSDictionary",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          }
+        }
+      },
+      {
+        "index": 10,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "30314a2d6c702d6f564d2d766965772d5a65352d36622d327433"
+          }
+        }
+      },
+      {
+        "index": 11,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "554956696577436f6e74726f6c6c6572"
+          }
+        }
+      },
+      {
+        "index": 12,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 8
+          }
+        }
+      },
+      {
+        "index": 13,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          },
+          "UINibEncoderEmptyKey": {
+            "type": "OBJECT_REF",
+            "data": 16
+          }
+        }
+      },
+      {
+        "index": 14,
+        "class": "UIRuntimeOutletConnection",
+        "values": {
+          "UILabel": {
+            "type": "OBJECT_REF",
+            "data": 15
+          },
+          "UISource": {
+            "type": "OBJECT_REF",
+            "data": 8
+          },
+          "UIDestination": {
+            "type": "OBJECT_REF",
+            "data": 6
+          }
+        }
+      },
+      {
+        "index": 15,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "73746f7279626f617264"
+          }
+        }
+      },
+      {
+        "index": 16,
+        "class": "UIRuntimeOutletConnection",
+        "values": {
+          "UILabel": {
+            "type": "OBJECT_REF",
+            "data": 17
+          },
+          "UISource": {
+            "type": "OBJECT_REF",
+            "data": 2
+          },
+          "UIDestination": {
+            "type": "OBJECT_REF",
+            "data": 8
+          }
+        }
+      },
+      {
+        "index": 17,
+        "class": "NSString",
+        "values": {
+          "NS.bytes": {
+            "type": "DATA",
+            "data": "7363656e6556696577436f6e74726f6c6c6572"
+          }
+        }
+      },
+      {
+        "index": 18,
+        "class": "NSArray",
+        "values": {
+          "NSInlinedValue": {
+            "type": "BOOL_FALSE",
+            "data": false
+          }
+        }
+      }
+    ]
+  }
+]

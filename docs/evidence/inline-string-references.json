@@ -1,0 +1,37 @@
+[
+  {
+    "constant": "/install/",
+    "instruction": "0x10001213c",
+    "function_start": "0x100011940",
+    "function_end": "0x1000122b0",
+    "register": "x0"
+  },
+  {
+    "constant": "/install/",
+    "instruction": "0x100012ff8",
+    "function_start": "0x100012eb8",
+    "function_end": "0x100013098",
+    "register": "x0"
+  },
+  {
+    "constant": "kravasigner",
+    "instruction": "0x1000fdbb8",
+    "function_start": "0x1000fd89c",
+    "function_end": "0x1000fea68",
+    "register": "x2"
+  },
+  {
+    "constant": "/source/",
+    "instruction": "0x1000fe4c4",
+    "function_start": "0x1000fd89c",
+    "function_end": "0x1000fea68",
+    "register": "x0"
+  },
+  {
+    "constant": "/install/",
+    "instruction": "0x1000fe504",
+    "function_start": "0x1000fd89c",
+    "function_end": "0x1000fea68",
+    "register": "x0"
+  }
+]

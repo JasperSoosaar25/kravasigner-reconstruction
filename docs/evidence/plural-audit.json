@@ -1,0 +1,272 @@
+[
+  {
+    "locale": "ar",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "one": "%lld تطبيق",
+            "other": "%lld تطبيقات"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "one": "%lld يوم",
+            "other": "%lld أيام"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Sources",
+        "variables": {
+          "value": {
+            "one": "%lld مصدر",
+            "other": "%lld مصادر"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  },
+  {
+    "locale": "cs",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "few": "%lld aplikace",
+            "many": "%lld aplikací",
+            "one": "%lld aplikace",
+            "other": "%lld aplikací"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "few": "%lld dny",
+            "many": "%lld dnů",
+            "one": "%lld den",
+            "other": "%lld dnů"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Sources",
+        "variables": {
+          "value": {
+            "few": "%lld zdroje",
+            "many": "%lld zdrojů",
+            "one": "%lld zdroj",
+            "other": "%lld zdrojů"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  },
+  {
+    "locale": "de",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "one": "%lld App",
+            "other": "%lld Apps"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "one": "%lld Tag",
+            "other": "%lld Tage"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "one": "%lld App",
+            "other": "%lld Apps"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "one": "%lld Day",
+            "other": "%lld Days"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  },
+  {
+    "locale": "id",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "other": "%lld Aplikasi"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "other": "%lld Hari"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  },
+  {
+    "locale": "it",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "one": "%lld Applicazione",
+            "other": "%lld Applicazioni"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "one": "%lld Giorno",
+            "other": "%lld Giorni"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Sources",
+        "variables": {
+          "value": {
+            "one": "%lld Fonte",
+            "other": "%lld Fonti"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  },
+  {
+    "locale": "pl",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "few": "%lld aplikacji",
+            "many": "%lld aplikacji",
+            "one": "%lld aplikacja",
+            "other": "%lld aplikacji"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "few": "%lld dni",
+            "many": "%lld dni",
+            "one": "%lld dzień",
+            "other": "%lld dni"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Sources",
+        "variables": {
+          "value": {
+            "few": "%lld źródeł",
+            "many": "%lld źródeł",
+            "one": "%lld źródło",
+            "other": "%lld źródeł"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  },
+  {
+    "locale": "vi",
+    "entries": [
+      {
+        "key": "%lld Apps",
+        "variables": {
+          "value": {
+            "one": "%lld ứng dụng",
+            "other": "%lld ứng dụng"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      },
+      {
+        "key": "%lld Days",
+        "variables": {
+          "value": {
+            "one": "%lld ngày",
+            "other": "%lld ngày"
+          }
+        },
+        "format": "%#@value@",
+        "reference_matches": true
+      }
+    ]
+  }
+]

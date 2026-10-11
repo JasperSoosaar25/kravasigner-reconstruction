@@ -1,0 +1,70 @@
+{
+  "directory": "/workspace/scratch/ad1a9cf4b617/inspection/catalog-physical",
+  "written": 9,
+  "failed": 0,
+  "files": [
+    {
+      "index": 0,
+      "asset_name": "Repositories",
+      "name": "nekofiles_folder.png",
+      "compression": "deepmap2",
+      "file": "0000_Repositories_256x256@1x.png"
+    },
+    {
+      "index": 1,
+      "asset_name": "Cert",
+      "name": "Cert.png",
+      "compression": "deepmap2",
+      "file": "0001_Cert_256x256@1x.png"
+    },
+    {
+      "index": 2,
+      "asset_name": "App_Unknown",
+      "name": "unknown2.png",
+      "compression": "deepmap2",
+      "file": "0002_App_Unknown_256x256@1x.png"
+    },
+    {
+      "index": 4,
+      "asset_name": "AppIcon",
+      "name": "feather.png",
+      "compression": "lzfse",
+      "file": "0004_AppIcon_1024x1024@1x.png"
+    },
+    {
+      "index": 6,
+      "asset_name": "AppIcon",
+      "name": "feather.png",
+      "compression": "lzfse",
+      "file": "0006_AppIcon_1024x1024@1x.png"
+    },
+    {
+      "index": 7,
+      "asset_name": "AppIcon",
+      "name": "feather_dark.png",
+      "compression": "lzfse",
+      "file": "0007_AppIcon_1024x1024@1x.png"
+    },
+    {
+      "index": 8,
+      "asset_name": "AppIcon",
+      "name": "feather_dark.png",
+      "compression": "lzfse",
+      "file": "0008_AppIcon_1024x1024@1x.png"
+    },
+    {
+      "index": 9,
+      "asset_name": "AppIcon",
+      "name": "feather_tint.png",
+      "compression": "lzfse",
+      "file": "0009_AppIcon_1024x1024@1x.png"
+    },
+    {
+      "index": 10,
+      "asset_name": "AppIcon",
+      "name": "feather_tint.png",
+      "compression": "lzfse",
+      "file": "0010_AppIcon_1024x1024@1x.png"
+    }
+  ]
+}

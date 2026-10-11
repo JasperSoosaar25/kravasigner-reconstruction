@@ -1,0 +1,57 @@
+{
+  "method": "ARM64 ADR/ADRP+ADD references; candidate functions from LC_FUNCTION_STARTS. Not complete control-flow analysis.",
+  "function_count": 82979,
+  "constant_addresses": {
+    "local.kravasign.com": [
+      "0x100d14250"
+    ],
+    "https://www.kravasign.com/local.crt": [
+      "0x100d155b0"
+    ],
+    "https://www.kravasign.com/local.pem": [
+      "0x100d155e0"
+    ],
+    "kravasigner": [],
+    "addRepo": [],
+    "server.crt": [],
+    "server.pem": [],
+    "commonName.txt": []
+  },
+  "references": [
+    {
+      "string": "local.kravasign.com",
+      "string_address": "0x100d14250",
+      "reference_instruction": "0x1000151ec",
+      "function_start": "0x1000150d0",
+      "function_end": "0x100015214"
+    },
+    {
+      "string": "https://www.kravasign.com/local.crt",
+      "string_address": "0x100d155b0",
+      "reference_instruction": "0x100074f48",
+      "function_start": "0x100074ef8",
+      "function_end": "0x100075038"
+    },
+    {
+      "string": "https://www.kravasign.com/local.pem",
+      "string_address": "0x100d155e0",
+      "reference_instruction": "0x100074f58",
+      "function_start": "0x100074ef8",
+      "function_end": "0x100075038"
+    },
+    {
+      "string": "https://www.kravasign.com/local.crt",
+      "string_address": "0x100d155b0",
+      "reference_instruction": "0x100104a8c",
+      "function_start": "0x1001049f0",
+      "function_end": "0x100104b80"
+    },
+    {
+      "string": "https://www.kravasign.com/local.pem",
+      "string_address": "0x100d155e0",
+      "reference_instruction": "0x100104a9c",
+      "function_start": "0x1001049f0",
+      "function_end": "0x100104b80"
+    }
+  ]
+}

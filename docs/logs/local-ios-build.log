@@ -1,0 +1,4 @@
+$ bash scripts/build.sh device
+An Apple macOS host with Xcode is required; xcodebuild was not found.
+Exit: 2
+No IPA generated; no app launched.

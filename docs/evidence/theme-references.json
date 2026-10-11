@@ -1,0 +1,133 @@
+{
+  "method": "Inline ARM64 immediate color candidates and long-string preference-key references; call context must be checked.",
+  "inline_colors": [
+    {
+      "hex_color": "#f97316",
+      "register": "x0",
+      "instruction": "0x10004807c",
+      "function_start": "0x100047fb4",
+      "function_end": "0x1000481a4"
+    },
+    {
+      "hex_color": "#f97316",
+      "register": "x0",
+      "instruction": "0x100050f44",
+      "function_start": "0x100050ddc",
+      "function_end": "0x10005130c"
+    },
+    {
+      "hex_color": "#f97316",
+      "register": "x0",
+      "instruction": "0x1000510a4",
+      "function_start": "0x100050ddc",
+      "function_end": "0x10005130c"
+    },
+    {
+      "hex_color": "#f97316",
+      "register": "x0",
+      "instruction": "0x10005495c",
+      "function_start": "0x100054494",
+      "function_end": "0x100054c58"
+    },
+    {
+      "hex_color": "#f97316",
+      "register": "x0",
+      "instruction": "0x10009f8f0",
+      "function_start": "0x10009f320",
+      "function_end": "0x10009fa54"
+    },
+    {
+      "hex_color": "#f97316",
+      "register": "x22",
+      "instruction": "0x1000ff09c",
+      "function_start": "0x1000feda4",
+      "function_end": "0x1000ff170"
+    }
+  ],
+  "preference_references": [
+    {
+      "key": "Feather.userTintColor",
+      "instruction": "0x100048068",
+      "function_start": "0x100047fb4",
+      "function_end": "0x1000481a4"
+    },
+    {
+      "key": "Feather.shouldTintIcons",
+      "instruction": "0x1000480ac",
+      "function_start": "0x100047fb4",
+      "function_end": "0x1000481a4"
+    },
+    {
+      "key": "Feather.shouldChangeIconsBasedOffStyle",
+      "instruction": "0x1000480d4",
+      "function_start": "0x100047fb4",
+      "function_end": "0x1000481a4"
+    },
+    {
+      "key": "Feather.userTintColor",
+      "instruction": "0x100050f30",
+      "function_start": "0x100050ddc",
+      "function_end": "0x10005130c"
+    },
+    {
+      "key": "Feather.shouldTintIcons",
+      "instruction": "0x100050f74",
+      "function_start": "0x100050ddc",
+      "function_end": "0x10005130c"
+    },
+    {
+      "key": "Feather.shouldChangeIconsBasedOffStyle",
+      "instruction": "0x100050fa4",
+      "function_start": "0x100050ddc",
+      "function_end": "0x10005130c"
+    },
+    {
+      "key": "Feather.userTintColor",
+      "instruction": "0x100054948",
+      "function_start": "0x100054494",
+      "function_end": "0x100054c58"
+    },
+    {
+      "key": "Feather.shouldTintIcons",
+      "instruction": "0x10005498c",
+      "function_start": "0x100054494",
+      "function_end": "0x100054c58"
+    },
+    {
+      "key": "Feather.shouldChangeIconsBasedOffStyle",
+      "instruction": "0x1000549b4",
+      "function_start": "0x100054494",
+      "function_end": "0x100054c58"
+    },
+    {
+      "key": "Feather.userTintColor",
+      "instruction": "0x10009f8dc",
+      "function_start": "0x10009f320",
+      "function_end": "0x10009fa54"
+    },
+    {
+      "key": "Feather.shouldTintIcons",
+      "instruction": "0x10009f920",
+      "function_start": "0x10009f320",
+      "function_end": "0x10009fa54"
+    },
+    {
+      "key": "Feather.shouldChangeIconsBasedOffStyle",
+      "instruction": "0x10009f948",
+      "function_start": "0x10009f320",
+      "function_end": "0x10009fa54"
+    },
+    {
+      "key": "Feather.userInterfaceStyle",
+      "instruction": "0x1000fee3c",
+      "function_start": "0x1000feda4",
+      "function_end": "0x1000ff170"
+    },
+    {
+      "key": "Feather.userTintColor",
+      "instruction": "0x1000ff02c",
+      "function_start": "0x1000feda4",
+      "function_end": "0x1000ff170"
+    }
+  ]
+}

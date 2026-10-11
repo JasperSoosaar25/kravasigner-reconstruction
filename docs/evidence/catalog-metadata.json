@@ -1,0 +1,1419 @@
+{
+  "bom": {
+    "header": {
+      "version": 1,
+      "number_of_blocks": 51,
+      "index_offset": 2566544,
+      "index_length": 2072,
+      "vars_offset": 2566416,
+      "vars_length": 117
+    },
+    "block_count": 256,
+    "variables": {
+      "APPEARANCEKEYS": 6,
+      "BITMAPKEYS": 46,
+      "CARHEADER": 1,
+      "EXTENDED_METADATA": 45,
+      "FACETKEYS": 4,
+      "KEYFORMAT": 22,
+      "RENDITIONS": 2
+    }
+  },
+  "header": {
+    "tag": "CTAR",
+    "coreui_version": 970,
+    "storage_version": 17,
+    "storage_timestamp": 0,
+    "rendition_count": 11,
+    "main_version": "@(#)PROGRAM:CoreUI  PROJECT:CoreUI-970.1",
+    "asset_storage_version": "Xcode 26.0 (17A321) via AssetCatalogSimulatorAgent",
+    "uuid": "00000000-0000-0000-0000-000000000000",
+    "associated_checksum": 0,
+    "schema_version": 2,
+    "color_space_id": 1,
+    "key_semantics": 2
+  },
+  "extended_metadata": {
+    "tag": "META",
+    "deployment_platform_version": "16.0",
+    "deployment_platform": "ios",
+    "authoring_tool": "@(#)PROGRAM:CoreThemeDefinition  PROJECT:CoreThemeDefinition-652  [IIO-2773.0.1.2]"
+  },
+  "key_format": {
+    "tag": "kfmt",
+    "version": 0,
+    "attributes": [
+      7,
+      13,
+      12,
+      15,
+      16,
+      9,
+      17,
+      1,
+      2
+    ],
+    "attribute_names": [
+      "Theme Appearance",
+      "Localization",
+      "Scale",
+      "Idiom",
+      "Subtype",
+      "Dimension 2",
+      "Identifier",
+      "Element",
+      "Part"
+    ]
+  },
+  "appearances": [
+    {
+      "name": "ISAppearanceTintable",
+      "id": 10
+    },
+    {
+      "name": "UIAppearanceAny",
+      "id": 0
+    },
+    {
+      "name": "UIAppearanceDark",
+      "id": 1
+    }
+  ],
+  "facets": [
+    {
+      "name": "AppIcon",
+      "attributes": [
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 220
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        }
+      ]
+    },
+    {
+      "name": "App_Unknown",
+      "attributes": [
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 181
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 43481
+        }
+      ]
+    },
+    {
+      "name": "Cert",
+      "attributes": [
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 181
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6551
+        }
+      ]
+    },
+    {
+      "name": "Repositories",
+      "attributes": [
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 181
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 4420
+        }
+      ]
+    }
+  ],
+  "renditions": [
+    {
+      "asset_name": "Repositories",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 0
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 0
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 0
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 4420
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 181
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 16,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 1,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 256,
+        "height": 256,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "nekofiles_folder.png",
+        "bitmap_lengths": [
+          5146
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000001000000010000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000001000000010000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00040000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 2,
+          "length": 5146,
+          "declared_length": 5130,
+          "compression_type": 11,
+          "compression": "deepmap2"
+        }
+      }
+    },
+    {
+      "asset_name": "Cert",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 0
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 0
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 0
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6551
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 181
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 16,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 1,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 256,
+        "height": 256,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "Cert.png",
+        "bitmap_lengths": [
+          38394
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000001000000010000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000001000000010000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00040000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "length": 38394,
+          "declared_length": 38378,
+          "compression_type": 11,
+          "compression": "deepmap2"
+        }
+      }
+    },
+    {
+      "asset_name": "App_Unknown",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 0
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 0
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 0
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 43481
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 181
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 16,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 1,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 256,
+        "height": 256,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "unknown2.png",
+        "bitmap_lengths": [
+          17709
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000001000000010000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000001000000010000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00040000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 2,
+          "length": 17709,
+          "declared_length": 17693,
+          "compression_type": 11,
+          "compression": "deepmap2"
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 0
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 1
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 0
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 218
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 0,
+        "height": 0,
+        "scale_factor": 0,
+        "color_space_id": 0,
+        "modification_time": 0,
+        "layout": 1010,
+        "layout_name": "Multisize Image Set",
+        "name": "AppIcon",
+        "bitmap_lengths": [
+          24
+        ],
+        "tlvs": [
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "0000000000000000"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          }
+        ],
+        "payload": {
+          "tag": "SISM",
+          "version": 1,
+          "length": 24
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 0
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 1
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 1
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 220
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 1024,
+        "height": 1024,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "feather.png",
+        "bitmap_lengths": [
+          486909
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000004000000040000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000004000000040000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00100000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 3,
+          "length": 486909,
+          "declared_length": 4,
+          "compression_type": 4,
+          "compression": "lzfse"
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 0
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 2
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 0
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 218
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 0,
+        "height": 0,
+        "scale_factor": 0,
+        "color_space_id": 0,
+        "modification_time": 0,
+        "layout": 1010,
+        "layout_name": "Multisize Image Set",
+        "name": "AppIcon",
+        "bitmap_lengths": [
+          24
+        ],
+        "tlvs": [
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "0000000000000000"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          }
+        ],
+        "payload": {
+          "tag": "SISM",
+          "version": 1,
+          "length": 24
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 0
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 2
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 1
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 220
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 1024,
+        "height": 1024,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "feather.png",
+        "bitmap_lengths": [
+          486909
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000004000000040000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000004000000040000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00100000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 3,
+          "length": 486909,
+          "declared_length": 4,
+          "compression_type": 4,
+          "compression": "lzfse"
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 1
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 1
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 1
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 220
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 1024,
+        "height": 1024,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "feather_dark.png",
+        "bitmap_lengths": [
+          610824
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000004000000040000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000004000000040000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00100000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 3,
+          "length": 610824,
+          "declared_length": 4,
+          "compression_type": 4,
+          "compression": "lzfse"
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 1
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 2
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 1
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 220
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 1024,
+        "height": 1024,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "feather_dark.png",
+        "bitmap_lengths": [
+          610824
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000004000000040000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000004000000040000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00100000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 3,
+          "length": 610824,
+          "declared_length": 4,
+          "compression_type": 4,
+          "compression": "lzfse"
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 10
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 1
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 1
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 220
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 1024,
+        "height": 1024,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "feather_tint.png",
+        "bitmap_lengths": [
+          144985
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000004000000040000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000004000000040000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00100000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 1,
+          "length": 144985,
+          "declared_length": 4,
+          "compression_type": 4,
+          "compression": "lzfse"
+        }
+      }
+    },
+    {
+      "asset_name": "AppIcon",
+      "key": [
+        {
+          "type": 7,
+          "name": "Theme Appearance",
+          "value": 10
+        },
+        {
+          "type": 13,
+          "name": "Localization",
+          "value": 0
+        },
+        {
+          "type": 12,
+          "name": "Scale",
+          "value": 1
+        },
+        {
+          "type": 15,
+          "name": "Idiom",
+          "value": 2
+        },
+        {
+          "type": 16,
+          "name": "Subtype",
+          "value": 0
+        },
+        {
+          "type": 9,
+          "name": "Dimension 2",
+          "value": 1
+        },
+        {
+          "type": 17,
+          "name": "Identifier",
+          "value": 6849
+        },
+        {
+          "type": 1,
+          "name": "Element",
+          "value": 85
+        },
+        {
+          "type": 2,
+          "name": "Part",
+          "value": 220
+        }
+      ],
+      "csi": {
+        "tag": "CTSI",
+        "version": 1,
+        "flags": {
+          "raw": 0,
+          "header_flagged_fpo": false,
+          "excluded_from_contrast_filter": false,
+          "vector_based": false,
+          "opaque": false,
+          "bitmap_encoding": 0,
+          "opt_out_of_thinning": false,
+          "flippable": false,
+          "tintable": false,
+          "preserved_vector_representation": false
+        },
+        "width": 1024,
+        "height": 1024,
+        "scale_factor": 100,
+        "pixel_format": "ARGB",
+        "color_space_id": 1,
+        "modification_time": 0,
+        "layout": 12,
+        "layout_name": "One Part Scale",
+        "name": "feather_tint.png",
+        "bitmap_lengths": [
+          144985
+        ],
+        "tlvs": [
+          {
+            "type": 1001,
+            "name": "Slices",
+            "length": 20,
+            "hex": "0100000000000000000000000004000000040000"
+          },
+          {
+            "type": 1003,
+            "name": "Metrics",
+            "length": 28,
+            "hex": "01000000000000000000000000000000000000000004000000040000"
+          },
+          {
+            "type": 1004,
+            "name": "Blend Mode and Opacity",
+            "length": 8,
+            "hex": "000000000000803f"
+          },
+          {
+            "type": 1006,
+            "name": "EXIF Orientation",
+            "length": 4,
+            "hex": "01000000"
+          },
+          {
+            "type": 1007,
+            "name": "Unknown 1007",
+            "length": 4,
+            "hex": "00100000"
+          }
+        ],
+        "payload": {
+          "tag": "CELM",
+          "version": 1,
+          "length": 144985,
+          "declared_length": 4,
+          "compression_type": 4,
+          "compression": "lzfse"
+        }
+      }
+    }
+  ]
+}

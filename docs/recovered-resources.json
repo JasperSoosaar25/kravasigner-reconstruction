@@ -1,0 +1,698 @@
+[
+  {
+    "path": "RecoveredResources/Bundle/de.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/de.lproj/Localizable.strings",
+    "sha256": "77a31c03d344b27cee23982057ee4995fef3535688d9f9e652d0852227df5fd9",
+    "size": 18938,
+    "built_path": "de.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/de.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/de.lproj/Localizable.stringsdict",
+    "sha256": "bf8ec87cf45883b6eec7cfc8cdb8fbcc33bf8f1747cbb6a17e078f09b39e806e",
+    "size": 281,
+    "built_path": "de.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/ar.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/ar.lproj/Localizable.strings",
+    "sha256": "a2d6d1a0d38cdc5fdfdf4ab15dfc0f953f18f0c1d157709d1c02e2a46578133c",
+    "size": 21531,
+    "built_path": "ar.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/ar.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/ar.lproj/Localizable.stringsdict",
+    "sha256": "330d571cd2bdbcff597563bd90cde4ee62f398f81453f8ec61574d9a322250d9",
+    "size": 435,
+    "built_path": "ar.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/zh-Hans.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/zh-Hans.lproj/Localizable.strings",
+    "sha256": "2f65c8048cba7ae343eb8e533c6310fb620ee10b55e2fdd12e0730379090812e",
+    "size": 13826,
+    "built_path": "zh-Hans.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/en.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/en.lproj/Localizable.strings",
+    "sha256": "7d887bc757486879a5b0ad436fddf24b77d809be6f6d71da83f34fece8169fff",
+    "size": 9043,
+    "built_path": "en.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/en.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/en.lproj/Localizable.stringsdict",
+    "sha256": "4cb5304b41c53303fdb2b60c22e42d2b080520bc405fd334aa066a189f284741",
+    "size": 270,
+    "built_path": "en.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V1Mac@2x.png",
+    "ipa_path": "Payload/KravaSigner.app/V1Mac@2x.png",
+    "sha256": "486f72a2ae3877368774753a8f46b01a1459224ad9f16e6946c9ed1efccbfaa3",
+    "size": 11818,
+    "built_path": "V1Mac@2x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1Mac@2x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V1Mac@2x.png",
+    "sha256": "8aa4a5920b44fca2ecb01ffee220646a33afbc575bdb6e9f30080c0d5e4589c7",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V1Mac@3x.png",
+    "ipa_path": "Payload/KravaSigner.app/V1Mac@3x.png",
+    "sha256": "c7b0528ed70666ba1e07c893a7ce9791dc418e2cf6543784e5234e694bbd08f2",
+    "size": 23814,
+    "built_path": "V1Mac@3x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1Mac@3x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V1Mac@3x.png",
+    "sha256": "0da6366569622811ae341dc76246d95b008b4108cd64b00fedcb0f037c554269",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/swift-nio__NIOFileSystem.bundle/PrivacyInfo.xcprivacy",
+    "ipa_path": "Payload/KravaSigner.app/swift-nio__NIOFileSystem.bundle/PrivacyInfo.xcprivacy",
+    "sha256": "982f20d820bc4460acc9d4116c3e6c8ec837f717dc82edbb7308f7400515c909",
+    "size": 599,
+    "built_path": "swift-nio__NIOFileSystem.bundle/PrivacyInfo.xcprivacy",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Reference/swift-nio__NIOFileSystem.bundle/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/swift-nio__NIOFileSystem.bundle/Info.plist",
+    "sha256": "cb3c7d2078bfbf20e361a51a86bde6e942f035fd8c9a1fb97432612c4e6813fd",
+    "size": 694,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/es.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/es.lproj/Localizable.strings",
+    "sha256": "5b6c177a06e9b563577d82119f0e5b8777d3e5c2b974239d2e4ad3f83a6a48a9",
+    "size": 1593,
+    "built_path": "es.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Settings.bundle/en.lproj/Root.strings",
+    "ipa_path": "Payload/KravaSigner.app/Settings.bundle/en.lproj/Root.strings",
+    "sha256": "abe7d62def8a5e82d5a0a6c6dfc5e7b9118f3f90fae2414096b3ae9e42386e6a",
+    "size": 225,
+    "built_path": "Settings.bundle/en.lproj/Root.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Settings.bundle/Root.plist",
+    "ipa_path": "Payload/KravaSigner.app/Settings.bundle/Root.plist",
+    "sha256": "f8f87f9c8aac5cbc50f4fb4c5db1c0d17ea5b056193f9bb4c6aaf55b78b05f92",
+    "size": 489,
+    "built_path": "Settings.bundle/Root.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/ellekit.deb",
+    "ipa_path": "Payload/KravaSigner.app/ellekit.deb",
+    "sha256": "588ad56c5de5585ca2d66e385cc8f25b4c1d77d5e8fc52baec6d69cb3fa3343d",
+    "size": 114288,
+    "built_path": "ellekit.deb",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/it.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/it.lproj/Localizable.strings",
+    "sha256": "0742cb6e721adf596c01bbf05aca76bc28038f5d41a7b16d34ea67985b5679a3",
+    "size": 17239,
+    "built_path": "it.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/it.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/it.lproj/Localizable.stringsdict",
+    "sha256": "378eb04b72cc5589e57a5afc2ca0b0a5bafcbd6f10f75963a39da7cbf06158fc",
+    "size": 399,
+    "built_path": "it.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V0@2x.png",
+    "ipa_path": "Payload/KravaSigner.app/V0@2x.png",
+    "sha256": "cd476bd8083df37cb409bcf7d3c753ee36061b42e57adfb5c4392956634696db",
+    "size": 12709,
+    "built_path": "V0@2x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V0@2x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V0@2x.png",
+    "sha256": "0a8ec0b09a877d865a352f73ec46a5e9828057cee6a3737467bc2c213bdf3b06",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/AppIcon60x60@2x.png",
+    "ipa_path": "Payload/KravaSigner.app/AppIcon60x60@2x.png",
+    "sha256": "ff6d82b3c9a4318b72204681acf6e02593b466bd6739c4e3e248786e22914c07",
+    "size": 17391,
+    "built_path": "AppIcon60x60@2x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
+    "ipa_path": "Payload/KravaSigner.app/Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
+    "sha256": "b5e002093cdc58d236c1986ef22a94810dd90e3050a92c7280e7e30c6397939c",
+    "size": 2229,
+    "built_path": "Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Launch Screen.storyboardc/UIViewController-01J-lp-oVM.nib",
+    "ipa_path": "Payload/KravaSigner.app/Launch Screen.storyboardc/UIViewController-01J-lp-oVM.nib",
+    "sha256": "54f3637f671feba5f19e82ec4f4a7fb448bb3cfc0fb180f089aa571fc8f053e2",
+    "size": 924,
+    "built_path": "Launch Screen.storyboardc/UIViewController-01J-lp-oVM.nib",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Launch Screen.storyboardc/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/Launch Screen.storyboardc/Info.plist",
+    "sha256": "1f255d5cc53b531e3f29a9406a8df49a958e2bf9443d3e20bd8374f707f7d5c8",
+    "size": 258,
+    "built_path": "Launch Screen.storyboardc/Info.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Wing@3x.png",
+    "ipa_path": "Payload/KravaSigner.app/Wing@3x.png",
+    "sha256": "c5a09196a9e4d8e94fa4e212323c3dd1679293871e4b15cdda644f1c92c28580",
+    "size": 18182,
+    "built_path": "Wing@3x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Wing@3x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._Wing@3x.png",
+    "sha256": "e686d249890d962c8b8d0ece770ad89a80e58d00c97e1aa1c9bc2c7ed4430263",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Wing@2x.png",
+    "ipa_path": "Payload/KravaSigner.app/Wing@2x.png",
+    "sha256": "75be2cf4faf20145e9d7f5c9019427ce4dba9040cf010b6277876f1d9edd54f5",
+    "size": 9886,
+    "built_path": "Wing@2x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Wing@2x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._Wing@2x.png",
+    "sha256": "4279f24c9ef36ee35464555728613a80fb93304bc990ca0c633964f31e711c0d",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/swift-crypto_Crypto.bundle/PrivacyInfo.xcprivacy",
+    "ipa_path": "Payload/KravaSigner.app/swift-crypto_Crypto.bundle/PrivacyInfo.xcprivacy",
+    "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0",
+    "size": 398,
+    "built_path": "swift-crypto_Crypto.bundle/PrivacyInfo.xcprivacy",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Reference/swift-crypto_Crypto.bundle/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/swift-crypto_Crypto.bundle/Info.plist",
+    "sha256": "0727d52bbe66e4939e7325580689319f7275a4027c11cc33e0f95247eebda9af",
+    "size": 684,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/BitByteData_BitByteData.bundle/PrivacyInfo.xcprivacy",
+    "ipa_path": "Payload/KravaSigner.app/BitByteData_BitByteData.bundle/PrivacyInfo.xcprivacy",
+    "sha256": "521eb6ef8430773e5c010e1838fe9dd8fa5d62b7b76d1cea8d7d8daadcb144e2",
+    "size": 373,
+    "built_path": "BitByteData_BitByteData.bundle/PrivacyInfo.xcprivacy",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Reference/BitByteData_BitByteData.bundle/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/BitByteData_BitByteData.bundle/Info.plist",
+    "sha256": "d5af74e63558a6f83b52d13f6c4d13bb4f8dcdb74dca167c618300fce01dae30",
+    "size": 692,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Feather.momd/VersionInfo.plist",
+    "ipa_path": "Payload/KravaSigner.app/Feather.momd/VersionInfo.plist",
+    "sha256": "92d7da8d7d48d73682160923ca2183177f790aa8f0d0f4fcfa6002ae0bcaeae4",
+    "size": 464,
+    "built_path": "Feather.momd/VersionInfo.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Feather.momd/Feather.mom",
+    "ipa_path": "Payload/KravaSigner.app/Feather.momd/Feather.mom",
+    "sha256": "088a478450d0a697e17657f1f8ff30d881f1136c561d30df653031a7d2bd6652",
+    "size": 4973,
+    "built_path": "Feather.momd/Feather.mom",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Feather.momd/Feather.omo",
+    "ipa_path": "Payload/KravaSigner.app/Feather.momd/Feather.omo",
+    "sha256": "a0103071b8e7215f7610dbc8ad012169d11b452f3bd646f0f9d23070f77dab03",
+    "size": 10056,
+    "built_path": "Feather.momd/Feather.omo",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/cs.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/cs.lproj/Localizable.strings",
+    "sha256": "404a9198e73f6ce68517a2cd114863f423ba644a36bad8c520192c60bfd0c13f",
+    "size": 10636,
+    "built_path": "cs.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/cs.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/cs.lproj/Localizable.stringsdict",
+    "sha256": "a6605d4ce420671249a6524c2c7fb86347a9cff52732037b01bbfbd61b1534f7",
+    "size": 464,
+    "built_path": "cs.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/feather_extension.png",
+    "ipa_path": "Payload/KravaSigner.app/feather_extension.png",
+    "sha256": "5e0fc2097e2eea04e6906f5963a94baf4faa81ea7c1af45e3e105ebdb1b604bd",
+    "size": 9856,
+    "built_path": "feather_extension.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._feather_extension.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._feather_extension.png",
+    "sha256": "cfc8ef861bc04d4f749a8f55dc984e0c4732787f54289af8e4e5997aa7986628",
+    "size": 219,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner.latest_result.txt",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner.latest_result.txt",
+    "sha256": "d81393a0b60ff894604b2ce8723e6f208d8492209d2a79e316be35a0a00fe4df",
+    "size": 915,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner.latest_result.txt",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/SWCompression.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/SWCompression.plist",
+    "sha256": "65db385d7a207859bef3c2333ee0e7161a0867ca8891f06cc958675d12973659",
+    "size": 1483,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/SWCompression.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Nuke.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Nuke.plist",
+    "sha256": "35cf9c210f4c6cd07fae05eaf284bdeb89b05bc7ec1af26f084f231ab75841fd",
+    "size": 1502,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Nuke.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/BitByteData.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/BitByteData.plist",
+    "sha256": "65db385d7a207859bef3c2333ee0e7161a0867ca8891f06cc958675d12973659",
+    "size": 1483,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/BitByteData.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Zip.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Zip.plist",
+    "sha256": "7d9e73b30f785c144c21f3112d6a0f889e5c21bbaa23b53d865bb0c67858b6aa",
+    "size": 1494,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Zip.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/LiveContainer.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/LiveContainer.plist",
+    "sha256": "38eb74fd5aabbb0619f8851c0c1a31c22f81100249f78b80f16f4c404db7f2fe",
+    "size": 11768,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/LiveContainer.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Zsign.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Zsign.plist",
+    "sha256": "f7e723e68aace1898cc6ab5b3b5d5bbf804169d5b7db74691988479655258097",
+    "size": 1475,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/Zsign.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/idevice.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/idevice.plist",
+    "sha256": "e32626eb5df76c96f7c4b3e7c64690efed65621dbfb54b2a44cc1d0b4ebc61ae",
+    "size": 414,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/idevice.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/vapor.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/vapor.plist",
+    "sha256": "ffc5adeac9cf05a2ffd85bc65bb17f57cd9b8eaed63e7278bdb3ca3106499289",
+    "size": 1491,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/vapor.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/ElleKit.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/ElleKit.plist",
+    "sha256": "f870e4134a49f3c365c153491ddef459128b3ae2fb28849140e493b89ad63b33",
+    "size": 1877,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner/ElleKit.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner.plist",
+    "ipa_path": "Payload/KravaSigner.app/com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner.plist",
+    "sha256": "7f61d78bb1eff30df385b8c450fdb2d9259aec813a686409ad08e56e7d06f1aa",
+    "size": 2174,
+    "built_path": "com.mono0926.LicensePlist.Output/com.kravasign.KravaSigner.plist",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V0@3x.png",
+    "ipa_path": "Payload/KravaSigner.app/V0@3x.png",
+    "sha256": "ae1429bbc0cb6b11ebef85ce35770dd3880bf9981143d90d8f02ca464314e429",
+    "size": 22697,
+    "built_path": "V0@3x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V0@3x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V0@3x.png",
+    "sha256": "de368163f98dc68d428ac54089092ffa7ffc0e3859eb657a4622f01bd533692e",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/swift-nio-ssl_NIOSSL.bundle/PrivacyInfo.xcprivacy",
+    "ipa_path": "Payload/KravaSigner.app/swift-nio-ssl_NIOSSL.bundle/PrivacyInfo.xcprivacy",
+    "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0",
+    "size": 398,
+    "built_path": "swift-nio-ssl_NIOSSL.bundle/PrivacyInfo.xcprivacy",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Reference/swift-nio-ssl_NIOSSL.bundle/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/swift-nio-ssl_NIOSSL.bundle/Info.plist",
+    "sha256": "a2f4757f1eb7d18545c6486d518ef1b00db4ddb5c24f8212ff83ff6106800fe8",
+    "size": 686,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Assets.car",
+    "ipa_path": "Payload/KravaSigner.app/Assets.car",
+    "sha256": "50609cba61e12dd6b7c003cac4087a677831ce962086c1cd9769c4806f738300",
+    "size": 2568616,
+    "built_path": "Assets.car",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/tr.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/tr.lproj/Localizable.strings",
+    "sha256": "960819e6a2a2982e7ffb7d175d9e5f7e8c080793914cfd37abcf1d9f81e2823e",
+    "size": 24405,
+    "built_path": "tr.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/pl.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/pl.lproj/Localizable.strings",
+    "sha256": "48c4bc6db80cfd9f5717393925b08508dde448ab5fe6a85cc1074796364ff575",
+    "size": 22411,
+    "built_path": "pl.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/pl.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/pl.lproj/Localizable.stringsdict",
+    "sha256": "7d6189cd9cd6d01c1b2b249cd5a047faeeb7d0794c6fde45955e1707d6c5e13e",
+    "size": 444,
+    "built_path": "pl.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/AppIcon76x76@2x~ipad.png",
+    "ipa_path": "Payload/KravaSigner.app/AppIcon76x76@2x~ipad.png",
+    "sha256": "585ca9c9b41a98e59438353a7672ea61b2c7c65b74de729d793ddcd35b4f046b",
+    "size": 24752,
+    "built_path": "AppIcon76x76@2x~ipad.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/vi.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/vi.lproj/Localizable.strings",
+    "sha256": "924e0455af0a0d7abc8b006dc6521eb1bdb8b34a8dcdce2c39c026d463ba262a",
+    "size": 23430,
+    "built_path": "vi.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/vi.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/vi.lproj/Localizable.stringsdict",
+    "sha256": "2b6e6f0b7b018a2cde814c16253fac69143bfd09d95c9d851b30cdddbcd3937b",
+    "size": 298,
+    "built_path": "vi.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/ru.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/ru.lproj/Localizable.strings",
+    "sha256": "2560d71a65dd2da1583f94ef0084cb27b40147250bfec26aaac9d46786e11fa7",
+    "size": 2107,
+    "built_path": "ru.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/fr.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/fr.lproj/Localizable.strings",
+    "sha256": "d1ffe5fd0744c446380afa724e452f365f74c894b2fcfeed871a3a74c952d204",
+    "size": 1522,
+    "built_path": "fr.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/id.lproj/Localizable.strings",
+    "ipa_path": "Payload/KravaSigner.app/id.lproj/Localizable.strings",
+    "sha256": "22eba37b7d5dc277176d4ff52ef9077f82cf4514d3e164e245577e6d3c1ad4bf",
+    "size": 8971,
+    "built_path": "id.lproj/Localizable.strings",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/id.lproj/Localizable.stringsdict",
+    "ipa_path": "Payload/KravaSigner.app/id.lproj/Localizable.stringsdict",
+    "sha256": "2e6d12202383f998d563dc4e46a49d95006ccd4f624a8a2ac1850ecf789c73d2",
+    "size": 267,
+    "built_path": "id.lproj/Localizable.stringsdict",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V2Mac@2x.png",
+    "ipa_path": "Payload/KravaSigner.app/V2Mac@2x.png",
+    "sha256": "dec4eab29adcc2318f39e33b146c14b8363dedc47a74dafb5b781efabd9d0616",
+    "size": 13605,
+    "built_path": "V2Mac@2x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V2Mac@2x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V2Mac@2x.png",
+    "sha256": "14d1c6e2be90a6b846c79e9f6845090249c483c7014e1efc661dcb4bd9211b5a",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy",
+    "ipa_path": "Payload/KravaSigner.app/Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy",
+    "sha256": "5a9b8fc0cddb10201bb47cc2804b3f004c7251476622d25bfc4eb54ed46e1084",
+    "size": 373,
+    "built_path": "Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Reference/Frameworks/OpenSSL.framework/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/Frameworks/OpenSSL.framework/Info.plist",
+    "sha256": "6adc1728fb13db0c62827167188690312b767a7898e81935f0ac89c31e46fb39",
+    "size": 768,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "Feather.xcconfig",
+    "ipa_path": "Payload/KravaSigner.app/Feather.xcconfig",
+    "sha256": "c30e33b39b4212eb10479b8da2028bf229404f533156ce9bc535decd6a8e5395",
+    "size": 300,
+    "built_path": "Feather.xcconfig",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V1@2x.png",
+    "ipa_path": "Payload/KravaSigner.app/V1@2x.png",
+    "sha256": "ab13cfea44e360707f4a34007ec57557d88b2ae908e3b5297d95a671fef20b78",
+    "size": 10633,
+    "built_path": "V1@2x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1@2x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V1@2x.png",
+    "sha256": "2c79ef761427a3cce5683f6aaf108ebc890b2ae619973a59656626e9f71487f0",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Donor@3x.png",
+    "ipa_path": "Payload/KravaSigner.app/Donor@3x.png",
+    "sha256": "f13325c03113b73efe5ced00395e93c050d6927a585406f60f44fc09ad756a60",
+    "size": 23183,
+    "built_path": "Donor@3x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Donor@3x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._Donor@3x.png",
+    "sha256": "b1de65169945fa4af370cbdf3ba7e7c9635fe201ca20a1c9e5233db6ed95502c",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/Donor@2x.png",
+    "ipa_path": "Payload/KravaSigner.app/Donor@2x.png",
+    "sha256": "b4c4b577f5e2b778e28078d2249443bffa7f89a5cd40d7839447b475377ac2f9",
+    "size": 12795,
+    "built_path": "Donor@2x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._Donor@2x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._Donor@2x.png",
+    "sha256": "ce463e9fded04cc7226590d6b8f5a6b015b2313b764eaef70277405ca7aa9f2e",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V1@3x.png",
+    "ipa_path": "Payload/KravaSigner.app/V1@3x.png",
+    "sha256": "164ef3d3a5f42f8e5b773492ccb3e278a33241a8a80098598baa8190896b428d",
+    "size": 20344,
+    "built_path": "V1@3x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V1@3x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V1@3x.png",
+    "sha256": "280e665e5963cffd14e8b6b33ba9c20885dee118bbc14550ad042961266d2f70",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/V2Mac@3x.png",
+    "ipa_path": "Payload/KravaSigner.app/V2Mac@3x.png",
+    "sha256": "41e8d5dc99e7400b75f92f905cc378ccccb0275f5779aed12b55281f2ad13503",
+    "size": 26146,
+    "built_path": "V2Mac@3x.png",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/ArchiveMetadata/__MACOSX/Payload/KravaSigner.app/._V2Mac@3x.png",
+    "ipa_path": "__MACOSX/Payload/KravaSigner.app/._V2Mac@3x.png",
+    "sha256": "3d55d82233590ac3873145cd8e1300482c02c66f5b88ac6e02632a73d651b1b5",
+    "size": 176,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/swift-nio_NIOPosix.bundle/PrivacyInfo.xcprivacy",
+    "ipa_path": "Payload/KravaSigner.app/swift-nio_NIOPosix.bundle/PrivacyInfo.xcprivacy",
+    "sha256": "982f20d820bc4460acc9d4116c3e6c8ec837f717dc82edbb7308f7400515c909",
+    "size": 599,
+    "built_path": "swift-nio_NIOPosix.bundle/PrivacyInfo.xcprivacy",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Reference/swift-nio_NIOPosix.bundle/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/swift-nio_NIOPosix.bundle/Info.plist",
+    "sha256": "2c117753ac70427b4498990126557a00b26a0a2a3496495ba82ece2caf23b1fb",
+    "size": 682,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Reference/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/Info.plist",
+    "sha256": "bb08a137154670c89754558a839e09c94fa0def177244e914b9332c5b2146653",
+    "size": 3206,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/SWCompression_SWCompression.bundle/PrivacyInfo.xcprivacy",
+    "ipa_path": "Payload/KravaSigner.app/SWCompression_SWCompression.bundle/PrivacyInfo.xcprivacy",
+    "sha256": "521eb6ef8430773e5c010e1838fe9dd8fa5d62b7b76d1cea8d7d8daadcb144e2",
+    "size": 373,
+    "built_path": "SWCompression_SWCompression.bundle/PrivacyInfo.xcprivacy",
+    "kind": "preserved-resource"
+  },
+  {
+    "path": "RecoveredResources/Reference/SWCompression_SWCompression.bundle/Info.plist",
+    "ipa_path": "Payload/KravaSigner.app/SWCompression_SWCompression.bundle/Info.plist",
+    "sha256": "e099347d17a23a86e5faff70f8d6fc24497d55554256e8aa1e03bfcaca6c5a58",
+    "size": 700,
+    "built_path": null,
+    "kind": "preserved-reference"
+  },
+  {
+    "path": "RecoveredResources/Bundle/PkgInfo",
+    "ipa_path": "Payload/KravaSigner.app/PkgInfo",
+    "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0",
+    "size": 8,
+    "built_path": "PkgInfo",
+    "kind": "preserved-resource"
+  }
+]
